@@ -250,12 +250,12 @@
   bottom: 30px;
     left: 46.6%;
 }
-
+/*
 .arrow-home svg {
   height: 30px;
-}
+}*/
 
-.arrow-home h5 {
+.text-arrow-home {
       color: white;
     text-transform: uppercase;
     font-weight: 700;
