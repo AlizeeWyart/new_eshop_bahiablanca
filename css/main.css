@@ -12,12 +12,17 @@
    Global styles
    ========================================================================== */
 h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, small, #pricing {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 p, .lead {
-	font-family: 'Raleway', sans-serif;
-  font-weight:100;
+	font-family: 'Roboto', sans-serif;
+  font-weight:300;
+}
+
+a {
+  font-family:'Montserrat', sans-serif;
+  font-weight:300;
 }
 
 h1 {
@@ -237,18 +242,20 @@ a:hover, a:focus {
    ========================================================================== */
 
 .navbar {
-    border: 0px solid rgba(0, 0, 0, 0);
-    background: #70cbce;
+    border-bottom: 2px solid #9F1723;
+    background: white;
     margin: auto;
-    min-height: 60px;
+    min-height: 50px;
     padding-top: 8px;
     position: fixed;
-    top: -60px;
+    top: -150px;
     transition: top 0.4s ease 0s;
+    width:100vw;
+    z-index:2000;
 }
 
 .navbar.open {
-    top: 0;
+    top: 0px;
 }
 
 .navbar-inverse .navbar-nav > li > a, .navbar-nav a {
@@ -672,6 +679,35 @@ footer {
 @media (min-width: 1200px) and (max-width: 3000px) {
 
 }
+
+
+.btn-green {
+  border-radius: 0;
+  border: 1px solid #1ABC9C;
+  box-shadow: none;
+  background-color: #1ABC9C;
+  cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    color:white;
+    text-align: center;
+    letter-spacing: .5px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 2rem;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active {
+  background-color: transparent;
+  color: #1ABC9C !important;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
 
 
 

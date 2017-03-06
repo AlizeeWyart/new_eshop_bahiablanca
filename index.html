@@ -14,7 +14,7 @@
   <!-- Styles -->
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Raleway:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/page.css">
+  <link rel="stylesheet" href="css/navbar.css">
 
 
 
@@ -29,62 +30,109 @@
 
 <body>
 
-      <header id="header-home">
-        <div class="margin-left-20px">
-          <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_9000,w_1200,f_auto,q_90/v1/780428/3c85003c1c774eb3be89f15a39066756_urnolg.jpg" alt="" style="width:100px">
+    <div class="navbar navbar-inverse navbar-fixed-top flex-row-space-between">
+      <!-- Div à récupérer sur site du Wagon -->
+        <img class="logo-bahia-2" src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_9000,w_1200,f_auto,q_90/v1/780428/3c85003c1c774eb3be89f15a39066756_urnolg.jpg" alt="">
+        <div class="flex-row menu-navbar-2-content">
+          <!-- FEMMES NAVBAR 2 -->
+          <a href="#" id="navbar-2-femmes" style="position:relative;"><span style="position:absolute;top: -15px;text-transform: none;font-size: 10px;left: 66px;opacity:0;min-width:100px"><img src="img/flower.png" style="height:20px;" class="no-stop-rotation"></span>Femmes</a>
+          <!-- HOMMES NAVBAR 2 -->
+          <a href="#" id="navbar-2-hommes" style="position:relative;"><span style="position:absolute;top: 14px;text-transform: none;font-size: 10px;left: -2px;opacity:0;min-width:100px;"><img src="img/trait_green.png" style="width:79px;"></span>Hommes</a>
+          <!-- ENFANTS NAVBAR 2 -->
+          <a href="#" id="navbar-2-enfants" style="position:relative;"><span style="position:absolute;top: -10px;text-transform: none;font-size: 10px;left: 63px;opacity:0;min-width:100px;transform: rotate(12deg);"><img src="img/Soleil.png" style="height:25px;" class="no-stop-rotation" ></span>Enfants</a>
+          <!-- HISTOIRE NAVBAR 2 -->
+          <a href="#" id="aventure-navbar" style="position:relative">Histoire<span style="position:absolute;top: -15px;text-transform: none;font-size: 10px;left: -2px;opacity:0;min-width:100px">Découvrez notre</span></a>
+          <!-- ARTISAN NAVBAR 2 -->
+          <a href="#" id="artisan-navbar" style="position:relative">Artisans<span style="position:absolute;top: -15px;text-transform: none;font-size: 10px;left: 2px;opacity:0;min-width:100px">Rencontrez nos</span></a>
+          <!-- JOURNAL NAVBAR 2 -->
+          <a href="#" id="navbar-2-journal" style="position:relative;"><span style="position:absolute;top: 11px;text-transform: none;font-size: 10px;left: -2px;opacity:0;min-width:100px;"><img src="img/trait_blue.png" style="width:79px;"></span>Journal</a>
         </div>
-        <div class="menu-left margin-left-20px">
-          <ul class="txt-upper">
-            <li>
-              Boutique
-              <div class="eshop-categ">
-                <ul>
-                  <li>
-                    Femmes
-                  </li>
-                  <li>
-                    Hommes
-                  </li>
-                  <li>
-                    Enfants
-                  </li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              L'histoire
-            </li>
-            <li>
-              L'artisanat
-            </li>
-            <li>
-              Journal
-            </li>
-          </ul>
+        <div class="flex-row menu-navbar-2-account">
+          <a href="#" id="navbar-2-rechercher">
+            <span style="position:relative;    margin-right: 16px;">
+            <!-- LOGO RECHERCHER -->
+            <svg style="position:absolute;top: -2px;height: 24px;left: -1px;" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#676465;enable-background:accumulate;" d="m 42.003912,964.36624 c -16.5448,0 -30,13.45512 -30,30 0,16.54466 13.4552,29.99996 30,29.99996 7.5515,0 14.4401,-2.817 19.7188,-7.4375 l 22.875,22.8437 c 0.7811,0.7808 2.0314,0.781 2.8124,0 0.7812,-0.7811 0.7814,-2.0317 0,-2.8125 l -22.8437,-22.8437 c 4.6296,-5.2808 7.4375,-12.1902 7.4375,-19.74996 0,-16.54489 -13.4553,-30 -30,-30 z m 0,4 c 14.3829,0 26,11.61689 26,26 0,14.38286 -11.6171,25.99996 -26,25.99996 -14.383,0 -26,-11.6171 -26,-25.99996 0,-14.38312 11.617,-26 26,-26 z" fill="black  " fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></g></svg>
+            </span>
+            <span class="account-text">Rechercher</span>
+          </a>
+
+
+          <a href="#" id="navbar-2-mon-compte">
+            <!-- Logo Ma Wishlist -->
+            <span style="position:relative;    margin-right: 16px;">
+              <svg style="position:absolute;top: -1px;height: 21px;left: -1px;" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path d="m 11.515026,969.18361 c -8.6909003,9.09509 -8.6825003,23.73055 0,32.83459 l 38.461099,40.344 c 12.8352,-13.4324 25.6705,-26.8647 38.5057,-40.2973 8.6909,-9.09529 8.6909,-23.73948 0,-32.83474 -8.6909,-9.09526 -22.6841,-9.09546 -31.375,0 l -7.0861,7.41581 -7.1307,-7.46236 c -8.691,-9.09527 -22.6842,-9.09527 -31.374999,0 z" style="color:#000000;enable-background:accumulate;" fill="#000000" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></svg>
+            </span>
+            <span class="account-text">Mes coups de cœur</span>
+          </a>
+
+          <a href="#" id="navbar-2-mon-compte">
+            <!-- LOGO Mon Compte -->
+            <span style="position:relative;    margin-right: 16px;">
+              <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 512 640" x="0px" y="0px" style="position:absolute;top: 0px;height: 18px"><title>usr</title><path d="M256,243.54A121.77,121.77,0,1,0,134.23,121.77,121.91,121.91,0,0,0,256,243.54Z"/><path d="M37.63,512H494A238,238,0,0,0,87.72,343.72,236.43,236.43,0,0,0,18,512H37.63Z"/><text x="0" y="527" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Baboon designs</text><text x="0" y="532" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text>
+              </svg>
+            </span>
+            <span class="account-text">Mon compte</span>
+          </a>
+
+
+
+
+
+          <a href="#" id="navbar-2-mon-panier">
+            <span style="position:relative;    margin-right: 16px;">
+              <svg style="position:absolute;top: -1px;height: 20px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 20 25" enable-background="new 0 0 20 20" xml:space="preserve"><rect x="-167" y="-33" display="none" fill="#676465" width="198" height="87"/><g><polygon points="-105.834,0.93 -139.83,0.93 -142.297,39.074 -103.703,39.074  "/><path d="M-123-16.715c9.501,0,12.11,14.552,12.137,14.699h2.653c-0.117-0.688-3.019-17.392-14.79-17.392   c-11.802,0-14.276,16.701-14.376,17.392l2.667-0.034C-134.688-2.197-132.494-16.715-123-16.715z"/></g><g><polygon points="-52.156,3.2 -74.22,3.2 -75.822,27.957 -50.772,27.957  "/><path d="M-63.297-8.252c6.167,0,7.86,9.445,7.877,9.54h1.722C-53.774,0.841-55.657-10-63.297-10c-7.66,0-9.266,10.839-9.331,11.288   l1.731-0.022C-70.884,1.17-69.459-8.252-63.297-8.252z"/></g><g><polygon points="-12.979,6.705 -29.935,6.705 -31.166,25.73 -11.916,25.73  "/><path d="M-21.541-2.096c4.739,0,6.04,7.258,6.053,7.332h1.323c-0.058-0.343-1.505-8.675-7.376-8.675   c-5.886,0-7.121,8.33-7.171,8.675l1.331-0.017C-27.371,5.145-26.276-2.096-21.541-2.096z"/></g><g><polygon points="15.559,7.117 4.55,7.117 3.75,19.469 16.249,19.469  "/><path d="M10,1.403c3.077,0,3.921,4.712,3.93,4.76h0.859C14.751,5.94,13.812,0.531,10,0.531c-3.822,0-4.623,5.408-4.656,5.632   l0.864-0.011C6.214,6.104,6.925,1.403,10,1.403z"/></g>
+              </svg>
+            </span>
+            <span class="account-text">Mon Panier </span> (0)
+          </a>
+
+
+        </div>
+    </div>
+
+
+      <nav class="navbar-bahia" style="position:relative;border-bottom: 2px solid #9F1723">
+        <img src="img/Vamos2.png" style="position: absolute;width: 120px;top: 10px;transform: rotate(9deg);left: 49px;">
+        <div class="container navbar-bahia-container-2">
+
+            <div class="navbar-bahia-side right hidden-sm hidden-xs">
+              <a href="#"><span style="position:relative;    margin-right: 24px;">
+              <svg style="position:absolute;top: -5px;height: 24px;left: -1px;fill:#676465 !important" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#676465;enable-background:accumulate;" d="m 42.003912,964.36624 c -16.5448,0 -30,13.45512 -30,30 0,16.54466 13.4552,29.99996 30,29.99996 7.5515,0 14.4401,-2.817 19.7188,-7.4375 l 22.875,22.8437 c 0.7811,0.7808 2.0314,0.781 2.8124,0 0.7812,-0.7811 0.7814,-2.0317 0,-2.8125 l -22.8437,-22.8437 c 4.6296,-5.2808 7.4375,-12.1902 7.4375,-19.74996 0,-16.54489 -13.4553,-30 -30,-30 z m 0,4 c 14.3829,0 26,11.61689 26,26 0,14.38286 -11.6171,25.99996 -26,25.99996 -14.383,0 -26,-11.6171 -26,-25.99996 0,-14.38312 11.617,-26 26,-26 z" fill="#676465" fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></g></svg></span>  Rechercher</a>
+
+              <a href="#"><span style="position:relative;    margin-right: 24px;"><svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 512 640" x="0px" y="0px" style="position:absolute;top: -3px;height: 18px;fill:#676465 !important"><title>usr</title><path d="M256,243.54A121.77,121.77,0,1,0,134.23,121.77,121.91,121.91,0,0,0,256,243.54Z"/><path d="M37.63,512H494A238,238,0,0,0,87.72,343.72,236.43,236.43,0,0,0,18,512H37.63Z"/><text x="0" y="527" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Baboon designs</text><text x="0" y="532" fill="#000000" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg></span> Mon compte</a>
+              <a href="#"><span style="position:relative;    margin-right: 22px;"><svg style="position:absolute;top: -4px;height: 20px;fill:#676465" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 20 25" enable-background="new 0 0 20 20" xml:space="preserve"><rect x="-167" y="-33" display="none" fill="#676465" width="198" height="87"/><g><polygon points="-105.834,0.93 -139.83,0.93 -142.297,39.074 -103.703,39.074  "/><path d="M-123-16.715c9.501,0,12.11,14.552,12.137,14.699h2.653c-0.117-0.688-3.019-17.392-14.79-17.392   c-11.802,0-14.276,16.701-14.376,17.392l2.667-0.034C-134.688-2.197-132.494-16.715-123-16.715z"/></g><g><polygon points="-52.156,3.2 -74.22,3.2 -75.822,27.957 -50.772,27.957  "/><path d="M-63.297-8.252c6.167,0,7.86,9.445,7.877,9.54h1.722C-53.774,0.841-55.657-10-63.297-10c-7.66,0-9.266,10.839-9.331,11.288   l1.731-0.022C-70.884,1.17-69.459-8.252-63.297-8.252z"/></g><g><polygon points="-12.979,6.705 -29.935,6.705 -31.166,25.73 -11.916,25.73  "/><path d="M-21.541-2.096c4.739,0,6.04,7.258,6.053,7.332h1.323c-0.058-0.343-1.505-8.675-7.376-8.675   c-5.886,0-7.121,8.33-7.171,8.675l1.331-0.017C-27.371,5.145-26.276-2.096-21.541-2.096z"/></g><g><polygon points="15.559,7.117 4.55,7.117 3.75,19.469 16.249,19.469  "/><path d="M10,1.403c3.077,0,3.921,4.712,3.93,4.76h0.859C14.751,5.94,13.812,0.531,10,0.531c-3.822,0-4.623,5.408-4.656,5.632   l0.864-0.011C6.214,6.104,6.925,1.403,10,1.403z"/></g><text x="0" y="35" fill="#676465" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">Created by Alex Auda Samora</text><text x="0" y="40" fill="#676465" font-size="5px" font-weight="bold" font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif">from the Noun Project</text></svg>
+</span> Mon Panier (0)</a>
+            </div>
+          </div>
+        </div>
+        <div class="container navbar-bahia-container">
+          <div class="navbar-bahia-side left hidden-sm hidden-xs">
+            <!-- Div à récupérer sur site du Wagon -->
+              <a href="#">Femmes</a>
+              <a href="#">Hommes</a>
+              <a href="#">Enfants</a>
+          </div>
+          <div class="logo-bahia-container">
+            <a href="#">
+              <img class="logo-bahia" src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_9000,w_1200,f_auto,q_90/v1/780428/3c85003c1c774eb3be89f15a39066756_urnolg.jpg" alt="">
+            </a>
+          </div>
+            <div class="navbar-bahia-side right hidden-sm hidden-xs">
+              <a href="#" id="aventure-navbar" style="position:relative">Histoire<span style="position:absolute;top: -15px;text-transform: none;font-size: 10px;left: -2px;opacity:0;min-width:100px">Découvrez notre</span></a>
+              <a href="#" id="artisan-navbar" style="position:relative">Artisans<span style="position:absolute;top: -15px;text-transform: none;font-size: 10px;left: 3px;opacity:0;min-width:100px">Rencontrez nos</span></a>
+              <a href="#">Journal</a>
+            </div>
+          </div>
         </div>
 
-        <div class="social-links margin-left-20px">
-          <a href="https://www.facebook.com/bahiablancaparis/?fref=ts&ref=br_tf">
-          <i class="fa fa-facebook-square" aria-hidden="true"></i>
-          </a>
-          <a href="https://www.instagram.com/bahiablancaparis/">
-            <i class="fa fa-instagram"></i>
-          </a>
-          <a href="mailto:hola@bahiablanca.co">
-            <i class="fa fa-envelope-o"></i>
-          </a>
-          <a href="https://twitter.com/bahiablanca_co">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </div>
-      </header>
+      </nav>
 
       <section id="content-right">
         <!-- SLIDER 1 PHOTO -->
         <div class="home-slider text-center" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1500,w_2000,f_auto,q_90/v1/780428/e38a5f05c0c44f3cbedca63310cfd82f_puigna.jpg') center center no-repeat; background-size:100% auto;position:relative">
           <img src="http://res.cloudinary.com/bahia-blanca/image/upload/v1/AQUARELLES/Vamos.png" style="width: 45%;position: absolute;top: 40%;left: 29%;">
           <div class="move-y arrow-home" style="position:absolute; bottom: 30px;left: 46.6%;">
-            <h5 style="color: white;text-transform: uppercase; font-weight: 700; font-size: 12Px;">C'est parti !</h5>
+            <h5 style="color: white;text-transform: uppercase; font-weight: 300; font-size: 12Px;">C'est parti !</h5>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 20" style="height:30px">
               <path fill="none" stroke="#FFFFFF" d="M6.1,1.5V18"/>
               <polyline fill="none" stroke="#FFFFFF" points="11.3,14.5 6.3,19.5 1.3,14.5 "/>
@@ -99,44 +147,43 @@
 
         <div class="text-center position-relative min-height-80vh flex-column-space-around">
           <img class="perroquet-img" src="http://res.cloudinary.com/bahia-blanca/image/upload/v1/AQUARELLES/Peroquet.png" alt="Peroquet">
-          <div style="width:60%;margin-left:30%">
+          <div style="width:50%;margin-left:38%">
 
-            <h1><span class="bottom-green">Partez et voyagez au Mexique</span></h3>
+            <h1 class="title-green">Partez et voyagez au Mexique</h3>
             <p>Besoin d'un peu de soleil en ce mois de Janvier ? Suivez ici le périple de l'équipe Bahia Blanca pour découvrir (ou redécouvrir pour les plus chanceux) le Mexique !
             Besoin d'un peu de soleil en ce mois de Janvier ? Suivez ici le périple de l'équipe Bahia Blanca pour découvrir (ou redécouvrir pour les plus chanceux) le Mexique !
             </p>
             <div class="padding-top-30px">
-              <a class="waves-effect waves-light btn txt-no-upper">Notre histoire</a>
+              <a class="btn-green">Notre histoire</a>
             </div>
           </div>
         </div>
 
-        <div class="text-center position-relative min-height-100vh flex-column-space-around">
+        <div class="text-center position-relative min-height-90vh flex-column-space-around">
 
-            <h1><span class="bottom-red">Nos catégories de produit</span></h3>
+            <h2 class="title-red">Nos catégories de produit</h3>
             <div class="row categ-box">
-              <div class="col s4 height-80vh-important">
-                <div class="height-60percent categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg') center center no-repeat; background-size: 100% auto">
+              <div class="col s4 height-70vh-important">
+                <div class="height-60percent categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg') center center no-repeat; background-size: cover !important">
                     <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>chemises<br>femmes</h3></div>
                 </div>
-                <div class="height-5percent  categ-card" style="background:white"></div>
-                <div class="height-30percent  categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/6e66a065056b44b589b719162a83fd27_pbo1jp.jpg') center center no-repeat; background-size: 100% auto">
+                <div class="height-5percent  categ-card" style="background:transparent"></div>
+                <div class="height-35percent  categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/6e66a065056b44b589b719162a83fd27_pbo1jp.jpg') center center no-repeat; background-size: cover !important">
                     <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>coussins<br>brodés</h3></div>
                 </div>
               </div>
-              <div class="col s4 height-80vh-important">
-                <div class="height-5percent  categ-card" style="background:white"></div>
-                <div class="margin-bottom-20px categ-card" style="height:100%;background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg') center center no-repeat; background-size: auto 100%">
+              <div class="col s4 height-70vh-important">
+                <div class="margin-bottom-20px categ-card" style="height:100%;background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg') center center no-repeat; background-size: cover !important">
 
                  <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>coussins<br>brodés</h3></div>
                 </div>
               </div>
-              <div class="col s4 height-80vh-important">
-                <div class="height-30percent categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/6e66a065056b44b589b719162a83fd27_pbo1jp.jpg') center center no-repeat; background-size: 100% auto">
+              <div class="col s4 height-70vh-important">
+                <div class="height-35percent categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/6e66a065056b44b589b719162a83fd27_pbo1jp.jpg') center center no-repeat; background-size: cover !important">
                     <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>coussins<br>brodés</h3></div>
                 </div>
-                <div class="height-5percent  categ-card" style="background:white"></div>
-                <div class="height-60percent  categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg') center center no-repeat; background-size: 100% auto">
+                <div class="height-5percent  categ-card" style="background:transparent"></div>
+                <div class="height-60percent  categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg') center center no-repeat; background-size: cover !important">
                     <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>chemises<br>femmes</h3></div>
 
                 </div>
@@ -144,43 +191,40 @@
             </div>
         </div>
 
-        <div class="text-center position-relative min-height-100vh flex-column-space-around">
-            <h1><span class="bottom-green">Nos dernières créations</span></h3>
-            <div class="row categ-box">
-              <div class="col s4 height-80vh-important">
-                <div class="margin-bottom-20px categ-card" style="height:100%;background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg') center center no-repeat; background-size: auto 100%">
+        <div class="text-center position-relative min-height-90vh flex-column-space-around">
+            <h1 class="title-green">Nos dernières créations</h3>
+            <div class="row product-box min-height-70vh">
 
-                 <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>Blouse<br>Manta</h3></div>
-                </div>
-              </div>
-              <div class="col s4 height-80vh-important">
+              <div class="col s4 min-height-60vh">
                  <div class="height-5percent  categ-card" style="background:white"></div>
                   <div class="height-5percent  categ-card" style="background:white"></div>
                    <div class="height-5percent  categ-card" style="background:white"></div>
                 <div class="margin-bottom-20px" style="height:100%;background:white">
-                  <h3 class="title-product-card">Blouse Manta</h3>
-                  <div class="separator-red"></div>
-                  <p>La blouse "Manta" comme disent les Mexicains car la manta est un coton robuste légèrement écru, d'une qualité rare. Les broderies sont faites à la main selon la créativité de chaque artisane. </p>
-                  <div class="separator-red"></div>
-                  <p>100 % coton.<br>Lavable à 30°C en machine.</p>
-                  <a class="waves-effect waves-light btn txt-no-upper">Je la veux !</a>
+                  <h3 class="title-product-card" style="text-align:right">Blouse Manta</h3>
+                  <p style="font-size:12px; text-align:right">La blouse "Manta" comme disent les Mexicains car la manta est un coton robuste légèrement écru, d'une qualité rare. </p>
 
                 </div>
               </div>
-              <div class="col s4 height-80vh-important">
-                <div class="height-30percent categ-card" style="background:url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485834163/jtxnascnxne331lme0id.jpg') center center no-repeat; background-size: 100% auto">
-                   <!--  <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>coussins<br>brodés</h3></div> -->
-                </div>
-                <div class="height-30percent" style="background:white">
-                  <h3 class="title-made-product-card" style="padding-top:8px">Fabriquée à Mexico</h3>
-                  <p style="font-size:0.8em;margin:0 0 0 0">On commence bien entendu par aller jeter un coup d'oeil dans le "Sentier de Mexico", on nous indique la Calle Guatemala... <br><br><a href="#"><b>En savoir + </b></a></p>
-                </div>
-                <div class="height-35percent  categ-card" style="background:url('https://maps.googleapis.com/maps/api/staticmap?center=Mexico,%20Mexico&zoom=13&size=600x400&maptype=roadmap&markers=color:blue%7Clabel:S%7C40.702147,-74.015794&markers=color:green%7Clabel:G%7C40.711614,-74.012318&markers=color:red%7Clabel:C%7C15.976462,-93.21326599999998') center center no-repeat; background-size: 100% auto">
-                    <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%;font-size:0.5em"><h3>Découvrez<br>notre atelier</h3></div>
+               <div class="col s4 min-height-60vh">
+                <div class="categ-card min-height-60vh" style="height:100%;background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg') center center no-repeat; background-size: cover !important">
 
                 </div>
               </div>
-            </div>
+              <div class="col s4 min-height-60vh">
+               <div class="categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_3000,w_2000,f_auto,q_90/v1/780428/rouge_u9heqp.jpg');background-size:cover !important;height:200px"></div>
+
+                <div class="margin-bottom-20px height-35percent" style="height:100%;background:white">
+
+                <a class="btn-green">Je la veux !</a>
+
+
+                </div>
+              </div>
+              <!-- <div class="col s4 min-height-60vh">
+                <h5 class="sub-title-green">Hecho a mano, hecho con amor</h5>
+                  <video style="width:100%;height: auto; transform: rotate(90deg);" autoplay="autoplay" loop="loop" data-component="video" data-video-id="188305134" muted="" poster="https://i.vimeocdn.com/video/601369893_1280x1920.jpg?r=pad" src="https://player.vimeo.com/external/188305134.hd.mp4?s=b76e927e8049cc70e87d00d011c0a5b70c9e7772&amp;profile_id=174&amp;oauth2_token_id=930259283"></video>
+
+            </div> -->
         </div>
       </section>
 
@@ -192,7 +236,8 @@
     <script src="js/wow.min.js"></script>
      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="js/animate.js"></script>
+    <script src="js/modernizr-2.7.1.js"></script>
 
     </body>
 </html>

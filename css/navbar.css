@@ -1,0 +1,203 @@
+/*// NAVBAR*/
+nav {
+  box-shadow:none;
+}
+
+.navbar-bahia {
+  background-color: white;
+  /*padding: 30px 0;*/
+  z-index: 2;
+  position: relative;
+  width:100vw;
+  border-bottom: 1px solid #9F1723;
+  height:100Px;
+}
+
+.navbar-bahia a:hover {
+  font-weight:500 !important;
+}
+
+
+.navbar-bahia-container {
+  display: flex;
+  height: 70px;
+  align-items: center;
+  justify-content: space-around;
+  width: 90%;
+}
+
+.navbar-bahia-container .navbar-bahia-side {
+  flex: 0 0 40%;
+  display: flex;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  /*padding-top: 77px;*/
+}
+
+.navbar-bahia-container-2 {
+  display: flex;
+ /* align-items: center;*/
+  justify-content: space-around;
+  width: 96%;
+  height:40px;
+}
+
+
+.navbar-bahia-container-2 .navbar-bahia-side  {
+  flex:0 0 100%;
+  /*text-transform: uppercase;*/
+  text-align:right;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-bahia-container-2 .navbar-bahia-side a {
+  font-size:12px;
+  color:#676465;
+}
+
+.navbar-bahia-container .right a {
+  margin-right:20px;
+}
+
+.navbar-bahia-container-2 .right a {
+  margin-left:20px;
+}
+
+
+.navbar-bahia-container .navbar-bahia-side a {
+  color:black;
+  font-size:16px;
+}
+
+.left {
+  justify-content: flex-end;
+}
+
+.left a {
+  margin-left:20px;
+}
+
+.right {
+  justify-content: flex-start;
+}
+
+.logo-bahia-container {
+  flex: 0 0 8%;
+  justify-content: center;
+}
+
+.logo-bahia {
+  position: relative;
+  top: 2px;
+  width: 110px;
+  top: 14px;
+}
+
+
+#aventure-navbar:hover span {
+  opacity:1 !important;
+  font-weight:normal !important;
+}
+
+#aventure-navbar:hover {
+  font-weight:500 !important;
+}
+
+#aventure-navbar span {
+  transition: 0.3s ease;
+}
+
+#artisan-navbar:hover span {
+  opacity:1 !important;
+  font-weight:normal !important;
+}
+
+#navbar-2-femmes:hover span {
+  opacity:1 !important;
+  font-weight:normal !important;
+}
+
+#navbar-2-hommes:hover span {
+  opacity:1 !important;
+  font-weight:normal !important;
+}
+
+#navbar-2-enfants:hover span {
+  opacity:1 !important;
+  font-weight:normal !important;
+}
+
+#navbar-2-journal:hover span {
+  opacity:1 !important;
+  font-weight:normal !important;
+}
+
+#artisan-navbar:hover {
+  font-weight:500 !important;
+}
+
+#artisan-navbar span {
+  transition: 0.3s ease;
+}
+
+.logo-bahia-2 {
+  margin-left: 20px;
+  position: absolute;
+  width: 80px;
+  top: 8px;
+}
+
+.flex-row-space-between {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+}
+
+.menu-navbar-2-content {
+  padding-left: 130px;
+  padding-top: 10px;
+}
+
+.menu-navbar-2-account {
+  padding-top: 10px;
+  padding-right:20px;
+}
+
+.menu-navbar-2-content a {
+  margin-right:20px;
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight:300;
+  transition:none;
+}
+
+.menu-navbar-2-account a {
+  margin-right:20px;
+  font-size: 14px;
+}
+
+.navbar a:hover {
+  font-weight:500;
+}
+
+
+#navbar-2-rechercher:hover .account-text {
+  display:inline;
+  font-weight:300 !important;
+}
+
+#navbar-2-mon-compte:hover .account-text {
+  display:inline;
+  font-weight:300 !important;
+}
+
+#navbar-2-mon-panier:hover .account-text {
+  display:inline;
+  font-weight:300 !important;
+}
+
+.account-text {
+  display:none;
+  transition:0.3s ease-in-out;
+  margin-left:10px;
+}
