@@ -108,7 +108,7 @@ a:hover, a:focus {
   border-radius:0;
   border: none;
   box-shadow: none;
-  background-color:#1ABC9C;
+  background-color:#9DD4B8;
 }
 
 .btn-lg {
@@ -683,9 +683,9 @@ footer {
 
 .btn-green {
   border-radius: 0;
-  border: 1px solid #1ABC9C;
+  border: 1px solid #9DD4B8;
   box-shadow: none;
-  background-color: #1ABC9C;
+  background-color: #9DD4B8;
   cursor: pointer;
     display: inline-block;
     overflow: hidden;
@@ -701,7 +701,7 @@ footer {
 
 .btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active {
   background-color: transparent;
-  color: #1ABC9C !important;
+  color: #9DD4B8 !important;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
