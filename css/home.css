@@ -48,7 +48,7 @@
   position: absolute;
     z-index: 1;
     width: 500px;
-    top: -34px;
+    top: 0px;
     left: -40px;
 }
 
@@ -337,6 +337,10 @@
   margin-right:16px;
 }
 
+.mb-60px {
+  margin-bottom:60px;
+}
+
 /* POSITION */
 
 .position-rel {
@@ -392,6 +396,10 @@
 
 .w-120px {
   width:120px;
+}
+
+.min-h-450px {
+  min-height:450px;
 }
 
 /* CURSOR */
