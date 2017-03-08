@@ -6,22 +6,22 @@ console.log("homepage js working");
 console.log("slider homepage working");
 var backgrounds = [
   'url(http://imageshack.com/a/img922/9742/ejJeNI.jpg)',
-  'url(http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1500,w_2000,f_auto,q_90/v1/780428/e38a5f05c0c44f3cbedca63310cfd82f_puigna.jpg) center center no-repeat',
-  'url(http://res.cloudinary.com/bahia-blanca/image/upload/v1/PHOTOS/jujuclaireyunan.jpg) center center no-repeat',
+  'url(http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1500,w_2000,f_auto,q_90/v1/780428/e38a5f05c0c44f3cbedca63310cfd82f_puigna.jpg)',
+  'url(http://res.cloudinary.com/bahia-blanca/image/upload/v1/PHOTOS/jujuclaireyunan.jpg)',
   ];
 var current = 0;
 
 function nextBackground() {
   $('.home-slider').css(
-   'background',
+   'background-image',
     backgrounds[current = ++current % backgrounds.length]
   );
-  $('.home-slider').css('background-size', "100% auto");
+  // $('.home-slider').css('background-size', "100% auto");
   setTimeout(nextBackground, 6000);
 };
 
-$('.home-slider').css('background', backgrounds[0]);
-$('.home-slider').css('background-size', "100% auto");
+$('.home-slider').css('background-image', backgrounds[0]);
+// $('.home-slider').css('background-size', "100% auto");
 
 setTimeout(nextBackground, 6000);
 

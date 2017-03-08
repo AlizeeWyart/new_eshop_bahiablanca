@@ -15,6 +15,7 @@ nav {
 
 .navbar-bahia a:hover {
   font-weight:500 !important;
+  transition:none !important;
 }
 
 

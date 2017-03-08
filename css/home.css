@@ -421,7 +421,11 @@
 /* SLIDER HOME */
 
 .home-slider {
-  transition: background 1s ease;
+  transition: background-image 1s ease-in-out;
+  background:center center no-repeat;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
 }
 
 /* SHOW @ NO-SHOW */
