@@ -1,29 +1,59 @@
 console.log("homepage js working");
 
-
-// SLIDER HOMEPAGE
+// SLIDER PRODUCTS HOMEPAGE
 
 console.log("slider homepage working");
-var backgrounds = [
-  'url(http://imageshack.com/a/img922/9742/ejJeNI.jpg)',
-  'url(http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1500,w_2000,f_auto,q_90/v1/780428/e38a5f05c0c44f3cbedca63310cfd82f_puigna.jpg)',
-  'url(http://res.cloudinary.com/bahia-blanca/image/upload/v1/PHOTOS/jujuclaireyunan.jpg)',
-  ];
-var current = 0;
+// var backgrounds = [
+//   'url(http://imageshack.com/a/img922/9742/ejJeNI.jpg)',
+//   'url(http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1500,w_2000,f_auto,q_90/v1/780428/e38a5f05c0c44f3cbedca63310cfd82f_puigna.jpg)',
+//   'url(http://res.cloudinary.com/bahia-blanca/image/upload/v1/PHOTOS/jujuclaireyunan.jpg)',
+//   ];
+// var current = 0;
+
+// function nextBackground() {
+//   $('.home-slider').css(
+//    'background-image',
+//     backgrounds[current = ++current % backgrounds.length]
+//   );
+//   // $('.home-slider').css('background-size', "100% auto");
+//   setTimeout(nextBackground, 6000);
+// };
+
+// $('.home-slider').css('background-image', backgrounds[0]);
+// // $('.home-slider').css('background-size', "100% auto");
+
+// setTimeout(nextBackground, 6000);
+
+// TRUE 1st SLIDER HOME
+
+
 
 function nextBackground() {
-  $('.home-slider').css(
-   'background-image',
-    backgrounds[current = ++current % backgrounds.length]
-  );
-  // $('.home-slider').css('background-size', "100% auto");
-  setTimeout(nextBackground, 6000);
+  var totalImgSlider = $('.img-slider').length;
+  actualImgSliderBox = $('.img-slider.show');
+  var actualImgSliderRanking = actualImgSliderBox.data("ranking");
+
+  // actualImgSliderBox.fadeIn("slow", function() {
+  //   actualImgSliderBox.css("opacity", "0");
+  // });
+
+  if (actualImgSliderRanking + 1 > totalImgSlider) {
+    var nextImgSliderRanking = 1
+  } else {
+    var nextImgSliderRanking = actualImgSliderRanking + 1;
+  };
+
+  nextImgSliderBox = $('.img-slider[data-ranking="'+ nextImgSliderRanking +'"]');
+
+  nextImgSliderBox.addClass("show");
+  actualImgSliderBox.css("opacity","0").removeClass("show");
+  nextImgSliderBox.css("opacity", "1");
+
+  setTimeout(nextBackground, 5000);
 };
 
-$('.home-slider').css('background-image', backgrounds[0]);
-// $('.home-slider').css('background-size', "100% auto");
 
-setTimeout(nextBackground, 6000);
+setTimeout(nextBackground, 5000);
 
 
 // SLIDER PRODUCTS
@@ -88,6 +118,7 @@ $('#arrow-left').on("click", function(){
     });
   }, 1000);
 });
+
 
 
 

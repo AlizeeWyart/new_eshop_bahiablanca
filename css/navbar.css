@@ -204,3 +204,11 @@ nav {
   transition:0.3s ease-in-out;
   margin-left:10px;
 }
+
+.navbar.navbar-inverse.navbar-fixed-top.flex-row-space-between.open::before {
+  display:none;
+}
+
+.navbar.navbar-inverse.navbar-fixed-top.flex-row-space-between.open::after {
+  display:none;
+}

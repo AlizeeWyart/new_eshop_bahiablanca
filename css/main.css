@@ -687,16 +687,16 @@ footer {
   box-shadow: none;
   background-color: #9DD4B8;
   cursor: pointer;
-    display: inline-block;
-    overflow: hidden;
-    color:white;
-    text-align: center;
-    letter-spacing: .5px;
-    height: 36px;
-    line-height: 36px;
-    padding: 0 2rem;
-    text-transform: uppercase;
-    vertical-align: middle;
+  display: inline-block;
+  overflow: hidden;
+  color:white;
+  text-align: center;
+  letter-spacing: .5px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
 }
 
 .btn-green:hover, .btn-green:focus, .btn-green:active, .btn-green.active {
@@ -708,8 +708,151 @@ footer {
   transition: all 0.35s ease-in-out;
 }
 
+.btn-red {
+  border-radius: 0;
+  border: 1px solid #A31D23;
+  box-shadow: none;
+  background-color: #A31D23;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  color:white;
+  text-align: center;
+  letter-spacing: .5px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 2rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+
+.btn-red:hover, .btn-red:focus, .btn-red:active, .btn-red.active {
+  background-color: transparent;
+  color: #A31D23 !important;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+
+.color-green {
+  color:#9DD4B8;
+}
+
+.txt-right {
+  text-align:right;
+}
 
 
+/* FONT SIZE */
+.fs-12px {
+  font-size: 12px;
+}
+
+.fs-16px {
+  font-size:16px;
+}
+
+/* FONT WEIGHT */
+.fw-300 {
+  font-weight:300;
+}
+
+
+/* TEXT TRANSFORM */
+.text-left {
+  text-align:left;
+}
+
+/* HEIGHT */
+
+.h-200px {
+  height:200px;
+}
+
+.h-30px {
+  height:30px;
+}
+
+.h-20px {
+  height:20px;
+}
+
+.h-110px {
+  height:110px;
+}
+
+
+/* CONTAINER */
+.container-70 {
+  width:70%;
+  margin:auto;
+}
+
+.container-80 {
+  width:80%;
+  margin:auto;
+}
+
+.container-60 {
+  width:60%;
+  margin:auto;
+}
+
+
+/* MARGINS */
+
+.mt-50px {
+  margin-top: 50px;
+}
+
+.mb-5px {
+  margin-bottom: 5px;
+}
+
+.mr-5px {
+  margin-right:5px;
+}
+
+.ml-15px {
+  margin-left:15px;
+}
+
+.mb-20px-important {
+  margin-bottom:20px !important;
+}
+
+.mb-50px {
+  margin-bottom:50px;
+}
+
+.mb-30px {
+  margin-bottom:30px;
+}
+
+/* LIST */
+
+.no-bullet li {
+  list-style-type: none;
+}
+
+/* PADDING */
+
+.plr-5px {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+
+/* BORDER */
+
+.br-red {
+  border-right: 1px solid #A31D23;
+}
+
+.br-green {
+  border-right: 1px solid #9DD4B8;
+}
 
 
 

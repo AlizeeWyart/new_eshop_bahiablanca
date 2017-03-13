@@ -12,15 +12,17 @@
 	<meta property="og:description" content="">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+  <script src="https://use.fontawesome.com/c0ab0fc63b.js"></script>
   <link rel="stylesheet" href="css/animate.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/footer.css">
   <!-- <link rel="stylesheet" href="css/page.css"> -->
   <link rel="stylesheet" href="css/navbar.css">
 </head>
@@ -29,7 +31,7 @@
   <!-- NAVBAR 2 -->
   <div class="navbar navbar-inverse navbar-fixed-top flex-row-space-between">
     <!-- Div à récupérer sur site du Wagon -->
-    <img class="logo-bahia-2" src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_9000,w_1200,f_auto,q_90/v1/780428/3c85003c1c774eb3be89f15a39066756_urnolg.jpg" alt="">
+    <img class="logo-bahia-2" src="img/logo-bahia.png" alt="">
     <div class="flex-row menu-navbar-2-content">
       <!-- FEMMES NAVBAR 2 -->
       <a href="#" id="navbar-2-femmes" class="position-rel">
@@ -161,7 +163,7 @@
       </div>
       <div class="logo-bahia-container">
         <a href="#">
-          <img class="logo-bahia" src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_9000,w_1200,f_auto,q_90/v1/780428/3c85003c1c774eb3be89f15a39066756_urnolg.jpg" alt="">
+          <img class="logo-bahia" src="img/logo-bahia.png" alt="">
         </a>
       </div>
         <div class="navbar-bahia-side right hidden-sm hidden-xs">
@@ -191,11 +193,31 @@
   </nav>
   <!-- // FIN NAVBAR 1 -->
 
+  <!-- CAROUSEL -->
+
+
+
+
+  <!-- // FIN CAROUSEL -->
+
+
   <section id="content-right">
     <!-- SLIDER 1 PHOTO -->
     <div class="home-slider text-center position-rel" >
-      <!-- <img src="http://res.cloudinary.com/bahia-blanca/image/upload/v1/AQUARELLES/Vamos.png" style="width: 45%;position: absolute;top: 40%;left: 29%;"> -->
-      <div class="move-y arrow-home" style="position:absolute; bottom: 30px;left: 46.6%;">
+      <!-- IMAGE 1-->
+      <div class="img-slider show" style="background-image: url('http://imageshack.com/a/img922/9742/ejJeNI.jpg');opacity:1" data-ranking="1">
+        <a class="btn-red btn-slider-home">Descubro</a>
+      </div>
+      <!-- IMAGE 2-->
+      <div class="img-slider" style="background-image: url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1500,w_2000,f_auto,q_90/v1/780428/e38a5f05c0c44f3cbedca63310cfd82f_puigna');opacity:0" data-ranking="2">
+        <a class="btn-red btn-slider-home">Descubro 2</a>
+      </div>
+      <!-- IMAGE 3 -->
+      <div class="img-slider" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1/PHOTOS/jujuclaireyunan.jpg');opacity:0" data-ranking="3">
+        <a class="btn-red btn-slider-home">Descubro 3</a>
+      </div>
+      <!-- FLECHE -->
+      <div class="move-y arrow-home" style="position:absolute; bottom: 30px;left: 48%;">
         <h5 style="color: white;text-transform: uppercase; font-weight: 300; font-size: 12Px;">Vamos !</h5>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 20" style="height:30px">
           <path fill="none" stroke="#FFFFFF" d="M6.1,1.5V18"/>
@@ -204,18 +226,14 @@
       </div>
     </div>
 
-    <!-- OTHER -->
-    <div class="mouse-icon hidden-xs" style="margin: -80px auto 50px;display:none">
-      <div class="scroll"></div>
-    </div>
 
     <div class="text-center position-rel min-h-450px mb-60px flex-column-space-around">
       <img class="perroquet-img" src="http://res.cloudinary.com/bahia-blanca/image/upload/v1/AQUARELLES/Peroquet.png" alt="Peroquet">
       <div style="width:50%;margin-left:38%">
 
-        <h1 class="title-green">Partez et voyagez au Mexique</h3>
-        <p>Besoin d'un peu de soleil en ce mois de Janvier ? Suivez ici le périple de l'équipe Bahia Blanca pour découvrir (ou redécouvrir pour les plus chanceux) le Mexique !
-        Besoin d'un peu de soleil en ce mois de Janvier ? Suivez ici le périple de l'équipe Bahia Blanca pour découvrir (ou redécouvrir pour les plus chanceux) le Mexique !
+        <h1 class="title-green">Vamos a Mexico !</h3>
+        <p>Dépoussiérer l'artisanat pour le remettre au coeur du prêt-à-porter en France en le rendant fashion, telle est l'ambition de Bahia Blanca. Nos pièces uniques sont dessinées à Paris et entièrement confectionnées au Mexique par différentes ethnies d'artisanes que nous avons rencontrées sur place !</p>
+        <p>Nous avons silloné le Mexique à la rencontre de différentes ethnies d'artisanes. Nous sommes tombées amoureuses de leur savoir-faire et voulons les partager à leur juste valeur avec vous !
         </p>
         <div class="padding-top-30px">
           <a class="btn-green">Notre histoire</a>
@@ -229,26 +247,26 @@
         <div class="row categ-box">
           <div class="col s4 height-70vh-important">
             <div class="height-60percent categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg') center center no-repeat; background-size: cover !important">
-                <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>chemises<br>femmes</h3></div>
+                <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>blouses<br>femme</h3></div>
             </div>
             <div class="height-5percent  categ-card" style="background:transparent"></div>
             <div class="height-35percent  categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/6e66a065056b44b589b719162a83fd27_pbo1jp.jpg') center center no-repeat; background-size: cover !important">
-                <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>coussins<br>brodés</h3></div>
+                <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>ceintures<br>femme</h3></div>
             </div>
           </div>
           <div class="col s4 height-70vh-important">
             <div class="margin-bottom-20px categ-card" style="height:100%;background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg') center center no-repeat; background-size: cover !important">
 
-             <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>coussins<br>brodés</h3></div>
+             <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>robes<br>brodés</h3></div>
             </div>
           </div>
           <div class="col s4 height-70vh-important">
             <div class="height-35percent categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/6e66a065056b44b589b719162a83fd27_pbo1jp.jpg') center center no-repeat; background-size: cover !important">
-                <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>coussins<br>brodés</h3></div>
+                <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>ceintures<br>hommes</h3></div>
             </div>
             <div class="height-5percent  categ-card" style="background:transparent"></div>
             <div class="height-60percent  categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg') center center no-repeat; background-size: cover !important">
-                <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>chemises<br>femmes</h3></div>
+                <div class="overlay-color-card flex-column-space-around" style="background-color: transparent; width: 100%; height:100%"><h3>chemises<br>hommes </h3></div>
 
             </div>
           </div>
@@ -256,7 +274,7 @@
     </div>
 
     <div class="text-center position-relative min-height-90vh flex-column-space-around position-rel">
-        <h1 class="title-green">Nos dernières créations</h3>
+        <h1 class="title-green">Una pequeña selección</h3>
         <!-- ARROWS -->
         <!-- ARROW LEFT -->
         <svg class="position-abs height-80px cursor-pointer" id="arrow-left" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path d="m 25.249259,1003.0519 16.0002,16.9999 c 0.3873,0.4042 1.0492,0.4071 1.4221,0.047 0.379,-0.3659 0.4068,-1.0376 0.047,-1.4221 l -14.4064,-15.3124 45.68771,0 c 0.5523,0 1,-0.4477 1,-1 0,-0.5523 -0.4477,-1 -1,-1 l -45.68771,0 14.4064,-15.31251 c 0.3601,-0.3845 0.3379,-1.0621 -0.047,-1.4221 -0.3846,-0.36 -1.0035,-0.3689 -1.4221,0.047 l -16.0002,17.00001 c -0.3803,0.468 -0.2803,1.0416 0,1.3752 z" style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#000000;enable-background:accumulate;" fill="#99CDAE" fill-opacity="1" fill-rule="nonzero" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></g></svg>
@@ -270,9 +288,10 @@
           <div class="col s4 min-height-60vh">
             <div class="margin-bottom-20px" style="height:100%;background:white">
               <!-- Nom du produit -->
-              <h3 class="title-product-card no-margin-top" style="text-align:right">Blouse Manta 1</h3>
+              <h3 class="title-product-card no-margin-top" style="text-align:right">La Roba Perla</h3>
               <!-- Description du produit -->
-              <p style="font-size:12px; text-align:right">La blouse "Manta" comme disent les Mexicains car la manta est un coton robuste légèrement écru, d'une qualité rare. </p>
+              <p class="fs-12px txt-right">Robe dos nu dans les bandes aux couleurs vives dans le dos sont brodées à la main par les artisanes de l'Hidalgo</p>
+              <p class="txt-right"><span class="color-green">65€</span></p>
             </div>
           </div>
           <!-- // Fin première colonne -->
@@ -287,7 +306,6 @@
            <!-- <div class="categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_3000,w_2000,f_auto,q_90/v1/780428/rouge_u9heqp.jpg');background-size:cover !important;height:200px"></div> -->
             <div class="height-50percent" style="position:relative">
               <video style="width:170px;margin-top: -42px;height: auto; transform: rotate(90deg);" autoplay="autoplay" loop="loop" data-component="video" data-video-id="188305134" muted="" poster="https://i.vimeocdn.com/video/601369893_1280x1920.jpg?r=pad" src="https://player.vimeo.com/external/188305134.hd.mp4?s=b76e927e8049cc70e87d00d011c0a5b70c9e7772&amp;profile_id=174&amp;oauth2_token_id=930259283"></video>
-              <p class="no-margin font-size-10px" style="margin-top:-40px">Hecho a mano, hecho con amore a Mexicò</p>
             </div>
             <div class="height-50percent flex-column-center">
               <a class="btn-green" style="max-width:200px;margin:auto">Je la veux !</a>
@@ -302,15 +320,16 @@
           <div class="col s4 min-height-60vh">
             <div class="margin-bottom-20px" style="height:100%;background:white">
               <!-- Nom du produit -->
-              <h3 class="title-product-card no-margin-top" style="text-align:right">Mariniera Bohemia</h3>
+              <h3 class="title-product-card no-margin-top" style="text-align:right">La Roba Perla</h3>
               <!-- Description du produit -->
-              <p style="font-size:12px; text-align:right">Décontractée et élégante, la Mariniera bohemia avec son col Mao revisité sera parfaite pour vos soirées d'été! A vous de choisir la couleur des broderies:</p>
+              <p class="fs-12px txt-right">Robe dos nu dans les bandes aux couleurs vives dans le dos sont brodées à la main par les artisanes de l'Hidalgo</p>
+              <p class="txt-right"><span class="color-green">65€</span></p>
             </div>
           </div>
           <!-- // Fin première colonne -->
           <!-- 2e COLONNE -->
           <div class="col s4 min-height-60vh">
-            <div class="min-height-60vh" style="height:100%;background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_3000,w_2000,f_auto,q_90/v1/780428/alstonc_jxjvqp.jpg') center center no-repeat; background-size: cover !important">
+            <div class="min-height-60vh" style="height:100%;background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg') center center no-repeat; background-size: cover !important">
             </div>
           </div>
           <!-- // Fin 2e colonne -->
@@ -319,7 +338,6 @@
            <!-- <div class="categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_3000,w_2000,f_auto,q_90/v1/780428/rouge_u9heqp.jpg');background-size:cover !important;height:200px"></div> -->
             <div class="height-50percent" style="position:relative">
               <video style="width:170px;margin-top: -42px;height: auto; transform: rotate(90deg);" autoplay="autoplay" loop="loop" data-component="video" data-video-id="188305134" muted="" poster="https://i.vimeocdn.com/video/601369893_1280x1920.jpg?r=pad" src="https://player.vimeo.com/external/188305134.hd.mp4?s=b76e927e8049cc70e87d00d011c0a5b70c9e7772&amp;profile_id=174&amp;oauth2_token_id=930259283"></video>
-              <p class="no-margin font-size-10px" style="margin-top:-40px">Hecho a mano, hecho con amore a Mexicò</p>
             </div>
             <div class="height-50percent flex-column-center">
               <a class="btn-green" style="max-width:200px;margin:auto">Je la veux !</a>
@@ -328,22 +346,22 @@
           <!-- Fin 3e colonne -->
         </div>
         <!-- FIN PRODUIT 2 -->
-        <!-- PRODUIT 2 -->
+        <!-- PRODUIT 3 -->
         <div class="row product-box min-height-70vh" data-ranking="3" style="display:none;opacity:0">
           <!-- PREMIERE COLONNE -->
           <div class="col s4 min-height-60vh">
             <div class="margin-bottom-20px" style="height:100%;background:white">
               <!-- Nom du produit -->
-              <h3 class="title-product-card no-margin-top" style="text-align:right">Ceinture Bohemia Colores</h3>
+              <h3 class="title-product-card no-margin-top" style="text-align:right">La Roba Perla</h3>
               <!-- Description du produit -->
-              <p style="font-size:12px; text-align:right">Nos artisanes tissent à la main les fils de coton colorés suivant leur créativité. Les "tejidos" sont ensuite cousus sur le cuir.
-              Aussi bien pour hommes que pour femmes :) </p>
+              <p class="fs-12px txt-right">Robe dos nu dans les bandes aux couleurs vives dans le dos sont brodées à la main par les artisanes de l'Hidalgo</p>
+              <p class="txt-right"><span class="color-green">65€</span></p>
             </div>
           </div>
           <!-- // Fin première colonne -->
           <!-- 2e COLONNE -->
           <div class="col s4 min-height-60vh">
-            <div class="min-height-60vh" style="height:100%;background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_3000,w_2000,f_auto,q_90/v1/780428/ceintureju_x8uk5u.jpg') center center no-repeat; background-size: cover !important">
+            <div class="min-height-60vh" style="height:100%;background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg') center center no-repeat; background-size: cover !important">
             </div>
           </div>
           <!-- // Fin 2e colonne -->
@@ -352,7 +370,6 @@
            <!-- <div class="categ-card" style="background:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_3000,w_2000,f_auto,q_90/v1/780428/rouge_u9heqp.jpg');background-size:cover !important;height:200px"></div> -->
             <div class="height-50percent" style="position:relative">
               <video style="width:170px;margin-top: -42px;height: auto; transform: rotate(90deg);" autoplay="autoplay" loop="loop" data-component="video" data-video-id="188305134" muted="" poster="https://i.vimeocdn.com/video/601369893_1280x1920.jpg?r=pad" src="https://player.vimeo.com/external/188305134.hd.mp4?s=b76e927e8049cc70e87d00d011c0a5b70c9e7772&amp;profile_id=174&amp;oauth2_token_id=930259283"></video>
-              <p class="no-margin font-size-10px" style="margin-top:-40px">Hecho a mano, hecho con amore a Mexicò</p>
             </div>
             <div class="height-50percent flex-column-center">
               <a class="btn-green" style="max-width:200px;margin:auto">Je la veux !</a>
@@ -360,8 +377,144 @@
           </div>
           <!-- Fin 3e colonne -->
         </div>
-        <!-- FIN PRODUIT 2 -->
+        <!-- FIN PRODUIT 3 -->
+    </div>
+
+    <!-- INSTALIVE -->
+
+    <div class="text-center">
+      <h2 class="title-red mb-5px">Instalive</h2>
+      <p>Suivez-nous sur Instagram et taguez vos photos #bahiablancaparis</p>
+      <div class="insta-photos-box row mt-50px">
+        <div class="col-xs-6 col-sm-2 plr-5px position-rel insta-photo-box">
+          <img src="img/instalive-1.png" class="insta-photo">
+          <div class="insta-overlay flex-column-center">
+            <h5 class="insta-text mb-20px-important">Retrouver sa trousse à la maison ! Qu'y a-t-il dedans ? #surprise #trousse #brodée #hechoamano #hechoconamor #online #eshop...</h5>
+            <h5 class="insta-text"><i class="fa fa-heart mr-5px" aria-hidden="true"></i> 251 <i class="fa fa-comment mr-5px ml-15px" aria-hidden="true"></i>9</span></h5>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-2 plr-5px position-rel insta-photo-box">
+          <img src="img/instalive-2.png" class="insta-photo">
+          <div class="insta-overlay flex-column-center">
+            <h5 class="insta-text mb-20px-important">Les couleurs du WE ☀️#ilfaitbeau #colores #naranja #azul #inspiration #azulejos</h5>
+            <h5 class="insta-text"><i class="fa fa-heart mr-5px" aria-hidden="true"></i> 243 <i class="fa fa-comment mr-5px ml-15px" aria-hidden="true"></i>10</span></h5>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-2 plr-5px position-rel insta-photo-box">
+          <img src="img/instalive-3.png" class="insta-photo">
+          <div class="insta-overlay flex-column-center">
+            <h5 class="insta-text mb-20px-important">Les Chemises Bohemia reviennent bientôt 😍La commande est passée 🥂#onaretrouvéjuan #chemises #bohemia #bahiablancaparis #coton ...</h5>
+            <h5 class="insta-text"><i class="fa fa-heart mr-5px" aria-hidden="true"></i> 184 <i class="fa fa-comment mr-5px ml-15px" aria-hidden="true"></i>9</span></h5>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-2 plr-5px position-rel insta-photo-box">
+          <img src="img/instalive-4.png" class="insta-photo">
+          <div class="insta-overlay flex-column-center">
+            <h5 class="insta-text mb-20px-important">Détail en point de croix de notre première collection Bahia Blanca été 2017 ✂️ #nouvellecollection #bientôt #été2017 #lancement #révélation ... </h5>
+            <h5 class="insta-text"><i class="fa fa-heart mr-5px" aria-hidden="true"></i> 174 <i class="fa fa-comment mr-5px ml-15px" aria-hidden="true"></i>4</span></h5>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-2 plr-5px position-rel insta-photo-box">
+          <img src="img/instalive-5.png" class="insta-photo">
+          <div class="insta-overlay flex-column-center">
+            <h5 class="insta-text mb-20px-important">LA femme mexicaine pour clôturer cette belle journée #fridakahlo #femme #artiste #icône #inspiration #rivera #passion #mujeres</h5>
+            <h5 class="insta-text"><i class="fa fa-heart mr-5px" aria-hidden="true"></i> 175 <i class="fa fa-comment mr-5px ml-15px" aria-hidden="true"></i>10</span></h5>
+          </div>
+        </div>
+        <div class="col-xs-6 col-sm-2 plr-5px position-rel insta-photo-box">
+          <img src="img/instalive-6.png" class="insta-photo">
+          <div class="insta-overlay flex-column-center">
+            <h5 class="insta-text mb-20px-important">Les couleurs du WE ☀️#ilfaitbeau #colores #naranja #azul #inspiration #azulejos</h5>
+            <h5 class="insta-text"><i class="fa fa-heart mr-5px" aria-hidden="true"></i> 112 <i class="fa fa-comment mr-5px ml-15px" aria-hidden="true"></i>5</span></h5>
+          </div>
+        </div>
       </div>
+    </div>
+
+
+
+    <!-- CONDITIONS FOOTER -->
+    <div class="text-center container-70">
+      <div class="conditions mb-50px row">
+        <div class="col-xs-4 br-red h-110px">
+          <div class="condition-box">
+            <h4 class="text-center txt-upper fs-16px"><i class="fa fa-paper-plane" aria-hidden="true"></i></h4>
+            <h4 class="text-center txt-upper fs-16px">Livraison offerte</h4>
+            <h5 class="fs-12px fw-300">dès 70€ d'achats en France*</h5>
+          </div>
+        </div>
+        <div class="col-xs-4 br-red h-110px">
+          <div class="condition-box">
+            <h4 class="text-center txt-upper fs-16px"><i class="fa fa-lock" aria-hidden="true"></i></h4>
+            <h4 class="text-center txt-upper fs-16px">Paiement sécurisé</h4>
+            <h5 class="fs-12px fw-300">
+              <img src="img/credit-cards/cc-visa.svg" alt="" class="h-20px">
+              <img src="img/credit-cards/cc-master-card.svg" alt="" class="h-20px">
+              <img src="img/credit-cards/cc-american-express.svg" alt="" class="h-20px">
+              <img src="img/credit-cards/cc-maestro.svg" alt="" class="h-20px">
+            </h5>
+
+          </div>
+        </div>
+        <div class="col-xs-4 h-110px">
+          <div class="condition-box">
+            <h4 class="text-center txt-upper fs-16px"><i class="fa fa-phone" aria-hidden="true"></i></h4>
+            <h4 class="text-center txt-upper fs-16px">Appelez-nous !</h4>
+            <h5 class="fs-12px fw-300">Joignables au 06 19 91 13 32</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="container-80">
+      <div class="conditions">
+        <div class="col-xs-4">
+          <div class="condition-box">
+            <h4 class="text-right txt-upper fs-16px">Liens utiles</h4>
+            <ul class="no-bullet">
+              <li class="text-right"><a href="#" class="fs-12px fw-300">Livraisons et retour</a></li>
+              <li class="text-right"><a href="#" class="fs-12px fw-300">CGV</a></li>
+              <li class="text-right"><a href="#" class="fs-12px fw-300">Mentions Légales</a></li>
+              <li class="text-right"><a href="#" class="fs-12px fw-300">Contact Presse</a></li>
+              <li class="text-right"><a href="#" class="fs-12px fw-300">Envoyez-nous un mot doux</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="condition-box">
+            <h4 class="text-center txt-upper fs-16px mb-30px">Recevez la Bahia Letter</h4>
+            <div class="">
+              <form action="" class="bahialetter">
+                <input type="text" placeholder="moi@email.com">
+                <a class="btn-red btn-bahialetter">Vamos !</a>
+              </form>
+            </div>
+            <div class="social-links">
+              <a href="https://www.facebook.com/bahiablancaparis/?fref=ts&ref=br_tf"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/bahiablancaparis/"><i class="fa fa-instagram"></i></a>
+              <a href="mailto:hola@bahiablanca.co"><i class="fa fa-envelope-o"></i></a>
+              <a href="https://twitter.com/bahiablanca_co"><i class="fa fa-twitter"></i> </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-4">
+          <div class="condition-box">
+            <h4 class="txt-upper fs-16px text-left">L'aventure</h4>
+            <ul class="no-bullet">
+              <li class="text-left"><a href="#" class="fs-12px fw-300">Notre histoire</a></li>
+              <li class="text-left"><a href="#" class="fs-12px fw-300">L'équipe</a></li>
+              <li class="text-left"><a href="#" class="fs-12px fw-300">Les artisans</a></li>
+              <li class="text-left"><a href="#" class="fs-12px fw-300">Le journal</a></li>
+              <li class="text-left"><a href="#" class="fs-12px fw-300">Le recrutement</a></li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
   </section>
 
     <!-- Javascript
@@ -369,12 +522,14 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script> -->
     <script>window.jQuery || document.write('<script src="js/jquery-1.11.0.min.js"><\/script>')</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script src="js/main.js"></script>
     <!-- <script src="js/animate.js"></script> -->
     <script src="js/modernizr-2.7.1.js"></script>
     <script src="js/homepage.js"></script>
+
 
     </body>
 </html>
