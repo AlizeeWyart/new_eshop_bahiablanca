@@ -13,19 +13,20 @@
 }
 .bahialetter input {
   width: 70%;
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #A31D23;
   padding: 0px 10px;
   outline: none;
   color: #333333;
   height: 29px;
+  font-family: "Raleway", sans-serif;
 }
 
 input[type=text]:focus:not([readonly]) {
-  border-bottom: 1px solid #333333;
+  border-bottom: 1px solid #A31D23;
   box-shadow:none;
 }
 
-.bahialetter  .btn-bahialetter {
+.bahialetter .btn-bahialetter {
   font-weight:300;
   height:30px;
   padding:0 10px;

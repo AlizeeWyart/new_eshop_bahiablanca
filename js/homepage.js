@@ -60,15 +60,43 @@ setTimeout(nextBackground, 5000);
 
 console.log("slider product begin");
 
-$('#arrow-right').on("click", function(){
-  var totalProducts = $('.product-box').length
-  // console.log("click on arrow right");
-  actualProductBox = $('.product-box.show');
+
+function loop() {
+  console.log("begin");
+  var totalProducts = $('.one-product-box').length;
+  actualProductBox = $('.one-product-box.show');
   var actualRanking = actualProductBox.data("ranking");
 
-  actualProductBox.fadeIn("slow", function() {
-    actualProductBox.css("opacity", "0");
-  });
+  if (actualRanking + 1 > totalProducts) {
+    nextRanking = 1
+  } else {
+    nextRanking = actualRanking + 1;
+  };
+
+  // console.log("prochain produit: " + nextRanking);
+  nextProductBox = $('.one-product-box[data-ranking="'+ nextRanking +'"]');
+
+  actualProductBox.css("opacity", "0");
+  nextProductBox.addClass("show");
+  actualProductBox.removeClass("show");
+  nextProductBox.css("opacity", "1");
+
+  console.log("ok");
+
+  setTimeout(loop, 3000);
+}
+
+$(document).ready(function() {
+  setTimeout(loop, 3000);
+});
+
+
+
+$('#arrow-right').on("click", function(){
+  var totalProducts = $('.one-product-box').length
+  // console.log("click on arrow right");
+  actualProductBox = $('.one-product-box.show');
+  var actualRanking = actualProductBox.data("ranking");
 
   if (actualRanking + 1 > totalProducts) {
     var nextRanking = 1
@@ -77,28 +105,20 @@ $('#arrow-right').on("click", function(){
   };
 
   // console.log("prochain produit: " + nextRanking);
-  nextProductBox = $('.product-box[data-ranking="'+ nextRanking +'"]');
+  nextProductBox = $('.one-product-box[data-ranking="'+ nextRanking +'"]');
 
-  setTimeout(function(){
-    nextProductBox.addClass("show");
-    actualProductBox.css("display","none").removeClass("show");
-    nextProductBox.css("display", "block");
-    nextProductBox.fadeIn("slow", function() {
-      nextProductBox.css("opacity", "1");
-    });
-  }, 1000);
+  actualProductBox.css("opacity", "0");
+  nextProductBox.addClass("show");
+  actualProductBox.removeClass("show");
+  nextProductBox.css("opacity", "1");
 });
 
 
 $('#arrow-left').on("click", function(){
-  var totalProducts = $('.product-box').length
+  var totalProducts = $('.one-product-box').length
   // console.log("click on arrow right");
-  actualProductBox = $('.product-box.show');
+  actualProductBox = $('.one-product-box.show');
   var actualRanking = actualProductBox.data("ranking");
-
-  actualProductBox.fadeIn("slow", function() {
-    actualProductBox.css("opacity", "0");
-  });
 
   if (actualRanking - 1 <= 0 ) {
     var previousRanking = totalProducts
@@ -107,16 +127,12 @@ $('#arrow-left').on("click", function(){
   };
 
   // console.log("prochain produit: " + nextRanking);
-  previousProductBox = $('.product-box[data-ranking="'+ previousRanking +'"]');
+  previousProductBox = $('.one-product-box[data-ranking="'+ previousRanking +'"]');
 
-  setTimeout(function(){
-    previousProductBox.addClass("show");
-    actualProductBox.css("display","none").removeClass("show");
-    previousProductBox.css("display", "block");
-    previousProductBox.fadeIn("slow", function() {
-      previousProductBox.css("opacity", "1");
-    });
-  }, 1000);
+  actualProductBox.css("opacity", "0");
+  previousProductBox.addClass("show");
+  actualProductBox.removeClass("show");
+  previousProductBox.css("opacity", "1");
 });
 
 

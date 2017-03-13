@@ -167,9 +167,18 @@
   margin: 0 201px 40px 201px !important;
 
   /* TRANSITION FOR SLIDER */
-  transition: opacity 1.5s ease-in-out;
+
+  position:relative;
 }
 
+.one-product-box {
+  position:absolute;
+  transition: 1s ease-in-out;
+  top:30px;
+  left:0;
+  right:0;
+  bottom:0;
+}
 
 .categ-card:hover {
   outline: 2px solid white;
@@ -433,7 +442,7 @@
 /* COLOR SVG */
 
 .fill-grey {
-  fill:#676465;
+  fill:#333333;
 }
 
 /* SLIDER HOME */

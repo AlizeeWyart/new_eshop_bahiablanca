@@ -20,8 +20,10 @@ $(document).ready(function(){
     $('#search-btn-1').on("click", function(){
       console.log("ok");
       $(this).css("opacity", "0").css("z-index","0");
+      $('#search-btn-1 .navbar-1-text').css("display", "inline");
       $('.search-form-box').css("opacity", "1").css("z-index", "3");
     });
+
 
     $('#search-btn-2').on("click", function(){
       console.log("ok");
