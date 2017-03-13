@@ -1,6 +1,6 @@
 $(document).ready(function(){
-  
-  
+
+
   //------------------------------------//
   //Navbar//
   //------------------------------------//
@@ -16,20 +16,31 @@ $(document).ready(function(){
     			}
     		}
     	});
-  
-  
+
+    $('#search-btn-1').on("click", function(){
+      console.log("ok");
+      $(this).css("opacity", "0").css("z-index","0");
+      $('.search-form-box').css("opacity", "1").css("z-index", "3");
+    });
+
+    $('#search-btn-2').on("click", function(){
+      console.log("ok");
+      $(this).css("opacity", "0").css("z-index","0").css("display","inline");
+      $('.search-form-box-2').css("opacity", "1").css("z-index", "3");
+    });
+
   //------------------------------------//
   //Scroll To//
   //------------------------------------//
-  $(".scroll").click(function(event){		
+  $(".scroll").click(function(event){
   	event.preventDefault();
   	$('html,body').animate({scrollTop:$(this.hash).offset().top}, 800);
-  	
+
   });
-  
+
   //------------------------------------//
   //Wow Animation//
-  //------------------------------------// 
+  //------------------------------------//
   wow = new WOW(
         {
           boxClass:     'wow',      // animated element css class (default is wow)
@@ -41,5 +52,5 @@ $(document).ready(function(){
       wow.init();
 
 
-	
+
 });

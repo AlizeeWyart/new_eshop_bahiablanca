@@ -13,13 +13,16 @@
 }
 .bahialetter input {
   width: 70%;
-  /*border-bottom: 1px solid #A31D23;*/
-  border:none;
-  height: 29px;
+  border-bottom: 1px solid #333333;
   padding: 0px 10px;
   outline: none;
-  color:#A31D23;
-  background-color:rgba(163, 29, 35, 0.05);
+  color: #333333;
+  height: 29px;
+}
+
+input[type=text]:focus:not([readonly]) {
+  border-bottom: 1px solid #333333;
+  box-shadow:none;
 }
 
 .bahialetter  .btn-bahialetter {

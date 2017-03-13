@@ -13,6 +13,7 @@ nav {
   height:100Px;
 }
 
+
 .navbar-bahia a:hover {
   font-weight:500 !important;
   transition:none !important;
@@ -206,9 +207,41 @@ nav {
 }
 
 .navbar.navbar-inverse.navbar-fixed-top.flex-row-space-between.open::before {
-  display:none;
+  content:none;
 }
 
 .navbar.navbar-inverse.navbar-fixed-top.flex-row-space-between.open::after {
-  display:none;
+  content:none;
+}
+
+/* SEARCH FORM */
+
+.search-form-box {
+  position:absolute;
+  top: -4px;
+  left: 24px;
+}
+
+.search-form-box-2 {
+  position:absolute;
+  top: -4px;
+  left: 24px;
+}
+
+form.search-form {
+  width: 78px;
+  height:20px;
+}
+
+form.search-form input {
+  background-color: white;
+  border-bottom: 1px solid #676465;
+  height:100%;
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  font-size: 12px;
+  font-weight: 300;
+  position: absolute;
 }

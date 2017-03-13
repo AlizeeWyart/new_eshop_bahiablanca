@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, sma
 }
 
 p, .lead {
-	font-family: 'Roboto', sans-serif;
+	font-family: 'Montserrat', sans-serif;
   font-weight:300;
 }
 
@@ -758,6 +758,11 @@ footer {
   font-weight:300;
 }
 
+/* FONT FAMILY */
+
+.ff-raleway {
+  font-family: "Raleway", sans-serif;
+}
 
 /* TEXT TRANSFORM */
 .text-left {
@@ -782,10 +787,19 @@ footer {
   height:110px;
 }
 
+.h-140px {
+  height:140px;
+}
+
 
 /* CONTAINER */
 .container-70 {
   width:70%;
+  margin:auto;
+}
+
+.container-75 {
+  width:75%;
   margin:auto;
 }
 
@@ -841,6 +855,10 @@ footer {
 .plr-5px {
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.pl-5px {
+  padding-left: 5px;
 }
 
 
