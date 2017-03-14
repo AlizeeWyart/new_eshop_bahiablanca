@@ -233,6 +233,25 @@ $("#main-photo").elevateZoom({
 // PHOTO GALLERY
 
 
+$(".thumb-product").on("click", function(e){
+    // on récupère l'url de thumb cliqué
+    var newBackgroundImage = $(this).css("background-image");
+    var newUrl = newBackgroundImage.replace('url(','').replace(')','').replace(/\"/gi, "");
+    // console.log(newUrl);
+    // on récupère l'url de la main photo
+    var lastBackgroundImage = "url(" + $("#main-photo").attr('src') + ")";
+    // On met la petite photo dans la grande
+    $("#main-photo").attr('src', newUrl);
+    $("#main-photo").elevateZoom({
+      zoomType: "inner",
+      cursor: "crosshair",
+    });
+    console.log(lastBackgroundImage)
+    // Et la grande dans la petite
+    $(this).css('background-image', lastBackgroundImage)
+  });
+
+
 // COLOR CHOICE
 
 // PRENDRE LE PREMIER CHOIX
