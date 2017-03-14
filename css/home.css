@@ -309,6 +309,7 @@
 }
 
 
+
 .title-green {
   font-weight: 300;
   text-transform: uppercase;
@@ -520,4 +521,8 @@
   top: 65%;
   z-index:3;
   position: relative;
+}
+
+.btn-product-home {
+  z-index:3;
 }
