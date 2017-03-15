@@ -244,3 +244,40 @@ label.size-choice.checked {
 .guide-btn:hover {
   text-decoration: underline;
 }
+
+.product-suggestion-result {
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+.suggestion-title {
+  text-align:center;
+  padding:0px 100px 0 100px;
+  margin-bottom:30px;
+}
+
+.suggestion-title h5 {
+  font-size:18px;
+  font-weight:300;
+}
+.product-suggestion-result .product-miniature-card {
+  width: 180px;
+}
+
+.product-suggestion-result .photos-product {
+  height: 260px;
+}
+
+.product-suggestion-result .call-to-action-banner p {
+  font-size:12px;
+}
+
+.product-suggestion-result .call-to-action-banner {
+  padding:10px;
+}
+
+.product-suggestion-result .description-product p {
+  font-size:10px;
+}

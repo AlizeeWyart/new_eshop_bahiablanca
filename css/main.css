@@ -11,6 +11,12 @@
 /* ==========================================================================
    Global styles
    ========================================================================== */
+
+
+body {
+  overflow-x: hidden;
+}
+
 h1, h2, h3, h4, h5, h6, p, .btn, .navbar-nav a, .form-control, .list-inline, small, #pricing {
   font-family: 'Montserrat', sans-serif;
 }
@@ -861,6 +867,10 @@ footer {
   margin-top: 50px;
 }
 
+.mt-15px {
+  margin-top:15px;
+}
+
 .mb-5px {
   margin-bottom: 5px;
 }
@@ -943,6 +953,9 @@ footer {
 .br-red {
   border-right: 1px solid #A31D23;
 }
+.br-grey {
+  border-right: 1px solid #333333;
+}
 
 .br-green {
   border-right: 1px solid #9DD4B8;
@@ -956,4 +969,7 @@ footer {
   justify-content:space-between;
 }
 
+.underline {
+  text-decoration:underline;
+}
 
