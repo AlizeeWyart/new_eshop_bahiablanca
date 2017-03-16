@@ -21,6 +21,43 @@
 </head>
 
 <body>
+  <!-- PANIER BOX -->
+  <div class="panier-nav-box bg-white zi-3 w-260px p-fixed shadow-grey opacity-0 hidden-xs" style="top: 49px;right: 23px;">
+    <h3 class="no-margin fw-300 text-center txt-upper p-10px position-rel">
+      <i class="fa fa-times position-abs color-light-grey clickable" id="close-panier-nav-box"  aria-hidden="true" style="top:15px;right:20px"></i>
+      Mon Panier
+    </h3>
+    <hr class="w-90percent no-mt">
+    <!-- ARTICLE PANIER -->
+    <div class="row position-rel">
+      <i class="fa fa-trash-o position-abs color-light-grey clickable  zi-4" aria-hidden="true" style="right: 21px;top: 1px;"></i>
+      <div class="col-xs-4">
+        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/40e02e000576499eb312ed27a45f108b_suadiv.jpg" alt="" class="w-100percent">
+      </div>
+      <div class="col-xs-8 no-pl">
+        <h4 class="no-margin fs-16px color-red fw-300">Robe Perla</h4>
+        <p class="fs-12px fw-300 pt-10px">Bleu - S/M <br>75 €</p>
+      </div>
+    </div>
+    <!-- ARTICLE PANIER -->
+    <div class="row position-rel">
+      <i class="fa fa-trash-o position-abs color-light-grey clickable  zi-4" aria-hidden="true" style="right: 21px;top: 1px;"></i>
+      <div class="col-xs-4">
+        <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg" alt="" class="w-100percent">
+      </div>
+      <div class="col-xs-8 no-pl">
+        <h4 class="no-margin fs-16px color-red fw-300">Robe Perla</h4>
+        <p class="fs-12px fw-300 pt-10px">Bleu - S/M <br>75 €</p>
+      </div>
+    </div>
+    <hr class="w-90percent no-mt no-mb">
+    <div class="row flex-row-space-between no-margin">
+      <h3 class="no-margin fw-300 p-10px">Livraison</h3>
+      <h3 class="no-margin fw-300 text-right txt-upper p-10px">Offerte !</h3>
+    </div>
+    <hr class="w-90percent no-mt no-mb">
+    <a href="product.html" class="btn-red w-100percent">Procéder au paiement</a>
+  </div>
   <!-- NAVBAR 2 -->
   <div class="navbar navbar-inverse navbar-fixed-top">
     <!-- Div à récupérer sur site du Wagon -->
@@ -81,7 +118,7 @@
           <span class="account-text" id="search-btn-2">Rechercher</span>
         </a>
         <!-- MIN COMPTE -->
-        <a href="index.html" id="navbar-2-mon-compte">
+        <a href="compte.html" id="navbar-2-mon-compte">
           <!-- LOGO Mon Compte -->
            <span class="position-rel mr-16px">
             <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 512 640" x="0px" y="0px" style="position:absolute;top: 0px;height: 18px"><title>usr</title><path d="M256,243.54A121.77,121.77,0,1,0,134.23,121.77,121.91,121.91,0,0,0,256,243.54Z"/><path d="M37.63,512H494A238,238,0,0,0,87.72,343.72,236.43,236.43,0,0,0,18,512H37.63Z"/>
@@ -91,7 +128,7 @@
         </a>
 
         <!-- MA WISHLIST -->
-        <a href="index.html" id="navbar-2-mon-compte" style="margin-right: 10px;">
+        <a href="wishlist.html" id="navbar-2-mon-compte" style="margin-right: 10px;">
           <!-- Logo Ma Wishlist -->
           <span class="position-rel mr-16px">
             <svg class="position-abs" style="top: -1px;height: 21px;left: -1px;" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path d="m 11.515026,969.18361 c -8.6909003,9.09509 -8.6825003,23.73055 0,32.83459 l 38.461099,40.344 c 12.8352,-13.4324 25.6705,-26.8647 38.5057,-40.2973 8.6909,-9.09529 8.6909,-23.73948 0,-32.83474 -8.6909,-9.09526 -22.6841,-9.09546 -31.375,0 l -7.0861,7.41581 -7.1307,-7.46236 c -8.691,-9.09527 -22.6842,-9.09527 -31.374999,0 z" style="color:#000000;enable-background:accumulate;" fill="#000000" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></svg>
@@ -101,7 +138,7 @@
 
 
         <!-- MON PANIER -->
-        <a href="index.html" id="navbar-2-mon-panier">
+        <a href="panier.html" id="navbar-2-mon-panier">
           <span class="position-rel mr-16px">
             <!-- <svg class="position-abs" style="top: -1px;height: 20px;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 20 25" enable-background="new 0 0 20 20" xml:space="preserve"><rect x="-167" y="-33" display="none" fill="#676465" width="198" height="87"/><g><polygon points="-105.834,0.93 -139.83,0.93 -142.297,39.074 -103.703,39.074  "/><path d="M-123-16.715c9.501,0,12.11,14.552,12.137,14.699h2.653c-0.117-0.688-3.019-17.392-14.79-17.392   c-11.802,0-14.276,16.701-14.376,17.392l2.667-0.034C-134.688-2.197-132.494-16.715-123-16.715z"/></g><g><polygon points="-52.156,3.2 -74.22,3.2 -75.822,27.957 -50.772,27.957  "/><path d="M-63.297-8.252c6.167,0,7.86,9.445,7.877,9.54h1.722C-53.774,0.841-55.657-10-63.297-10c-7.66,0-9.266,10.839-9.331,11.288   l1.731-0.022C-70.884,1.17-69.459-8.252-63.297-8.252z"/></g><g><polygon points="-12.979,6.705 -29.935,6.705 -31.166,25.73 -11.916,25.73  "/><path d="M-21.541-2.096c4.739,0,6.04,7.258,6.053,7.332h1.323c-0.058-0.343-1.505-8.675-7.376-8.675   c-5.886,0-7.121,8.33-7.171,8.675l1.331-0.017C-27.371,5.145-26.276-2.096-21.541-2.096z"/></g><g><polygon points="15.559,7.117 4.55,7.117 3.75,19.469 16.249,19.469  "/><path d="M10,1.403c3.077,0,3.921,4.712,3.93,4.76h0.859C14.751,5.94,13.812,0.531,10,0.531c-3.822,0-4.623,5.408-4.656,5.632   l0.864-0.011C6.214,6.104,6.925,1.403,10,1.403z"/></g>
             </svg> -->
@@ -136,7 +173,7 @@
         </a>
 
 
-        <a href="#" class="navbar-1-icon">
+        <a href="compte.html" class="navbar-1-icon">
           <span class="position-rel mr-24px">
             <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 512 640" x="0px" y="0px" class="position-abs h-18px" style="top: 0px;fill:#333333 !important"><path d="M256,243.54A121.77,121.77,0,1,0,134.23,121.77,121.91,121.91,0,0,0,256,243.54Z"/><path d="M37.63,512H494A238,238,0,0,0,87.72,343.72,236.43,236.43,0,0,0,18,512H37.63Z"/></svg>
           </span>
@@ -144,7 +181,7 @@
         </a>
 
 
-        <a href="#" class="navbar-1-icon">
+        <a href="wishlist.html" class="navbar-1-icon">
         <!-- Logo Ma Wishlist -->
         <span class="position-rel mr-24px">
           <svg class="position-abs" style="top: -1px;height: 21px;left: -1px;" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path d="m 11.515026,969.18361 c -8.6909003,9.09509 -8.6825003,23.73055 0,32.83459 l 38.461099,40.344 c 12.8352,-13.4324 25.6705,-26.8647 38.5057,-40.2973 8.6909,-9.09529 8.6909,-23.73948 0,-32.83474 -8.6909,-9.09526 -22.6841,-9.09546 -31.375,0 l -7.0861,7.41581 -7.1307,-7.46236 c -8.691,-9.09527 -22.6842,-9.09527 -31.374999,0 z" style="color:#000000;enable-background:accumulate;" fill="#333333" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></svg>
@@ -154,7 +191,7 @@
 
 
 
-        <a href="#" class="navbar-1-icon">
+        <a href="panier.html" class="navbar-1-icon">
           <span class="position-rel mr-22px">
             <img src="img/shopping-bag-grey.svg" alt="" class="position-abs" style="top: -2px;height: 16px;" >
           </span>

@@ -1,0 +1,68 @@
+.histoire-title {
+  height:150px;
+  text-align:center;
+  margin-top: 50px;
+  position:relative;
+}
+
+.histoire-title-aquarelle {
+  height:100%;
+}
+
+.histoire-vagues {
+  /*height:100px;*/
+  text-align:center;
+  position:relative;
+}
+
+
+.timeline-row {
+  margin:0;
+}
+.timeline-card {
+  padding: 60px 100px;
+  min-height:340px;
+  position:relative;
+}
+
+.timeline-card.left {
+  text-align:right;
+}
+
+.timeline-card h3 {
+  margin:0;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 30px;
+  color: #A31D23;
+  padding-bottom: 20px;
+}
+
+.timeline-card.photo img {
+  height: 200px;
+}
+
+.timeline-card.right {
+  border-left: 2px solid rgba(17, 191, 174, 0.2);
+}
+
+.timeline-card .icon-middle {
+  width:30px;
+  height:30px;
+  color:white;
+  background:#A31D23;
+  position:absolute;
+  border-radius: 50%;
+  padding: 0;
+  font-size: 15px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 58px;
+  left: -16px;
+}
+
+.histoire-subtitle.active h3 {
+  text-decoration:underline;
+}

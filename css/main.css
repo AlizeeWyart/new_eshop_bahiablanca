@@ -774,6 +774,7 @@ footer {
   color:#9DD4B8;
 }
 
+
 .color-grey {
   color:#333333;
 }
@@ -782,8 +783,15 @@ footer {
   color:#A31D23;
 }
 
+.color-light-grey {
+  color: #999799;
+}
 .txt-right {
   text-align:right;
+}
+
+.txt-justify {
+  text-align:justify;
 }
 
 
@@ -800,9 +808,21 @@ footer {
   font-size:20px;
 }
 
+.fs-30px {
+  font-size:30px;
+}
+
 /* FONT WEIGHT */
 .fw-300 {
   font-weight:300;
+}
+
+.fw-400 {
+  font-weight:400;
+}
+
+.fw-500 {
+  font-weight:500;
 }
 
 /* FONT FAMILY */
@@ -826,6 +846,13 @@ footer {
   height:30px;
 }
 
+.h-220px {
+  height:200px
+}
+
+.h-260px {
+  height:260px;
+}
 .h-20px {
   height:20px;
 }
@@ -836,6 +863,31 @@ footer {
 
 .h-140px {
   height:140px;
+}
+
+.h-340px {
+  height:340px;
+}
+
+.h-380px {
+  height:380px;
+}
+
+.h-100percent {
+  height:100%;
+}
+
+/* WIDTH */
+.w-90percent {
+  width:90%;
+}
+
+.w-100percent {
+  width:100%;
+}
+
+.m-w-240px {
+  min-width:240px;
 }
 
 
@@ -862,6 +914,14 @@ footer {
 
 
 /* MARGINS */
+
+.no-mt {
+  margin-top:0;
+}
+
+.no-mb {
+  margin-bottom:0;
+}
 
 .mt-50px {
   margin-top: 50px;
@@ -899,6 +959,18 @@ footer {
   margin-bottom:20px;
 }
 
+.no-ml {
+  margin-left:0;
+}
+
+.no-mr {
+  margin-right:0;
+}
+
+.m-20px-0 {
+  margin:20px 0;
+}
+
 /* LIST */
 
 .no-bullet li {
@@ -919,7 +991,9 @@ footer {
 .p-20-40px {
   padding:20px 40px;
 }
-
+.p-10px {
+  padding:10px;
+}
 .no-p {
   padding:0;
 }
@@ -940,12 +1014,35 @@ footer {
   padding:0 20px;
 }
 
+.pt-5px {
+  padding-top:5px;
+}
 .pt-20px {
   padding-top:20px;
 }
 
+.pt-10px {
+  padding-top:10px;
+}
+
 .pb-20px {
   padding-bottom:20px;
+}
+
+.p-0-15px {
+  padding:0 15px;
+}
+
+.pr-10px {
+  padding-right:10px;
+}
+
+.pl-10px {
+  padding-left:10px;
+}
+
+.no-pl {
+  padding-left:0;
 }
 
 /* BORDER */
@@ -955,6 +1052,9 @@ footer {
 }
 .br-grey {
   border-right: 1px solid #333333;
+}
+.b-green {
+  border:1px solid #9DD4B8;
 }
 
 .br-green {
@@ -969,7 +1069,67 @@ footer {
   justify-content:space-between;
 }
 
+.flex-row-wrap-center {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:center;
+}
+
 .underline {
   text-decoration:underline;
 }
 
+/* BACKGROUND */
+
+.bg-white {
+  background-color:white;
+}
+
+/* CURSOR */
+
+.clickable {
+  cursor:pointer;
+}
+
+/* BACKGROUND */
+
+.bp-top-center {
+  background-position: top center;
+}
+
+.bs-cover {
+  background-size:cover;
+}
+
+.b-no-repeat {
+  background-repeat: no-repeat;
+}
+
+/* OVERFLOW */
+.o-y-hidden {
+  overflow-y:hidden;
+}
+
+/* Z-INDEX */
+.zi-2 {
+  z-index:2;
+}
+
+.zi-3 {
+  z-index:3;
+}
+
+.zi-4 {
+  z-index:4;
+}
+
+/* POSITION FIXED */
+
+.p-fixed {
+  position:fixed;
+}
+
+.shadow-grey {
+  box-shadow: 1px 1px 5px #a9a9a9;
+}

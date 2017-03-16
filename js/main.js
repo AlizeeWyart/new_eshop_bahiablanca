@@ -53,6 +53,13 @@ $(document).ready(function(){
       );
       wow.init();
 
+  // PANIER
+  console.log("panier begins");
+  $('#close-panier-nav-box').click(function(){
+    $('.panier-nav-box').css("opacity", "0");
+  });
 
-
+  $('.panier-nav-btn').mouseover(function(){
+    $('.panier-nav-box').css("opacity", "1");
+  });
 });

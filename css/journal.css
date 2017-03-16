@@ -1,0 +1,50 @@
+#journal-show .articles-section {
+  margin-top:60px;
+}
+
+
+.journal-title {
+  height:150px;
+  text-align:center;
+  margin-top:50px;
+  position:relative;
+}
+
+.journal-title-aquarelle {
+  height:80%;
+}
+
+.journal-subtitles-box {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+.journal-subtitle {
+  min-width:240px;
+  margin:20px 0;
+}
+
+.journal-subtitle.active {
+  text-decoration: underline
+}
+
+.journal-subtitle h3 {
+  font-weight:300;
+  text-align:center;
+  cursor:pointer;
+  margin:0;
+}
+
+.journal-subtitle h3:hover {
+  text-decoration: underline
+}
+
+.journal-products-result {
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content:space-between;
+  padding:50px 100px 0 100px;
+}

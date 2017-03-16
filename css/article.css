@@ -1,0 +1,15 @@
+#wrapper-content-article p {
+  text-align:justify;
+}
+
+.photo-description {
+  bottom: -2px;
+  background-color: rgba(255,255,255,0.58);
+  opacity: 0;
+  -webkit-transition: all .25s linear;
+  transition: all .25s linear;
+}
+
+.photo-box:hover .photo-description {
+  opacity:1;
+}

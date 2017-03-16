@@ -254,3 +254,7 @@ form.search-form input {
   font-weight: 300;
   position: absolute;
 }
+
+.panier-nav-box {
+  transition:0.3s ease-in-out;
+}

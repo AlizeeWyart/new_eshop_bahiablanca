@@ -129,7 +129,7 @@
   background-attachment: fixed;
   background-size: cover;
   height:60vh;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 
@@ -363,6 +363,7 @@ ul.articles-section a:nth-child(2) {
 .artisanat-info-box.left {
   right:0;
   left: -144px;
+  top:140px;
 }
 
 .artisanat-info-box.left a {

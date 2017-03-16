@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="css/animate.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900|Roboto:100,300,400,500,700,900" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -18,6 +19,8 @@
   <!-- <link rel="stylesheet" href="css/page.css"> -->
   <link rel="stylesheet" href="css/navbar.css">
   <link rel="stylesheet" href="css/category.css">
+  <link rel="stylesheet" href="css/artisanat.css">
+  <link rel="stylesheet" href="css/timeline.css">
 </head>
 
 <body>
@@ -255,357 +258,112 @@
   </nav>
   <!-- // FIN NAVBAR 1 -->
 
-<section id="category-show">
+
+<section id="histoire-container">
   <!-- Titre en aquarelle -->
-  <div class="category-title">
-    <img src="img/titres/ninos.png" alt="" class="category-title-aquarelle" style="margin-top:20px">
-    <img src="img/aquarelles/pelican.png" alt="" id="pelican-aquarelle">
+  <div class="histoire-title">
+    <img src="img/titres/historieta.png" alt="" class="histoire-title-aquarelle">
   </div>
-  <div class="category-products-result">
-    <!-- PRODUCT CARD N°1 -->
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
-        </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
+  <div class="histoire-subtitles-box flex-row-wrap-center mb-50px mt-15px">
+    <div class="histoire-subtitle m-20px-0 m-w-240px active br-grey">
+      <a href="histoire-part1.html"><h3 class="fw-300 text-center clickable no-margin">Nos débuts</h3></a>
+    </div>
+    <div class="histoire-subtitle m-20px-0 m-w-240px">
+      <a href="histoire-part1.html"><h3 class="fw-300 text-center clickable no-margin">L'équipe</h3></a>
+    </div>
+    </div>
+  </div>
+  <div class="wrapper-timeline">
+    <!-- TIME 1 -->
+    <div class="timeline-row row">
+      <div class="col-sm-6 timeline-card txt left">
+        <div class="txt-box" data-aos="fade-right" data-aos-duration="1200">
+          <h3>17 Janvier 2017</h3>
+          <p>C’est le grand départ au Mexique pour rencontrer l’atelier d’artisanes qui produira la collection Bahia été 2017 !</p>
         </div>
       </div>
-    </a>
-    <!-- // PRODUCT CARD N°1 -->
-    <!-- PRODUCT CARD N°2 -->
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
+      <div class="col-sm-6 timeline-card photo right" >
+        <div class="icon-middle">
+          <i class="fa fa-plane" aria-hidden="true"></i>
         </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
+        <img src="img/timeline/bahiablanca.png" alt="" data-aos="fade-left" data-aos-duration="1200">
+      </div>
+    </div>
+    <!-- TIME 2 -->
+    <div class="timeline-row row">
+      <div class="col-sm-6 timeline-card photo left">
+        <img src="img/timeline/schoolab.png" alt="" data-aos="fade-right" data-aos-duration="1200">
+      </div>
+      <div class="col-sm-6 timeline-card txt right">
+        <div class="icon-middle">
+          <i class="fa fa-briefcase" aria-hidden="true"></i>
         </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
+        <div class="txt-box" data-aos="fade-left" data-aos-duration="1200">
+          <h3>Novembre 2016</h3>
+          <p>BAHIA BLANCA est sélectionnée pour intégrer l’incubateur <span class="underline"><a href="https://theschoolab.com" target="_blanck">Schoolab</a></span> dans le Sentier</p>
         </div>
       </div>
-    </a>
-    <!-- // PRODUCT CARD N°2 -->
-    <!-- PRODUCT CARD N°3 -->
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
-        </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
+    </div>
+    <!-- TIME 3 -->
+    <div class="timeline-row row">
+      <div class="col-sm-6 timeline-card txt left">
+        <div class="txt-box" data-aos="fade-right" data-aos-duration="1200">
+          <h3>Septembre 2016</h3>
+          <p>Les études sont finies. Claire et Juliette se lancent à 100% sur le développement de la marque. Luce, styliste parisienne, les rejoint pour dessiner avec elles les premiers modèles.</p>
         </div>
       </div>
-    </a>
-    <!-- // PRODUCT CARD N°3 -->
-    <!-- PRODUCT CARD N°4 -->
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
+      <div class="col-sm-6 timeline-card photo right">
+        <div class="icon-middle">
+          <i class="fa fa-diamond" aria-hidden="true"></i>
         </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
+        <img src="img/timeline/luce.png" alt="" data-aos="fade-left" data-aos-duration="1200">
+      </div>
+    </div>
+    <!-- TIME 4 -->
+    <div class="timeline-row row">
+      <div class="col-sm-6 timeline-card photo left">
+        <img src="img/timeline/marche.png" alt="" data-aos="fade-right" data-aos-duration="1200">
+      </div>
+      <div class="col-sm-6 timeline-card txt right">
+        <div class="icon-middle">
+          <i class="fa fa-sun-o" aria-hidden="true"></i>
         </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
+        <div class="txt-box" data-aos="fade-left" data-aos-duration="1200">
+          <h3>Juillet-Août 2016</h3>
+          <p>2 mois de ventes sur les marchés de l’île d’Yeu et du Cap Ferret, les retours sont très enthousiasmants !</p>
         </div>
       </div>
-    </a>
-    <!-- // PRODUCT CARD N°4 -->
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
-        </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
+    </div>
+    <!-- TIME 5 -->
+    <div class="timeline-row row">
+      <div class="col-sm-6 timeline-card txt left">
+        <div class="txt-box" data-aos="fade-right" data-aos-duration="1200">
+          <h3>Juillet 2015</h3>
+          <p>Juliette et Thibault présentent leurs coups de coeur mexicains ramenés dans leurs valises aux vacanciers du Cap Ferret !</p>
         </div>
       </div>
-    </a>
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
+      <div class="col-sm-6 timeline-card photo right">
+        <div class="icon-middle">
+          <i class="fa fa-sun-o" aria-hidden="true"></i>
         </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
+        <img src="img/timeline/marche2.png" alt="" data-aos="fade-left" data-aos-duration="1200">
+      </div>
+    </div>
+    <!-- TIME 4 -->
+    <div class="timeline-row row">
+      <div class="col-sm-6 timeline-card photo left">
+        <img src="img/timeline/mexicofirst.png" alt="" data-aos="fade-right" data-aos-duration="1200">
+      </div>
+      <div class="col-sm-6 timeline-card txt right">
+        <div class="icon-middle">
+          <i class="fa fa-globe" aria-hidden="true"></i>
         </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
+        <div class="txt-box" data-aos="fade-left" data-aos-duration="1200">
+          <h3>2014</h3>
+          <p>Juliette fait un stage de 6 mois dans une start-up sociale à Mexico DF, parcourt le Mexique et tombe amoureuse de ce pays et notamment de l’artisanat local.</p>
         </div>
       </div>
-    </a>
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
-        </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-      </div>
-    </a>
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
-        </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-      </div>
-    </a>
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
-        </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-      </div>
-    </a>
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
-        </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-      </div>
-    </a>
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
-        </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-      </div>
-    </a>
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
-        </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-      </div>
-    </a>
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
-        </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-      </div>
-    </a>
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
-        </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-      </div>
-    </a>
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
-        </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-      </div>
-    </a>
-    <a href="product.html">
-      <div class="product-miniature-card">
-        <div class="photos-product">
-          <div class="first-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
-          </div>
-          <div class="second-photo product-photo" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
-
-          </div>
-          <div class="call-to-action-banner">
-            <p><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
-          </div>
-        </div>
-        <div class="info-product">
-          <div class="title-info-product">Robe Perla</div>
-          <div class="price-info-product">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-      </div>
-    </a>
+    </div>
   </div>
 </section>
 
@@ -681,11 +439,11 @@
           <div class="condition-box">
             <h4 class="txt-upper fs-16px text-left">L'aventure</h4>
             <ul class="no-bullet">
-              <li class="text-left"><a href="index.html" class="fs-12px fw-300">Notre Histoire</a></li>
-              <li class="text-left"><a href="index.html" class="fs-12px fw-300">Nos Artisans</a></li>
-              <li class="text-left"><a href="index.html" class="fs-12px fw-300">Le Journal</a></li>
-              <li class="text-left"><a href="index.html" class="fs-12px fw-300">L'Équipe</a></li>
-              <li class="text-left"><a href="index.html" class="fs-12px fw-300">On Recrute</a></li>
+              <li class="text-left"><a href="histoire.html" class="fs-12px fw-300">Notre Histoire</a></li>
+              <li class="text-left"><a href="artisanat.html" class="fs-12px fw-300">Nos Artisans</a></li>
+              <li class="text-left"><a href="journal.html" class="fs-12px fw-300">Le Journal</a></li>
+              <li class="text-left"><a href="equipe.html" class="fs-12px fw-300">L'Équipe</a></li>
+              <li class="text-left"><a href="recrutement.html" class="fs-12px fw-300">On Recrute</a></li>
             </ul>
 
           </div>
@@ -693,6 +451,8 @@
       </div>
     </div>
   </footer>
+
+
     <!-- Javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -702,11 +462,14 @@
     <script src="js/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/artisanat.js"></script>
     <!-- <script src="js/animate.js"></script> -->
     <script src="js/modernizr-2.7.1.js"></script>
     <script src="js/homepage.js"></script>
-
-
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+    AOS.init();
+    </script>
     </body>
 </html>
 

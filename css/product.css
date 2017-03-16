@@ -212,7 +212,8 @@ label.size-choice.checked {
 
 
 .btn-add-cart {
-  width:100%;
+  width:90%;
+  margin-left:5%;
 }
 
 .wishlist-btn {
@@ -280,4 +281,9 @@ label.size-choice.checked {
 
 .product-suggestion-result .description-product p {
   font-size:10px;
+}
+
+.price-position {
+  top: -14px;
+  left: 40%;
 }
