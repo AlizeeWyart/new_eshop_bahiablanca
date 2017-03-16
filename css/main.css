@@ -804,6 +804,10 @@ footer {
   font-size:16px;
 }
 
+.fs-50px {
+  font-size:50px;
+}
+
 .fs-20px {
   font-size:20px;
 }
@@ -890,6 +894,10 @@ footer {
   min-width:240px;
 }
 
+.vw-100 {
+  width:100vw;
+}
+
 
 /* CONTAINER */
 .container-70 {
@@ -907,6 +915,11 @@ footer {
   margin:auto;
 }
 
+.container-85 {
+  width:85%;
+  margin:auto;
+}
+
 .container-60 {
   width:60%;
   margin:auto;
@@ -921,6 +934,10 @@ footer {
 
 .no-mb {
   margin-bottom:0;
+}
+
+.mt-80px {
+  margin-top:80px;
 }
 
 .mt-50px {
@@ -1055,6 +1072,13 @@ footer {
 }
 .b-green {
   border:1px solid #9DD4B8;
+}
+
+.b-light-grey {
+  border: 1px solid rgba(153, 151, 153, 0.4);;
+}
+.b-red {
+  border:1px solid #A31D23;
 }
 
 .br-green {
