@@ -168,7 +168,7 @@ label.size-choice.checked {
 
 .input-choice {
   display:flex;
-  justify-content: left;
+  justify-content: center;
 }
 #quantity-input{
   width: 30px;
@@ -179,7 +179,7 @@ label.size-choice.checked {
   margin: 4px 10px 0 10px;
   padding: 0 0 3px 0;
   font-family: 'Montserrat', sans-serif;
-  font-size: 21px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -207,7 +207,7 @@ label.size-choice.checked {
 }
 
 #increase-quantity {
-  padding: 0px 0px 0px 5px;
+  padding: 0px 0px 0px 0px;
 }
 
 

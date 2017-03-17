@@ -57,9 +57,13 @@ $(document).ready(function(){
   console.log("panier begins");
   $('#close-panier-nav-box').click(function(){
     $('.panier-nav-box').css("opacity", "0");
+    setTimeout(function() {
+      $('.panier-nav-box').css("z-index", "-3");
+    }, 1000);
   });
 
   $('.panier-nav-btn').mouseover(function(){
+    $('.panier-nav-box').css("z-index", "3");
     $('.panier-nav-box').css("opacity", "1");
   });
 });

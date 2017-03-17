@@ -26,6 +26,35 @@ input[type=text]:focus:not([readonly]) {
   box-shadow:none;
 }
 
+
+.connexion-box input[type=text] {
+  border-bottom:1px solid #A31D23;
+  font-family:'Montserrat', sans-serif;
+  font-weight:300;
+  font-size:14px;
+  height:30px;
+  margin:0 50px 0 0;
+}
+
+.reduc-box input[type=text] {
+  border-bottom:1px solid #A31D23;
+  font-family:'Montserrat', sans-serif;
+  font-weight:300;
+  font-size:14px;
+  height:30px;
+  margin:0;
+  width:160px;
+  text-transform: uppercase;
+}
+
+.reduc-box .btn-red {
+  height:30px;
+  line-height:30px;
+  padding: 0 10px;
+  font-weight:300;
+  margin-left: -4px;
+}
+
 .bahialetter .btn-bahialetter {
   font-weight:300;
   height:30px;

@@ -13,3 +13,13 @@
 .photo-box:hover .photo-description {
   opacity:1;
 }
+
+
+.tab-commande {
+  border-bottom: 2px solid #EEEEEE;
+  transition: border 0.3s ease-in-out;
+}
+
+.tab-commande.active, .tab-commande:hover {
+  border-bottom: 2px solid #333333;
+}

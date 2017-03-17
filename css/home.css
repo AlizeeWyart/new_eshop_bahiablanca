@@ -426,6 +426,10 @@
   min-height:450px;
 }
 
+.w-440px {
+  width:440px;
+}
+
 /* CURSOR */
 
 .cursor-pointer {
