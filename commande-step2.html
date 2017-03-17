@@ -15,6 +15,8 @@
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/product.css">
+  <link rel="stylesheet" href="css/article.css">
   <!-- <link rel="stylesheet" href="css/page.css"> -->
   <link rel="stylesheet" href="css/navbar.css">
 </head>
@@ -284,43 +286,107 @@
 
 
 
-  <section id="connexion" class="row">
-    <div class="connexion-title vw-100 text-center">
-      <h1 class="fw-300 color-red fs-50px txt-upper mt-80px">Se connecter</h1>
+
+  <section id="commande-step1" class="row">
+    <div class="commande-step1-title vw-100 text-center">
+      <h1 class="fw-300 color-red fs-30px txt-upper mt-80px">Ma commande</h1>
     </div>
+    <div class="commande-steps container-85 text-center">
+      <div class="row">
+        <!-- STEP 1 -->
+        <a href="commande-step1.html">
+        <div class="col-xs-3 tab-commande p-20px clickable"><h5 class="fw-300 fs-16px text-center no-margin">Je m'identifie</h5></div>
+        </a>
+        <!-- STEP 2 -->
+        <a href="commande-step2.html">
+        <div class="col-xs-3 tab-commande active p-20px"><h5 class="fw-300 fs-16px text-center no-margin">Mes informations</h5></div>
+        </a>
+        <!-- STEP 3 -->
+        <a href="commande-step3.html">
+        <div class="col-xs-3 tab-commande p-20px"><h5 class="fw-300 fs-16px text-center no-margin">Livraison</h5></div>
+        </a>
+        <!-- STEP 4 -->
+        <a href="commande-step4.html">
+        <div class="col-xs-3 tab-commande p-20px"><h5 class="fw-300 fs-16px text-center no-margin">Paiement</h5></div>
+        </a>
+      </div>
+    <form>
     <div class="row mt-50px text-center">
-      <div class="col-xs-6 h-340px" style="padding:0 50px 0 100px">
+      <div class="col-xs-6 h-500px" style="padding:0 20px 0 0px">
         <div class="txt-box p-40px b-light-grey h-100percent">
-          <h3 class="no-margin txt-upper color-red fs-20px fw-300">Créer votre compte</h3>
-          <h5 class="fs-12px fw-300">Renseignez votre e-mail pour créer un compte.</h5>
-          <form>
-          <div class="connexion-box flex-row-space-between pb-20px pt-10px">
-            <label for="" class="pr-10px text-right fs-12px fw-300 ff-main color-red m-w-100px no-margin flex-column-center">e-mail :</label>
-            <input type="text">
+          <h3 class="no-margin txt-upper color-red fs-20px fw-300">Mes informations personnelles</h3>
+          <div class="inscription-box flex-row-space-between pt-20px">
+            <label class="pr-10px text-left fs-12px fw-300 ff-main color-grey m-w-100px no-margin flex-column-center">civilité :</label>
+            <div class="sex-choice text-left" style="flex: 0 0 80%">
+              <input name="sexe" value="femme" type="radio" id="sexe-femme-choice" />
+              <label for="sexe-femme-choice" class="radio-red fs-12px fw-300 ff-main color-grey pr-10px">Mme</label>
+              <input name="sexe" value="homme" type="radio" id="sexe-homme-choice" />
+              <label for="sexe-homme-choice" class="radio-red fs-12px fw-300 ff-main color-grey">M</label>
+            </div>
           </div>
-          <a href="" class="btn-red">Créer son compte</a>
-          </form>
+          <div class="inscription-box flex-row-space-between pt-10px">
+            <label for="name-inscription" class="pr-10px text-left fs-12px fw-300 ff-main color-grey m-w-100px no-margin flex-column-center">Nom* :</label>
+            <input type="text" name="name" id="name-inscription">
+          </div>
+          <div class="inscription-box flex-row-space-between pt-10px">
+            <label for="prenom-inscription" class="pr-10px text-left fs-12px fw-300 ff-main m-w-100px color-grey no-margin flex-column-center">Prénom :</label>
+            <input type="text" name="prenom" id="prenom-inscription">
+          </div>
+          <div class="inscription-box flex-row-space-between pt-10px">
+            <label for="email-inscription" class="pr-10px text-left fs-12px fw-300 ff-main m-w-100px color-grey no-margin flex-column-center">Email :</label>
+            <input type="text" name="email" id="email-inscription">
+          </div>
+          <div class="inscription-box flex-row-space-between pt-10px">
+            <label for="telephone-inscription" class="pr-10px text-left fs-12px fw-300 ff-main m-w-100px color-grey no-margin flex-column-center">Numéro de téléphone :</label>
+            <input type="text" name="telephone" id="telephone-inscription">
+          </div>
+          <div class="inscription-box flex-row-space-between pt-10px">
+            <label for="password-inscription" class="pr-10px text-left fs-12px fw-300 ff-main m-w-100px color-grey no-margin flex-column-center">Mot de passe :</label>
+            <input type="text" name="password" id="email-inscription">
+          </div>
+          <div class="inscription-box flex-row-space-between pt-10px">
+            <label for="birthday-inscription" class="pr-10px text-left fs-12px fw-300 ff-main m-w-100px color-grey no-margin flex-column-center">Date de naissance :</label>
+            <input type="text" name="birthday" id="email-inscription">
+          </div>
+          <div class="inscription-box flex-row-space-between pt-20px">
+            <input type="checkbox" name="enews" id="enews-inscription">
+            <label for="enews-inscription" class="pr-10px text-left fs-12px fw-300 ff-main m-w-100px color-grey no-margin flex-column-center">Je veux recevoir vos newsletter</label>
+          </div>
         </div>
       </div>
-      <div class="col-xs-6 h-340px" style="padding:0 100px 0 50px">
+      <div class="col-xs-6 h-500px" style="padding:0 0px 0 20px">
         <div class="txt-box p-40px b-light-grey h-100percent">
-          <h3 class="no-margin txt-upper color-red fs-20px fw-300">Déjà inscrit(e) ?</h3>
-          <h5 class="fs-12px fw-300">Renseignez votre e-mail pour vous connecter.</h5>
+          <h3 class="no-margin txt-upper color-red fs-20px fw-300">Mon adresse</h3>
+          <h5 class="fs-12px fw-300">(Livraison en France)</h5>
           <form>
-          <div class="connexion-box flex-row-space-between pb-20px pt-10px">
-            <label for="" class="pr-10px text-right fs-12px fw-300 ff-main color-red m-w-100px no-margin flex-column-center">e-mail :</label>
-            <input type="text">
+          <div class="inscription-box flex-row-space-between pt-10px">
+            <label for="adresse-inscription" class="pr-10px text-left fs-12px fw-300 ff-main m-w-100px color-grey no-margin flex-column-center">Adresse :</label>
+            <input type="text" name="adresse" id="email-inscription">
           </div>
-          <div class="connexion-box flex-row-space-between pb-20px pt-10px">
-            <label for="" class="pr-10px text-right fs-12px fw-300 ff-main color-red m-w-100px no-margin flex-column-center">mot de passe :</label>
-            <input type="text">
+          <div class="inscription-box flex-row-space-between pt-10px">
+            <label for="complement-inscription" class="pr-10px text-left fs-12px fw-300 ff-main m-w-100px color-grey no-margin flex-column-center">Complément d'adresse :</label>
+            <input type="text" name="complement" id="email-inscription">
           </div>
-          <h5 class="fs-12px fw-300 underline">Mot de passe oublié ?</h5>
-          <a href="" class="btn-red">Se connecter</a>
-          </form>
+          <div class="inscription-box flex-row-space-between pt-10px">
+            <label for="code-postal-inscription" class="pr-10px text-left fs-12px fw-300 ff-main m-w-100px color-grey no-margin flex-column-center">Code postal :</label>
+            <input type="text" name="code-postal" id="email-inscription">
+          </div>
+          <div class="inscription-box flex-row-space-between pt-10px">
+            <label for="ville-inscription" class="pr-10px text-left fs-12px fw-300 ff-main m-w-100px color-grey no-margin flex-column-center">Ville :</label>
+            <input type="text" name="ville" id="email-inscription">
+          </div>
+          <div class="inscription-box flex-row-space-between pt-10px">
+            <label for="more-info-inscription" class="pr-10px text-left fs-12px fw-300 ff-main m-w-100px color-grey no-margin flex-column-center">Informations complémentaires :</label>
+            <input type="text" name="more-info" id="email-inscription">
+          </div>
         </div>
       </div>
     </div>
+    <a href="commande-step3.html" class="btn-red">Continuez</a>
+
+    </form>
+    </div>
+
   </section>
 
   <footer>
@@ -414,7 +480,10 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="js/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/jquery.elevatezoom.js"></script>
+    <script type="text/javascript" src="js/jquery.elevateZoom-3.0.8.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/product.js"></script>
     <!-- <script src="js/animate.js"></script> -->
     <script src="js/modernizr-2.7.1.js"></script>
     <script src="js/homepage.js"></script>

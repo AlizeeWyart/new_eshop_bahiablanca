@@ -889,6 +889,10 @@ footer {
   height:100%;
 }
 
+.h-500px {
+  height:500px;
+}
+
 /* WIDTH */
 .w-90percent {
   width:90%;
