@@ -12,14 +12,12 @@
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <!-- <link rel="stylesheet" href="css/page.css"> -->
   <link rel="stylesheet" href="css/navbar.css">
-  <link rel="stylesheet" href="css/category.css">
-  <link rel="stylesheet" href="css/artisanat.css">
+  <link rel="stylesheet" href="css/footer.css">
+  <link rel="stylesheet" href="css/product_category.css">
+  <link rel="stylesheet" href="css/art_journal_histoire.css">
 </head>
 
 <body>
@@ -288,19 +286,19 @@
 
 <section id="artisanat-container">
   <!-- Titre en aquarelle -->
-  <div class="artisanat-title">
-    <img src="img/titres/artesanos.png" alt="" class="artisanat-title-aquarelle">
-    <div class="artisanat-move-arrow move-y-artisanat">
+  <div class="h-140px text-center mt-50px position-rel">
+    <img src="img/titres/artesanos.png" alt="" class="h-100percent">
+    <div class="artisanat-move-arrow move-y-artisanat position-abs zi-1 fs-12px">
       <div class="position-rel">
         <p>Cliquez sur les régions <br>pour découvrir nos artisans !</p>
-        <img src="img/arrow-curve.svg" alt="" id="arrow-artisanat">
+        <img src="img/arrow-curve.svg" alt="" class="position-abs" id="arrow-artisanat">
       </div>
     </div>
   </div>
-  <div class="mapa-artisanat">
-    <img src="img/mapa.png" alt="" class="mapa-artisanat-aquarelle">
-    <div class="circle-lago-atitlan"></div>
-    <svg class="map" width="100%" viewBox="0 0 794 498">
+  <div class="mapa-artisanat position-rel m-auto text-center w-800px">
+    <img src="img/mapa.png" alt="" class="w-100percent">
+    <div class="circle-lago-atitlan position-abs bg-transparent clickable zi-2"></div>
+    <svg class="map position-abs" width="100%" viewBox="0 0 794 498">
           <defs>
             <path id="path-1" d="M391.24,310.07 L388.83,306.6 L394.33,295.9 L400.66,292.82 L402.26,290.64 L409.53,295.83 L411.26,300.31 L411.26,300.31 L411.28,302.5 L413.24,304.64 L408.96,306.61 L405.69,310.66 L401.41,311.76 L397.5,309.33 L393.29,308.95 L391.24,310.07 Z">
             </path>
@@ -532,115 +530,115 @@
     </svg>
     <!-- INFO BOX ON MAP -->
       <!-- CHIAPAS INFO BOX -->
-      <div class="artisanat-info-box right" id="chiapas-info-box">
+      <div class="artisanat-info-box right position-abs top-0 bg-white w-300px p-20px clickable opacity-0 tr-6-ease-io zi-moins1 right" id="chiapas-info-box">
         <div class="close-info-box" data-close="#chiapas-info-box">
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <h4 class="title-info-box">Guanajuato et ses mille et une couleurs</h4>
+        <h4 class="color-red fw-300 txt-upper fs-20px no-mt">Guanajuato et ses mille et une couleurs</h4>
         <a href="article.html">
-        <div class="photo-info-box" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
-          <div class="overlay-info-box">
-            <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+          <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
           </div>
         </div>
-        <p>La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
-        <h4 class="read-more-info-box">Lire la suite</h4>
+        <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
+        <h4 class="read-more-info-box bt-grey m-0-40px txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
         </a>
       </div>
       <!-- Lago Atitlan INFO BOX -->
-      <div class="artisanat-info-box right" id="lago-info-box">
-        <div class="close-info-box" data-close="#lago-info-box">
+      <div class="artisanat-info-box position-abs top-0 bg-white w-300px p-20px clickable opacity-0 tr-6-ease-io zi-moins1 right" id="lago-info-box">
+        <div class="close-info-box clickable position-abs" data-close="#lago-info-box">
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <h4 class="title-info-box">Lago Atitlàn</h4>
+        <h4 class="color-red fw-300 txt-upper fs-20px no-mt">Lago Atitlàn</h4>
         <a href="article.html">
-        <div class="photo-info-box" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
-          <div class="overlay-info-box">
-            <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+          <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
           </div>
         </div>
-        <p>La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
-        <h4 class="read-more-info-box">Lire la suite</h4>
+        <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
+        <h4 class="read-more-info-box bt-grey m-0-40px txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
         </a>
       </div>
       <!-- GUERRERO -->
-      <div class="artisanat-info-box left" id="guerrero-info-box">
+      <div class="artisanat-info-box position-abs top-0 bg-white w-300px p-20px clickable opacity-0 tr-6-ease-io zi-moins1 left" id="guerrero-info-box">
         <div class="close-info-box" data-close="#guerrero-info-box">
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <h4 class="title-info-box">GUERRERO</h4>
+        <h4 class="color-red fw-300 txt-upper fs-20px no-mt">GUERRERO</h4>
         <a href="article.html">
-        <div class="photo-info-box" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
-          <div class="overlay-info-box">
-            <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+          <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
           </div>
         </div>
-        <p>La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
-        <h4 class="read-more-info-box">Lire la suite</h4>
+        <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
+        <h4 class="read-more-info-box bt-grey m-0-40px txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
         </a>
       </div>
       <!-- MICHOACAN -->
-      <div class="artisanat-info-box left" id="michoacan-info-box">
+      <div class="artisanat-info-box position-abs top-0 bg-white w-300px p-20px clickable opacity-0 tr-6-ease-io zi-moins1 left" id="michoacan-info-box">
         <div class="close-info-box" data-close="#michoacan-info-box">
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <h4 class="title-info-box">MICHOACÁN</h4>
+        <h4 class="color-red fw-300 txt-upper fs-20px no-mt">MICHOACÁN</h4>
         <a href="article.html">
-        <div class="photo-info-box" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
-          <div class="overlay-info-box">
-            <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+          <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
           </div>
         </div>
-        <p>La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
-        <h4 class="read-more-info-box">Lire la suite</h4>
+        <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
+        <h4 class="read-more-info-box bt-grey m-0-40px txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
         </a>
       </div>
       <!-- HIDALGO -->
-      <div class="artisanat-info-box left" id="hidalgo-info-box">
+      <div class="artisanat-info-box position-abs top-0 bg-white w-300px p-20px clickable opacity-0 tr-6-ease-io zi-moins1 left" id="hidalgo-info-box">
         <div class="close-info-box" data-close="#hidalgo-info-box">
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <h4 class="title-info-box">HIDALGO</h4>
+        <h4 class="color-red fw-300 txt-upper fs-20px no-mt">HIDALGO</h4>
         <a href="article.html">
-        <div class="photo-info-box" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
-          <div class="overlay-info-box">
-            <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+          <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
           </div>
         </div>
-        <p>La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
-        <h4 class="read-more-info-box">Lire la suite</h4>
+        <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
+        <h4 class="read-more-info-box bt-grey m-0-40px txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
         </a>
       </div>
       <!-- DF -->
-      <div class="artisanat-info-box left" id="distrito-federal-info-box">
+      <div class="artisanat-info-box position-abs top-0 bg-white w-300px p-20px clickable opacity-0 tr-6-ease-io zi-moins1 left" id="distrito-federal-info-box">
         <div class="close-info-box" data-close="#distrito-federal-info-box">
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <h4 class="title-info-box">DISTRITO FEDERAL (Mexico City)</h4>
+        <h4 class="color-red fw-300 txt-upper fs-20px no-mt">DISTRITO FEDERAL (Mexico City)</h4>
         <a href="article.html">
-        <div class="photo-info-box" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
-          <div class="overlay-info-box">
-            <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+          <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
           </div>
         </div>
-        <p>La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
-        <h4 class="read-more-info-box">Lire la suite</h4>
+        <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
+        <h4 class="read-more-info-box bt-grey m-0-40px txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
         </a>
       </div>
       <!-- Puebla -->
-      <div class="artisanat-info-box left" id="puebla-info-box">
+      <div class="artisanat-info-box position-abs top-0 bg-white w-300px p-20px clickable opacity-0 tr-6-ease-io zi-moins1 left" id="puebla-info-box">
         <div class="close-info-box" data-close="#puebla-info-box">
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <h4 class="title-info-box">Puebla</h4>
+        <h4 class="color-red fw-300 txt-upper fs-20px no-mt">Puebla</h4>
         <a href="article.html">
-        <div class="photo-info-box" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
-          <div class="overlay-info-box">
-            <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+          <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
           </div>
         </div>
-        <p>La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
-        <h4 class="read-more-info-box">Lire la suite</h4>
+        <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
+        <h4 class="read-more-info-box bt-grey m-0-40px txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
         </a>
       </div>
     <!-- // INFO BOX ON MAP -->
@@ -652,42 +650,42 @@
   </div>
   <div class="video-txt-artisanat row mb-50px">
     <div class="col-sm-8 txt-artisanat left">
-      <h2>Hecho a mano</h2>
-      <p>Toutes les pièces Bahia Blanca sont confectionnées au Mexique. Chaque détail est brodé par des artisanes de différentes ethnies selon leur savoir-faire, avant d'être assemblée dans notre atelier de confection qui veille à la qualité de nos finitions.</p>
+      <h2 class="color-red fw-300 fs-30px no-margin txt-upper">Hecho a mano</h2>
+      <p class="pt-20px">Toutes les pièces Bahia Blanca sont confectionnées au Mexique. Chaque détail est brodé par des artisanes de différentes ethnies selon leur savoir-faire, avant d'être assemblée dans notre atelier de confection qui veille à la qualité de nos finitions.</p>
     </div>
-    <div class="col-sm-4 video-artisanat">
-      <iframe class="video-hecho-a-mano" src="https://player.vimeo.com/video/3604328?background=1&color=ff0179&loop=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="col-sm-4 no-padding text-right">
+      <iframe class="video-hecho-a-mano w-100percent" src="https://player.vimeo.com/video/3604328?background=1&color=ff0179&loop=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
   </div>
-  <div class="photo-full-width-artisanat row" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/v1/780428/84492d6e431b45409923f35b965b0aa3_ltcp9c.jpg')">
+  <div class="photo-full-width-artisanat no-repeat bs-cover mb-30px row" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1500,w_2000,f_auto,q_auto/v1/780428/84492d6e431b45409923f35b965b0aa3_ltcp9c.jpg')">
 
   </div>
   <div class="video-txt-artisanat row">
-    <div class="col-sm-4 video-artisanat">
-      <iframe class="video-hecho-a-mano" src="https://player.vimeo.com/video/3604328?background=1&color=ff0179&loop=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    <div class="col-sm-4 no-padding text-right">
+      <iframe class="video-hecho-a-mano w-100percent" src="https://player.vimeo.com/video/3604328?background=1&color=ff0179&loop=1&title=0&byline=0&portrait=0" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
     <div class="col-sm-8 txt-artisanat right">
-      <h2>Hecho con amor</h2>
-      <p>Toutes les pièces Bahia Blanca sont confectionnées au Mexique. Chaque détail est brodé par des artisanes de différentes ethnies selon leur savoir-faire, avant d'être assemblée dans notre atelier de confection qui veille à la qualité de nos finitions.</p>
+      <h2 class="color-red fw-300 fs-30px no-margin txt-upper">Hecho con amor</h2>
+      <p class="pt-20px">Toutes les pièces Bahia Blanca sont confectionnées au Mexique. Chaque détail est brodé par des artisanes de différentes ethnies selon leur savoir-faire, avant d'être assemblée dans notre atelier de confection qui veille à la qualité de nos finitions.</p>
     </div>
   </div>
-  <div class="photo-full-width-artisanat row" style="background-image:url('https://ae01.alicdn.com/kf/HTB1g34sLVXXXXcJXVXXq6xXFXXXo/Living-room-home-wall-decoration-fabric-poster-font-b-Mexico-b-font-font-b-city-b.jpg')">
+  <div class="photo-full-width-artisanat no-repeat bs-cover mb-30px row" style="background-image:url('https://ae01.alicdn.com/kf/HTB1g34sLVXXXXcJXVXXq6xXFXXXo/Living-room-home-wall-decoration-fabric-poster-font-b-Mexico-b-font-font-b-city-b.jpg')">
   </div>
-  <ul class="articles-section">
+  <ul class="articles-section flex-row-wrap-space-between m-auto w-85percent">
     <!-- ARTICLE MINIATURE 1 -->
     <a href="article.html">
-    <li class="article-miniature" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-      <div class="article-photo" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485839392/frkh2cypzkcbppr8ialg.jpg')">
-        <div class="overlay-to-read">
-          <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je découvre l'artisanant</h4>
+    <li class="article-miniature w-500px text-center mb-50px" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485839392/frkh2cypzkcbppr8ialg.jpg')">
+        <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
+          <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je découvre l'artisanant</h4>
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="article-title">L'artisanat dans l'Hidalgo</h4>
+        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">L'artisanat dans l'Hidalgo</h4>
         <!-- <h4 class="article-date">17 Janv 2017 </h4> -->
       </div>
       <div class="row article-content no-margin">
-        <p class="article-short-description"> C’est lors d’une belle soirée d’hiver qu’a eu lieu notre Christmas party MARIE SIXTINE ! Au programme : du shopping, des petits fours, du champagne, un photocall et une manucure avec la talentueuse Lili Nguyen de This is Venice.</p>
+        <p class="fs-12px"> C’est lors d’une belle soirée d’hiver qu’a eu lieu notre Christmas party MARIE SIXTINE ! Au programme : du shopping, des petits fours, du champagne, un photocall et une manucure avec la talentueuse Lili Nguyen de This is Venice.</p>
       </div>
       <div class="products-made">
         <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
@@ -697,25 +695,25 @@
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="lire-suite">Lire la suite</h4>
+        <h4 class="lire-suite bt-grey txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
       </div>
     </li>
     </a>
     <!-- // ARTICLE MINIATURE 1 -->
     <!-- ARTICLE MINIATURE 1 -->
     <a href="article.html">
-    <li class="article-miniature" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-      <div class="article-photo" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
-        <div class="overlay-to-read">
-          <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+    <li class="article-miniature w-500px text-center mb-50px" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+        <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
+          <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
         </div>
       </div>
       <div class="row article-content ">
-        <h4 class="article-title">Le Coyoacán de Frida</h4>
+        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Le Coyoacán de Frida</h4>
         <!-- <h4 class="article-date">20 Janvier 2017 </h4> -->
       </div>
       <div class="row article-content no-margin">
-        <p class="article-short-description">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
+        <p class="fs-12px">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
       </div>
       <div class="products-made">
         <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
@@ -725,7 +723,7 @@
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="lire-suite">Lire la suite</h4>
+        <h4 class="lire-suite bt-grey txt-upper fw-300 fs-16px pt-10px tr-3-eio ">Lire la suite</h4>
       </div>
     </li>
     </a>
@@ -733,18 +731,18 @@
     <!-- // ARTICLE MINIATURE 1 -->
     <!-- ARTICLE MINIATURE 1 -->
     <a href="article.html">
-    <li class="article-miniature" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-      <div class="article-photo" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485839490/pgoutfbiupzexx8tvqu7.jpg')">
-        <div class="overlay-to-read">
-          <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+    <li class="article-miniature w-500px text-center mb-50px" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485839490/pgoutfbiupzexx8tvqu7.jpg')">
+        <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
+          <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="article-title">Interlude colonial à Tepozotlan</h4>
+        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Interlude colonial à Tepozotlan</h4>
         <!-- <h4 class="article-date">20 Février 2017</h4> -->
       </div>
       <div class="row article-content no-margin">
-        <p class="article-short-description"> Le 5 novembre, c’est au sein de l’appartement rue de Charonne que certaines d’entre vous se sont retrouvées pour participer à l’atelier Hatha yoga chez MARIE SIXTINE.</p>
+        <p class="fs-12px"> Le 5 novembre, c’est au sein de l’appartement rue de Charonne que certaines d’entre vous se sont retrouvées pour participer à l’atelier Hatha yoga chez MARIE SIXTINE.</p>
       </div>
       <div class="products-made">
         <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
@@ -753,25 +751,25 @@
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="lire-suite">Lire la suite</h4>
+        <h4 class="lire-suite bt-grey txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
       </div>
     </li>
     </a>
     <!-- // ARTICLE MINIATURE 1 -->
     <!-- ARTICLE MINIATURE 1 -->
     <a href="article.html">
-      <li class="article-miniature" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-        <div class="article-photo" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485185825/z6brxnjmglg06abzzl6p.jpg')">
-          <div class="overlay-to-read">
-            <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+      <li class="article-miniature w-500px text-center mb-50px" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+        <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485185825/z6brxnjmglg06abzzl6p.jpg')">
+          <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
+            <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
           </div>
         </div>
         <div class="row article-content">
-          <h4 class="article-title">Blablaabl </h4>
+          <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Blablaabl </h4>
           <!-- <h4 class="article-date">20 Mars 2017</h4> -->
         </div>
         <div class="row article-content no-margin">
-          <p class="article-short-description ">Il n'est plus la peine de présenter Garance Doré, papesse du blogging connue pour ces photographies et illustrations de mode inspirantes... Elle nous fait rêver depuis des années au bureau et nous sommes très heureux de l'acceuillir en toute confidence au sein de notre appartement...</p>
+          <p class="fs-12px ">Il n'est plus la peine de présenter Garance Doré, papesse du blogging connue pour ces photographies et illustrations de mode inspirantes... Elle nous fait rêver depuis des années au bureau et nous sommes très heureux de l'acceuillir en toute confidence au sein de notre appartement...</p>
         </div>
         <div class="products-made">
           <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
@@ -782,25 +780,25 @@
           </div>
         </div>
         <div class="row article-content">
-          <h4 class="lire-suite">Lire la suite</h4>
+          <h4 class="lire-suite bt-grey txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
         </div>
       </li>
     </a>
     <!-- // ARTICLE MINIATURE 1 -->
     <!-- ARTICLE MINIATURE 1 -->
     <a href="article.html">
-    <li class="article-miniature" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-      <div class="article-photo" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485839392/frkh2cypzkcbppr8ialg.jpg')">
-        <div class="overlay-to-read">
-          <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+    <li class="article-miniature w-500px text-center mb-50px" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485839392/frkh2cypzkcbppr8ialg.jpg')">
+        <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
+          <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="article-title">Guanajuato et ses mille et une couleurs</h4>
+        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Guanajuato et ses mille et une couleurs</h4>
         <!-- <h4 class="article-date">17 Janv 2017 </h4> -->
       </div>
       <div class="row article-content no-margin">
-        <p class="article-short-description"> C’est lors d’une belle soirée d’hiver qu’a eu lieu notre Christmas party MARIE SIXTINE ! Au programme : du shopping, des petits fours, du champagne, un photocall et une manucure avec la talentueuse Lili Nguyen de This is Venice.</p>
+        <p class="fs-12px"> C’est lors d’une belle soirée d’hiver qu’a eu lieu notre Christmas party MARIE SIXTINE ! Au programme : du shopping, des petits fours, du champagne, un photocall et une manucure avec la talentueuse Lili Nguyen de This is Venice.</p>
       </div>
       <div class="products-made">
         <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
@@ -810,25 +808,25 @@
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="lire-suite">Lire la suite</h4>
+        <h4 class="lire-suite bt-grey txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
       </div>
     </li>
     </a>
     <!-- // ARTICLE MINIATURE 1 -->
     <!-- ARTICLE MINIATURE 1 -->
     <a href="article.html">
-    <li class="article-miniature" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-      <div class="article-photo" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
-        <div class="overlay-to-read">
-          <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+    <li class="article-miniature w-500px text-center mb-50px" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+        <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
+          <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="article-title">Le Coyoacán de Frida</h4>
+        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Le Coyoacán de Frida</h4>
         <!-- <h4 class="article-date">20 Janvier 2017 </h4> -->
       </div>
       <div class="row article-content no-margin">
-        <p class="article-short-description">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
+        <p class="fs-12px">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
       </div>
       <div class="products-made">
         <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
@@ -838,7 +836,7 @@
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="lire-suite">Lire la suite</h4>
+        <h4 class="lire-suite bt-grey txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
       </div>
     </li>
     </a>
@@ -846,18 +844,18 @@
     <!-- // ARTICLE MINIATURE 1 -->
     <!-- ARTICLE MINIATURE 1 -->
     <a href="article.html">
-    <li class="article-miniature" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-      <div class="article-photo" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485839490/pgoutfbiupzexx8tvqu7.jpg')">
-        <div class="overlay-to-read">
-          <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+    <li class="article-miniature w-500px text-center mb-50px" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485839490/pgoutfbiupzexx8tvqu7.jpg')">
+        <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
+          <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="article-title">Interlude colonial à Tepozotlan</h4>
+        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Interlude colonial à Tepozotlan</h4>
         <!-- <h4 class="article-date">20 Février 2017</h4> -->
       </div>
       <div class="row article-content no-margin">
-        <p class="article-short-description"> Le 5 novembre, c’est au sein de l’appartement rue de Charonne que certaines d’entre vous se sont retrouvées pour participer à l’atelier Hatha yoga chez MARIE SIXTINE.</p>
+        <p class="fs-12px"> Le 5 novembre, c’est au sein de l’appartement rue de Charonne que certaines d’entre vous se sont retrouvées pour participer à l’atelier Hatha yoga chez MARIE SIXTINE.</p>
       </div>
       <div class="products-made">
         <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
@@ -867,25 +865,24 @@
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="lire-suite">Lire la suite</h4>
+        <h4 class="lire-suite bt-grey txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
       </div>
     </li>
     </a>
     <!-- // ARTICLE MINIATURE 1 -->
     <!-- ARTICLE MINIATURE 1 -->
     <a href="article.html">
-      <li class="article-miniature" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-        <div class="article-photo" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485185825/z6brxnjmglg06abzzl6p.jpg')">
-          <div class="overlay-to-read">
-            <h4><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+      <li class="article-miniature w-500px text-center mb-50px" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
+        <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485185825/z6brxnjmglg06abzzl6p.jpg')">
+          <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
+            <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
           </div>
         </div>
         <div class="row article-content">
-          <h4 class="article-title">Blablaabl </h4>
-          <!-- <h4 class="article-date">20 Mars 2017</h4> -->
+          <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Blablaabl </h4>
         </div>
         <div class="row article-content no-margin">
-          <p class="article-short-description">Il n'est plus la peine de présenter Garance Doré, papesse du blogging connue pour ces photographies et illustrations de mode inspirantes... Elle nous fait rêver depuis des années au bureau et nous sommes très heureux de l'acceuillir en toute confidence au sein de notre appartement...</p>
+          <p class="fs-12px">Il n'est plus la peine de présenter Garance Doré, papesse du blogging connue pour ces photographies et illustrations de mode inspirantes... Elle nous fait rêver depuis des années au bureau et nous sommes très heureux de l'acceuillir en toute confidence au sein de notre appartement...</p>
         </div>
         <div class="products-made">
           <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
@@ -895,7 +892,7 @@
           </div>
         </div>
         <div class="row article-content">
-          <h4 class="lire-suite">Lire la suite</h4>
+          <h4 class="lire-suite bt-grey txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
         </div>
       </li>
     </a>

@@ -93,3 +93,9 @@ input[type=text]:focus:not([readonly]) {
   padding:0 10px;
   line-height:28px;
 }
+
+@media only screen and (max-width: 780px) {
+  .no-br-xs {
+    border-right:none;
+  }
+}

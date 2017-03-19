@@ -287,3 +287,91 @@ label.size-choice.checked {
   top: -14px;
   left: 40%;
 }
+
+
+
+/* CATEGORY */
+
+.category-title {
+  height:150px;
+  text-align:center;
+  margin-top:50px;
+  position:relative;
+}
+
+#plante-aquarelle1 {
+  width: 839px;
+  right: -283px;
+  top: -61px;
+}
+
+#surfer-aquarelle {
+  width: 345px;
+  right: -71px;
+  top: 7px;
+}
+
+#pelican-aquarelle {
+  width: 450px;
+  right: -71px;
+  top: 7px;
+  transform:rotate(86deg);
+}
+
+
+.category-products-result {
+  padding:50px 100px 0 100px;
+}
+
+
+
+/* PRODUCT MINIATURE */
+
+.product-miniature-card {
+  margin-bottom:50px;
+}
+
+
+.photos-product .second-photo {
+  opacity:0;
+}
+
+
+.product-miniature-card.sold-out .sold-out-box {
+  opacity:1;
+}
+
+.product-miniature-card:hover .first-photo {
+  opacity:0;
+}
+
+.product-miniature-card:hover .second-photo {
+  opacity:1;
+}
+
+.product-miniature-card:hover .call-to-action-banner {
+  opacity:1;
+}
+
+.price-info-product {
+  margin:0;
+}
+
+
+/* WISHLIST BUTTON */
+
+.add-to-whishlist-box:hover .fa.fa-heart-o, .product-miniature-card.favorite .fa.fa-heart-o {
+  display:none;
+}
+
+.add-to-whishlist-box:hover .fa.fa-heart, .product-miniature-card.favorite .fa.fa-heart {
+  display:inline;
+}
+
+.product-miniature-card.favorite .add-to-whishlist-box:hover .fa.fa-heart {
+  display:none;
+}
+.product-miniature-card.favorite .add-to-whishlist-box:hover .fa.fa-heart-o {
+  display:inline;
+}
+
