@@ -318,9 +318,16 @@ label.size-choice.checked {
   transform:rotate(86deg);
 }
 
+@media only screen and (min-width: 780px) {
+  .category-products-result {
+    padding:50px 100px 0 100px;
+  }
+}
 
-.category-products-result {
-  padding:50px 100px 0 100px;
+@media only screen and (max-width: 780px) {
+  .category-products-result {
+    padding:20px;
+  }
 }
 
 

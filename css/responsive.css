@@ -1,0 +1,20 @@
+@media only screen and (max-width: 780px) {
+  .h-100px-xs {
+    height:100px;
+  }
+  .m-auto-xs {
+    margin:auto;
+  }
+  .row-histoire {
+    padding:20px;
+  }
+  .mb-20px-xs {
+    margin-bottom:20px;
+  }
+  .fs-14px-xs {
+    font-size:14px;
+  }
+  .mt-80px-xs {
+    margin-top:80px;
+  }
+}
