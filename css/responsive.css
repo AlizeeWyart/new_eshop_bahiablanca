@@ -1,20 +1,110 @@
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 760px) {
+  /* HEIGHT */
   .h-100px-xs {
     height:100px;
   }
+
+  /* WIDTH */
+  .m-w-240px.xs {
+    min-width:40%;
+  }
+  .w-600px-xs {
+    width:600px;
+  }
+  .w-100percent-xs {
+    width:100%;
+  }
+
+  /* MARGIN */
   .m-auto-xs {
     margin:auto;
-  }
-  .row-histoire {
-    padding:20px;
   }
   .mb-20px-xs {
     margin-bottom:20px;
   }
+  .mt-80px-xs {
+    margin-top:80px;
+  }
+  .no-mb-xs {
+    margin-bottom:0;
+  }
+
+
+  /* FONT SIZE */
   .fs-14px-xs {
     font-size:14px;
   }
-  .mt-80px-xs {
-    margin-top:80px;
+
+  /* HISTOIRE */
+  .row-histoire {
+    padding:20px;
+  }
+  .timeline-card, .timeline-card.left, .timeline-card.right {
+    padding:40px;
+    text-align:center;
+    min-height:200px;
+  }
+  .timeline-card.right {
+    border:none;
+  }
+  .right {
+    float:none !important;
+  }
+  .left {
+    float:none !important;
+  }
+  .timeline-card .icon-middle {
+    top: -15px;
+    left: 46%;
+  }
+
+  /* ARTISANAT */
+
+  .mapa-artisanat {
+    margin-left:-184px;
+  }
+  .artisanat-move-arrow {
+    top: 186px;
+    right: 20px;
+  }
+  .mapa-artisanat .map {
+    top: -20px;
+    left: -88px;
+    width: 614px;
+  }
+  .artisanat-info-box  {
+    right: 4%;
+    top: 71px;
+    width: 90vw;
+  }
+  .artisanat-info-box.left {
+    left: 203px;
+    top: 71px;
+    width: 90vw;
+  }
+  .circle-lago-atitlan {
+    bottom: 56px;
+    left: 435px;
+    right:0;
+  }
+  .video-txt-artisanat {
+    padding: 0;
+  }
+  .txt-artisanat.left {
+    text-align:center;
+    padding:0px 20px 20px 20px;
+  }
+  .txt-artisanat.right {
+    text-align:center;
+    padding:20px 20px 0px 20px;
+  }
+  .photo-full-width-artisanat {
+    height:40vh;
+  }
+
+  /* ARTICLE */
+
+  .lire-suite {
+    margin: 0 80px;
   }
 }

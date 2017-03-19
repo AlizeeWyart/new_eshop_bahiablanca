@@ -1,7 +1,12 @@
-$('ul.articles-section a:nth-child(2)').css("margin-top", "160px");
-$('ul.articles-section a:nth-child(2n+1)').css("margin-top", "-160px");
-$('ul.articles-section a:nth-child(1)').css("margin-top", "0px");
+var isMobile = window.matchMedia("only screen and (max-width: 760px)");
 
+if (!isMobile.matches) {
+  $('ul.articles-section a:nth-child(2)').css("margin-top", "160px");
+  $('ul.articles-section a:nth-child(2n+1)').css("margin-top", "-160px");
+  $('ul.articles-section a:nth-child(1)').css("margin-top", "0px");
+} else {
+  console.log("its mobile")
+};
 
 $('#MX-CHP').click(function(){
   $('.artisanat-info-box').css("opacity", "0");
