@@ -358,4 +358,7 @@ $('#broderie-left').on("click", function(){
 
 
 
+$(document).ready(function(){
+  $('.mob-product-photos.owl-carousel').owlCarousel();
+});
 
