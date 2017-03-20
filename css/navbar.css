@@ -260,6 +260,8 @@ form.search-form input {
 }
 
 .left-calc {
+  -moz- left:calc((100vw*30/100/2) - 26px);
+  -webkit- left:calc((100vw*30/100/2) - 26px);
   left:calc((100vw*30/100/2) - 26px);
 }
 
