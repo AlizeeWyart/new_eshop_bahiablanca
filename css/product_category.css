@@ -382,3 +382,36 @@ label.size-choice.checked {
   display:inline;
 }
 
+/* MOBILE _ CAROUSELL */
+.mob-product-photos.owl-carousel {
+  position:relative;
+}
+.mob-product-photos.owl-carousel .owl-nav {
+  display:none;
+}
+.mob-product-photos.owl-carousel .owl-dots {
+  display:flex;
+  justify-content: center;
+  width:100%;
+  position:absolute;
+  bottom:20px;
+}
+.mob-product-photos.owl-carousel .owl-dot span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: white;
+  border: 1px solid #333333;
+  display: block;
+  -webkit-backface-visibility: visible;
+  transition: opacity .2s ease;
+  opacity:0.5;
+  border-radius: 30px;
+  display:inline-block;
+}
+
+.mob-product-photos.owl-carousel .owl-dot.active span {
+  opacity:1;
+  background: #333333;
+}
+

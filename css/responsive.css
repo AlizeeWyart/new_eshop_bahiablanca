@@ -142,12 +142,20 @@
   }
   .product-title h1 {
     font-size:30px;
+    margin-top:10px;
+    margin-bottom:20px;
   }
   .product-title {
     padding:50px 20px 0px 20px ;
   }
+  .price-box {
+    margin:0 40px;
+  }
   .price-position {
     left:36%;
+  }
+  .product-content {
+    padding:0;
   }
 }
 
