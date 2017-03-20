@@ -111,4 +111,16 @@
   .lire-suite {
     margin: 0 80px;
   }
+  .container-100-xs {
+    width:100%;
+  }
+}
+
+
+/* IPAD */
+
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+  .product-box {
+
+  }
 }
