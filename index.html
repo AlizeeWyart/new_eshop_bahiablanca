@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/product_category.css">
   <link rel="stylesheet" href="css/art_journal_histoire.css">
+  <link rel="stylesheet" href="css/responsive.css">
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
 </head>
 
@@ -293,9 +294,9 @@
       <svg class="h-100percent ml-10px" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#676465;enable-background:accumulate;" d="m 42.003912,964.36624 c -16.5448,0 -30,13.45512 -30,30 0,16.54466 13.4552,29.99996 30,29.99996 7.5515,0 14.4401,-2.817 19.7188,-7.4375 l 22.875,22.8437 c 0.7811,0.7808 2.0314,0.781 2.8124,0 0.7812,-0.7811 0.7814,-2.0317 0,-2.8125 l -22.8437,-22.8437 c 4.6296,-5.2808 7.4375,-12.1902 7.4375,-19.74996 0,-16.54489 -13.4553,-30 -30,-30 z m 0,4 c 14.3829,0 26,11.61689 26,26 0,14.38286 -11.6171,25.99996 -26,25.99996 -14.383,0 -26,-11.6171 -26,-25.99996 0,-14.38312 11.617,-26 26,-26 z" fill="black  " fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></g></svg>
     </div>
     <div class="flex-30percent">
-      <div class="logo-box h-30px text-center">
+      <div class="logo-box h-30px text-center position-rel">
         <a href="index.html">
-          <img src="img/logo-bahia.png" alt="" class="h-100percent" style="vertical-align: top">
+          <img src="img/logo-bahia.png" alt="" class="mob-logo-nav position-abs" style="vertical-align: top">
         </a>
       </div>
     </div>
@@ -317,105 +318,86 @@
     </div>
   </nav>
   <!-- MENU LEFT -->
-  <div id="mobile-menu-right" class="position-fixed h-100percent w-100percent bg-white nav-no-show text-center hidden-sm hidden-md hidden-lg" style="top:49px">
+  <div id="mobile-menu-right" class="position-fixed h-100percent w-300px bg-white nav-no-show text-left hidden-sm hidden-md hidden-lg p-20px zi-2" style="top:49px">
     <!-- FEMMES -->
-    <a href="categorie-femmes.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px mt-15px">Femmes</h3>
-    </a>
-    <div class="row mb-5px">
-      <div class="col-xs-6">
-        <a href="categorie-femmes.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Collection été 2017</h4>
-        </a>
-        <a href="categorie-femmes.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Robes</h4>
-        </a>
-        <a href="categorie-femmes.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Vestes</h4>
-        </a>
-      </div>
-      <div class="col-xs-6">
-        <a href="categorie-femmes.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Blouses</h4>
-        </a>
-        <a href="categorie-femmes.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Tops</h4>
-        </a>
-        <a href="categorie-femmes.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Accessoires</h4>
-        </a>
-      </div>
+    <h3 class="color-red txt-upper fw-300 fs-20px m-10px" data-btn="mob-menu-btn" data-target="#mob-femmes-menu-content">Femmes <i class="fa fa-angle-right ml-15px tr-rotate" aria-hidden="true"></i></h3>
+    <div class="row mb-5px ml-10px mob-menu-content mob-femmes" id="mob-femmes-menu-content">
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Collection été 2017</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Robes</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Vestes</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Blouses</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Tops</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Accessoires</h4>
+      </a>
     </div>
-    <hr class="hr-navbar">
+    <hr style="margin-top:10px">
     <!-- HOMMES -->
     <a href="categorie-hommes.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Hommes</h3>
+      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Hommes <i class="fa fa-angle-right ml-15px" aria-hidden="true"></i></h3>
     </a>
-    <hr class="hr-navbar">
+    <hr>
     <!-- ENFANTS -->
     <a href="categorie-enfants.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Enfants</h3>
+      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Enfants <i class="fa fa-angle-right ml-15px" aria-hidden="true"></i></h3>
     </a>
-    <img src="img/trait_blue.png" alt="" class="h-20px">
+    <hr>
     <!-- Notre hisoitre -->
-    <a href="histoire.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Notre histoire</h3>
-    </a>
-    <a href="histoire-part1.html">
-      <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Les débuts de Bahia Blanca</h4>
-    </a>
-    <a href="equipe.html">
-      <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">L'équipe</h4>
-    </a>
-    <hr class="hr-navbar">
+    <h3 class="color-red txt-upper fw-300 fs-20px m-10px" data-btn="mob-menu-btn" data-target="#mob-histoire-menu-content">Notre histoire <i class="fa fa-angle-right ml-15px tr-rotate" aria-hidden="true"></i></h3>
+    <div class="row mb-5px ml-10px mob-menu-content mob-histoire" id="mob-histoire-menu-content">
+      <a href="histoire-part1.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Les débuts de Bahia Blanca</h4>
+      </a>
+      <a href="equipe.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">L'équipe</h4>
+      </a>
+    </div>
+    <hr style="margin-top:10px">
     <!-- L'Artisanat -->
     <a href="artisanat.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Rencontrez nos artisans</h3>
+      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Les artisans <i class="fa fa-angle-right ml-15px" aria-hidden="true"></i></h3>
     </a>
-    <hr class="hr-navbar">
-    <!-- Notre hisoitre -->
-    <a href="journal.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Journal</h3>
-    </a>
-    <div class="row mb-5px">
-      <div class="col-xs-4">
-        <a href="lookbook.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Lookbook</h4>
-        </a>
-      </div>
-      <div class="col-xs-4">
-        <a href="journal.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Mexique</h4>
-        </a>
-      </div>
-      <div class="col-xs-4">
-        <a href="journal.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Lifestyle</h4>
-        </a>
-      </div>
+    <hr style="margin-top:10px">
+    <!-- Journal -->
+    <h3 class="color-red txt-upper fw-300 fs-20px m-10px" data-btn="mob-menu-btn" data-target="#mob-journal-menu-content">Le journal <i class="fa fa-angle-right ml-15px tr-rotate" aria-hidden="true"></i></h3>
+    <div class="row mb-5px ml-10px mob-menu-content mob-journal" id="mob-journal-menu-content">
+      <a href="journal.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Nos coups cœur du Mexique</h4>
+      </a>
+      <a href="journal.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Quelques idées Lifestyle</h4>
+      </a>
     </div>
-    <hr class="hr-navbar">
+    <hr style="margin-top:10px">
+    <!-- LOOKBOOK -->
+    <a href="lookbook.html">
+      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Le Lookbook <i class="fa fa-angle-right ml-15px" aria-hidden="true"></i></h3>
+    </a>
+    <hr>
     <!-- Liens Utiles -->
-    <a href="liens_utiles.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Liens utiles</h3>
-    </a>
-    <div class="row mb-5px">
-      <div class="col-xs-4">
-        <a href="contact.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Contact</h4>
-        </a>
-      </div>
-      <div class="col-xs-4">
-        <a href="liens_utiles.html#cgv">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">CGV</h4>
-        </a>
-      </div>
-      <div class="col-xs-4">
-        <a href="liens_utiles.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">À Propos</h4>
-        </a>
-      </div>
+    <h3 class="color-red txt-upper fw-300 fs-20px m-10px" data-btn="mob-menu-btn" data-target="#mob-liens-utiles-menu-content">Liens utiles <i class="fa fa-angle-right ml-15px tr-rotate" aria-hidden="true"></i></h3>
+    <div class="row mb-5px ml-10px mob-menu-content mob-liens-utiles" id="mob-liens-utiles-menu-content">
+      <a href="contact.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Contact</h4>
+      </a>
+      <a href="liens_utiles.html#cgv">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">CGV</h4>
+      </a>
+      <a href="liens_utiles.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">À Propos</h4>
+      </a>
     </div>
+    <hr style="margin-top:10px">
   </div>
   <!-- // NAVBAR MOBILE -->
 
@@ -635,20 +617,23 @@
     </a>
     <h1 class="color-red fw-300 txt-upper no-mb">Vamos a Mexico</h1>
     <p class="p-20px no-margin fs-16px">Nous avons silloné le Mexique à la rencontre de différentes ethnies d'artisanes. Nous sommes tombées amoureuses de leur savoir-faire et voulons les partager à leur juste valeur avec vous !</p>
-    <img src="img/aquarelles/perroquet.png" alt="" class="w-90percent" style="margin-top:-39px;margin-bottom: -160px;">
+    <img src="img/aquarelles/perroquet.png" alt="" class="w-90percent" style="margin-top:-39px;">
     <a href="histoire.html">
       <div class="w-100percent h-220px bs-cover no-repeat flex-column-center bp-2c" style="background-image:url('img/timeline/bahiablanca.png')">
         <h3 class="color-white txt-upper fs-30px fw-300">Notre histoire</h3>
+        <h5 class="color-white fw-300 fs-18px" data-aos="zoom-in" data-aos-duration="800">Le belle aventure Bahia</h5>
       </div>
     </a>
     <a href="artisanat.html">
       <div class="w-100percent h-220px bs-cover no-repeat flex-column-center bp-2c" style="background-image:url('img/timeline/marche2.png')">
-        <h3 class="color-white txt-upper fs-30px fw-300">L'artisanat Mexicain</h3>
+        <h3 class="color-white txt-upper fs-30px fw-300">Les artisans</h3>
+        <h5 class="color-white fw-300 fs-18px" data-aos="zoom-in" data-aos-duration="800">De précieux savoir-faire</h5>
       </div>
     </a>
     <a href="journal.html">
       <div class="w-100percent h-220px bs-cover no-repeat flex-column-center bp-2c" style="background-image:url('img/timeline/mexicofirst.png')">
-        <h3 class="color-white txt-upper fs-30px fw-300">Journal</h3>
+        <h3 class="color-white txt-upper fs-30px fw-300">Le journal</h3>
+        <h5 class="color-white fw-300 fs-18px" data-aos="zoom-in" data-aos-duration="800">Des découvertes à partager</h5>
       </div>
     </a>
   </section>
@@ -714,18 +699,18 @@
   <footer>
     <!-- CONDITIONS FOOTER -->
     <div class="text-center container-75">
-      <div class="row">
-        <img src="img/titres/Hechoamano.png" class="h-140px mb-60px">
+      <div class="row no-mb-xs">
+        <img src="img/titres/Hechoamano.png" class="h-140px mb-60px no-mb-xs">
       </div>
       <div class="conditions mb-50px row">
-        <div class="col-xs-12 col-md-4 br-red h-140px no-br-xs">
+        <div class="col-xs-12 col-md-4 br-red h-140px no-br-xs h-125px-xs">
           <div class="condition-box">
             <h4 class="text-center txt-upper fs-16px"><i class="fa fa-paper-plane" aria-hidden="true"></i></h4>
             <h4 class="text-center txt-upper fs-16px">Livraison offerte</h4>
             <h5 class="fs-12px fw-300">dès 70€ d'achats en France*</h5>
           </div>
         </div>
-        <div class="col-xs-12 col-md-4 br-red h-140px no-br-xs">
+        <div class="col-xs-12 col-md-4 br-red h-140px no-br-xs h-125px-xs">
           <div class="condition-box">
             <h4 class="text-center txt-upper fs-16px"><i class="fa fa-lock" aria-hidden="true"></i></h4>
             <h4 class="text-center txt-upper fs-16px">Paiement 100% sécurisé</h4>
@@ -739,7 +724,7 @@
 
           </div>
         </div>
-        <div class="col-xs-12 col-md-4 h-140px">
+        <div class="col-xs-12 col-md-4 h-140px h-125px-xs">
           <div class="condition-box">
             <h4 class="text-center txt-upper fs-16px"><i class="fa fa-phone" aria-hidden="true"></i></h4>
             <h4 class="text-center txt-upper fs-16px">Appelez-nous !</h4>
@@ -748,33 +733,34 @@
             </a>
           </div>
         </div>
-        <div class="col-xs-12 col-md-4 h-140px hidden-sm hidden-md hidden-lg">
-          <div class="row">
-            <div class="col-xs-6">
-              <h4 class="text-center txt-upper fs-16px">Liens utiles</h4>
-              <a href="liens_utiles.html">
-                <h5 class="fs-12px fw-300">Paiement</h5>
-              </a>
-              <a href="liens_utiles.html#livraison-retours">
-                <h5 class="fs-12px fw-300">Livraison</h5>
-              </a>
-              <a href="liens_utiles.html#cgv">
-                <h5 class="fs-12px fw-300">CGV</h5>
-              </a>
-            </div>
-            <div class="col-xs-6">
-              <h4 class="text-center txt-upper fs-16px">à propos</h4>
-              <a href="contact.html">
-                <h5 class="fs-12px fw-300">Contact</h5>
-              </a>
-              <a href="equipe.html">
-                <h5 class="fs-12px fw-300">L'équipe</h5>
-              </a>
-              <a href="contact_presse.html">
-                <h5 class="fs-12px fw-300">Presse</h5>
-              </a>
-            </div>
-          </div>
+      </div>
+    </div>
+    <!-- MOBILE FOOTER -->
+    <div class="text-center container-90 hidden-sm hidden-md hidden-lg">
+      <div class="row">
+        <div class="col-xs-6">
+          <h4 class="text-center txt-upper fs-16px">Liens utiles</h4>
+          <a href="liens_utiles.html">
+            <h5 class="fs-12px fw-300">Livraison</h5>
+          </a>
+          <a href="liens_utiles.html#livraison-retours">
+            <h5 class="fs-12px fw-300">Retour</h5>
+          </a>
+          <a href="liens_utiles.html#cgv">
+            <h5 class="fs-12px fw-300">CGV</h5>
+          </a>
+        </div>
+        <div class="col-xs-6">
+          <h4 class="text-center txt-upper fs-16px">à propos</h4>
+          <a href="contact.html">
+            <h5 class="fs-12px fw-300">Contact</h5>
+          </a>
+          <a href="equipe.html">
+            <h5 class="fs-12px fw-300">L'Équipe</h5>
+          </a>
+          <a href="contact_presse.html">
+            <h5 class="fs-12px fw-300">Presse</h5>
+          </a>
         </div>
       </div>
     </div>
@@ -839,6 +825,7 @@
     <!-- <script src="js/animate.js"></script> -->
     <script src="js/modernizr-2.7.1.js"></script>
     <script src="js/homepage.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 
     </body>

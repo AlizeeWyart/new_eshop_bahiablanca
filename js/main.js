@@ -77,4 +77,19 @@ $(document).ready(function(){
       }
   });
 
+
+  $('*[data-btn="mob-menu-btn"]').click(function(){
+    mobMenuContent = $(this).data("target");
+    if ($(mobMenuContent).hasClass('open')) {
+      $(mobMenuContent).removeClass('open');
+      mobMenuAngle = $(this).find('i').css("transform", "rotate(0deg)");
+    } else {
+      $(mobMenuContent).addClass('open');
+      mobMenuAngle = $(this).find('i').css("transform", "rotate(90deg)");
+    }
+
+  });
+
+  AOS.init();
+
 });

@@ -259,24 +259,60 @@ form.search-form input {
   transition:0.3s ease-in-out;
 }
 
-#mobile-menu-right.nav-no-show {
+.mob-logo-nav {
+  height: 44px;
+  top: -7px;
+  left:calc((100vw*30/100/2) - 26px);
+}
+
+/*#mobile-menu-right.nav-no-show {
  z-index:-2;
  opacity:0;
 transition: opacity, 0.3s ease-in-out;
 }
 
-#mobile-menu-btn {
-  transition: opacity, 0.3s ease-in-out;
-}
 #mobile-menu-right.nav-no-show.open {
   z-index:2;
   opacity:1;
+}*/
+#mobile-menu-right.nav-no-show {
+  margin-left:-350px;
+  transition: margin-left 0.4s ease-out;
+  box-shadow: 1px 1px 5px #a9a9a9;
+}
+
+#mobile-menu-right.nav-no-show.open {
+
+  margin-left:0px;
+  transition: margin-left 0.4s ease-in;
+}
+
+#mobile-menu-btn {
+  transition: opacity, 0.3s ease-in-out;
 }
 
 #mobile-menu-btn.open {
   opacity:0;
 }
 
-.hr-navbar {
-  margin:0px 20px;
+.mob-menu-content {
+  height:0px;
+  overflow: hidden;
+  transition: height 0.4s ease-out;
+}
+
+.mob-menu-content.mob-femmes.open {
+  height:155px;
+}
+
+.mob-menu-content.mob-histoire.open, .mob-menu-content.mob-journal.open {
+  height:46px;
+}
+
+.mob-menu-content.mob-liens-utiles.open {
+  height:74px;
+}
+
+.mob-menu-content.open {
+  transition: height 0.4s ease-in;
 }

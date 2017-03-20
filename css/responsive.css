@@ -4,6 +4,10 @@
     height:100px;
   }
 
+  .h-125px-xs {
+    height:125px;
+  }
+
   /* WIDTH */
   .m-w-240px.xs {
     min-width:40%;

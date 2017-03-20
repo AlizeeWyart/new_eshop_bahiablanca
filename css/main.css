@@ -1356,6 +1356,14 @@ footer {
   transition:0.3s ease-in-out;
 }
 
+.tr-rotate {
+  -webkit-transition:-webkit-transform .3s;
+  -moz-transition:-moz-transform .3s;
+  -o-transition:-o-transform .3s;
+  -ms-transition:-ms-transform .3s;
+  transition:transform .3s;
+}
+
 tfoot {
   border-top: 1px solid #d0d0d0
 }
