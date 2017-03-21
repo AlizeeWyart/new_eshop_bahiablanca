@@ -923,6 +923,10 @@ footer {
   height:80%;
 }
 
+.h-90percent {
+  height:90%;
+}
+
 .h-100percent {
   height:100%;
 }
@@ -1395,4 +1399,16 @@ tfoot {
 
 .o-hid {
   overflow:hidden;
+}
+
+
+/* LINE HEIGHT */
+.no-lh {
+  line-height:0;
+}
+
+/*SCROLL*/
+
+.stop-scrolling-y {
+  overflow-y: hidden;
 }

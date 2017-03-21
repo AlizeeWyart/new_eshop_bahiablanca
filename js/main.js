@@ -70,12 +70,27 @@ $(document).ready(function(){
 
   $('#mobile-menu-btn').click(function(){
     $('#mobile-menu-right').toggleClass('open');
+    $('html').toggleClass("stop-scrolling-y");
+    $('body').toggleClass("stop-scrolling-y");
     if ($('#mobile-menu-btn').css('opacity') == 0) {
         $('#mobile-menu-btn').css('opacity', 1);
       } else {
-        $('#mobile-menu-btn').css('opacity', 0)
+        $('#mobile-menu-btn').css('opacity', 0);
       }
   });
+
+  // $(document).mouseup(function (e) {
+  //     var container = $('#mobile-menu-right');
+  //     var mobileNavbar = $('#mobile-menu-btn');
+  //     if (!container.is(e.target)) {
+  //       if ($('#mobile-menu-right').hasClass('open')) {
+  //         $('#mobile-menu-right').removeClass('open');
+  //         $('html').removeClass("stop-scrolling-y");
+  //         $('body').removeClass("stop-scrolling-y");
+  //         $('#mobile-menu-btn').css('opacity', 1);
+  //       }
+  //     }
+  // });
 
 
   $('*[data-btn="mob-menu-btn"]').click(function(){
