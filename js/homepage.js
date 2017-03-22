@@ -143,6 +143,9 @@ if (window.matchMedia("(max-width: 760px)").matches) {
       loop:true,
       responsiveClass:true,
       navigation:true,
+      autoplay:true,
+      autoplayTimeout:1500,
+      autoplaySpeed: 1000,
       responsive:{
           0:{
               items:2,

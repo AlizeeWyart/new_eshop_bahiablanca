@@ -157,6 +157,13 @@
   .product-content {
     padding:0;
   }
+  .fs-2em-xs {
+    font-size:2em;
+  }
+  .mt-30px-xs {
+    margin-top:30px;
+  }
+
 }
 
 
