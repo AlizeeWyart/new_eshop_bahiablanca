@@ -1132,6 +1132,10 @@ footer {
   padding:0 20px;
 }
 
+.pt-4px {
+  padding-top:4px;
+}
+
 .pt-5px {
   padding-top:5px;
 }
@@ -1201,6 +1205,10 @@ footer {
 }
 .b-red {
   border:1px solid #A31D23;
+}
+
+.b-grey {
+  border:1px solid #333333;
 }
 
 .br-green {
