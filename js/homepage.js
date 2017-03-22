@@ -136,6 +136,31 @@ $('#arrow-left').on("click", function(){
 });
 
 
+if (window.matchMedia("(max-width: 760px)").matches) {
+  $('.insta-photos-box').addClass("owl-insta-carousel").addClass("owl-carousel");
+  $(document).ready(function(){
+    $('.owl-insta-carousel.owl-carousel').owlCarousel({
+      loop:true,
+      responsiveClass:true,
+      navigation:true,
+      responsive:{
+          0:{
+              items:2,
+              nav:true
+          },
+          600:{
+              items:2,
+              nav:false
+          },
+          1000:{
+              items:5,
+              nav:true,
+              loop:false
+          }
+      }
+    });
+  });
+}
 
 
 

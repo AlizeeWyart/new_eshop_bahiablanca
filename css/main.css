@@ -1412,5 +1412,4 @@ tfoot {
 .stop-scrolling-y {
   overflow-y: hidden;
   height:100% !important;
-  position: fixed;
 }
