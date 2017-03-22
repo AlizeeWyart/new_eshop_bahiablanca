@@ -1,5 +1,9 @@
 @media only screen and (max-width: 760px) {
   /* HEIGHT */
+
+  .h-80px-xs {
+    height:80px;
+  }
   .h-100px-xs {
     height:100px;
   }
@@ -8,9 +12,20 @@
     height:125px;
   }
 
+  .h-160px-xs {
+    height:160px;
+  }
+
+  .h-200px-xs {
+    height:200px;
+  }
+
   /* WIDTH */
-  .m-w-240px.xs {
+  #histoire-container .m-w-240px.xs {
     min-width:40%;
+  }s
+  .m-w-240px.xs {
+    min-width:100%;
   }
   .w-600px-xs {
     width:600px;
@@ -25,6 +40,9 @@
   }
   .mb-20px-xs {
     margin-bottom:20px;
+  }
+  .mb-25px-xs {
+    margin-bottom:25px;
   }
   .mb-40px-xs {
     margin-bottom:40px;
@@ -48,7 +66,7 @@
 
   /* FONT SIZE */
   .fs-14px-xs {
-    font-size:14px;
+        font-size: 1.3em;
   }
 
   /*POSITION */
@@ -85,8 +103,8 @@
     margin-left:-184px;
   }
   .artisanat-move-arrow {
-    top: 186px;
-    right: 20px;
+    top: 160px;
+    right: 5px;
   }
   .mapa-artisanat .map {
     top: -20px;
@@ -95,13 +113,15 @@
   }
   .artisanat-info-box  {
     right: 4%;
-    top: 71px;
+    top: 20%;
     width: 90vw;
+    position:fixed;
   }
   .artisanat-info-box.left {
-    left: 203px;
-    top: 71px;
+    left: 4%;
+    top: 20%;
     width: 90vw;
+    position:fixed;
   }
   .circle-lago-atitlan {
     bottom: 56px;
@@ -123,6 +143,16 @@
     height:40vh;
   }
 
+  #journal-show .articles-section {
+    margin-top:0;
+  }
+
+  /* JOURNAL */
+
+  .journal-subtitle {
+    min-width:100px;
+  }
+
   /* ARTICLE */
 
   .lire-suite {
@@ -135,10 +165,10 @@
 
   /* PRODUCT */
   .product-suggestion-result .product-miniature-card {
-    width: 150px;
+    width: 80%;
   }
   .product-suggestion-result .photos-product {
-    height:190px;
+    height:250px;
   }
   .product-title h1 {
     font-size:30px;
@@ -163,14 +193,22 @@
   .mt-30px-xs {
     margin-top:30px;
   }
+  .suggestion-title img {
+    width:100%;
+  }
+  .suggestion-title {
+    margin-bottom:0;
+  }
+  .info-product-box-mob {
 
+  }
 }
 
 
 /* IPAD */
 
 @media only screen and (min-width: 760px) and (max-width: 1000px) {
-  .product-box {
-
+  .category-products-result {
+    padding: 60px;
   }
 }

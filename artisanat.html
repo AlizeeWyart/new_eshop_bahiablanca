@@ -21,12 +21,37 @@
   <link rel="stylesheet" href="css/art_journal_histoire.css">
   <link rel="stylesheet" href="css/responsive.css">
   <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <!-- Start of Async Drift Code -->
+  <script>
+  !function() {
+    var t;
+    if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+    t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+    t.factory = function(e) {
+      return function() {
+        var n;
+        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e, n, o, i;
+      e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+      n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+    });
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('uwtm284ivgsx');
+  </script>
+  <!-- End of Async Drift Code -->
 </head>
 
 <body>
 
-  <!-- PANIER BOX -->
-  <div class="panier-nav-box bg-white w-260px p-fixed shadow-grey opacity-0 hidden-xs" style="top: 49px;right: 23px;z-index:-3">
+<!-- PANIER BOX -->
+  <div class="panier-nav-box bg-white w-260px p-fixed shadow-grey opacity-0 hidden-xs hidden-sm" style="top: 49px;right: 23px;z-index:-3">
     <h3 class="no-margin fw-300 text-center txt-upper p-10px position-rel">
       <i class="fa fa-times position-abs color-light-grey clickable" id="close-panier-nav-box"  aria-hidden="true" style="top:15px;right:20px"></i>
       Mon Panier (4)
@@ -88,13 +113,15 @@
       <h3 class="no-margin fw-300 text-right txt-upper">150 €</h3>
     </div>
     <hr class="w-90percent no-mt no-mb">
-    <a href="panier.html" class="btn-red w-100percent">Procéder au paiement</a>
+    <a href="panier.html" class="btn-red w-100percent">Commander</a>
   </div>
   <!-- NAVBAR 2 -->
-  <div class="navbar navbar-inverse navbar-fixed-top hidden-xs">
+  <div class="navbar navbar-inverse navbar-fixed-top hidden-xs hidden-sm">
     <!-- Div à récupérer sur site du Wagon -->
     <div class="position-rel" style="width: 80px;">
-      <img class="logo-bahia-2" src="img/bahia-logo-1.svg" alt="">
+      <a href="index.html">
+        <img class="logo-bahia-2" src="img/bahia-logo-1.svg" alt="">
+      </a>
     </div>
     <div class="flex-row-space-between">
       <div class="flex-row menu-navbar-2-content">
@@ -183,7 +210,7 @@
   </div>
   <!-- // FIN NAVBAR 2 -->
   <!-- NAVBAR 1 -->
-  <nav class="navbar-bahia position-rel hidden-xs" style="border-bottom: 2px solid #9F1723">
+  <nav class="navbar-bahia position-rel hidden-xs hidden-sm" style="border-bottom: 2px solid #9F1723">
     <!-- <img src="img/Vamos2.png" class="w-120px position-abs" style="top: 10px;transform: rotate(9deg);left: 49px;"> -->
     <img src="img/titres/Hechoamano.png" class="position-abs" style="width:200px;top: -6px;
     transform: rotate(-15deg);left: 0px;">
@@ -286,17 +313,19 @@
   <!-- // FIN NAVBAR 1 -->
 
   <!-- NAVBAR MOBILE -->
-  <nav class="position-fixed top-0 left-0 p-10px w-100vw h-50px shadow-navbar bg-white hidden-sm hidden-lg hidden-md flex-row-space-between zi-4">
+  <nav class="position-fixed top-0 left-0 p-10px w-100percent h-50px shadow-navbar bg-white hidden-lg hidden-md flex-row-space-between zi-4" id="mobile-navbar">
     <!-- MENU BARS + SEARCH -->
     <div class="flex-30percent h-30px">
       <svg id="mobile-menu-btn" class="navbar-show bg-white clickable h-100percent ml-5px" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="5 10 80 100"><g transform="translate(0,-952.36218)"><path style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;opacity:1;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" d="M 7.8125 26 A 2.0021961 2.0021961 0 1 0 8 30 L 92 30 A 2.0002 2.0002 0 1 0 92 26 L 8 26 A 2.0002 2.0002 0 0 0 7.8125 26 z M 7.8125 48 A 2.0021961 2.0021961 0 1 0 8 52 L 92 52 A 2.0002 2.0002 0 1 0 92 48 L 8 48 A 2.0002 2.0002 0 0 0 7.8125 48 z M 7.8125 70 A 2.0021961 2.0021961 0 1 0 8 74 L 92 74 A 2.0002 2.0002 0 1 0 92 70 L 8 70 A 2.0002 2.0002 0 0 0 7.8125 70 z " transform="translate(0,952.36218)"/></g></svg>
       <svg id="menu-left-btn-cross" class="position-abs zi-moins2" style="top:10px;height:38px;left:12px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 120" x="0px" y="0px"><rect x="19.17" y="45.5" width="58.46" height="5.04" transform="translate(-19.78 48.29) rotate(-45)"/><rect x="45.88" y="18.8" width="5.04" height="58.46" transform="translate(-19.78 48.29) rotate(-45)"/></svg>
-      <svg class="h-100percent ml-10px" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#676465;enable-background:accumulate;" d="m 42.003912,964.36624 c -16.5448,0 -30,13.45512 -30,30 0,16.54466 13.4552,29.99996 30,29.99996 7.5515,0 14.4401,-2.817 19.7188,-7.4375 l 22.875,22.8437 c 0.7811,0.7808 2.0314,0.781 2.8124,0 0.7812,-0.7811 0.7814,-2.0317 0,-2.8125 l -22.8437,-22.8437 c 4.6296,-5.2808 7.4375,-12.1902 7.4375,-19.74996 0,-16.54489 -13.4553,-30 -30,-30 z m 0,4 c 14.3829,0 26,11.61689 26,26 0,14.38286 -11.6171,25.99996 -26,25.99996 -14.383,0 -26,-11.6171 -26,-25.99996 0,-14.38312 11.617,-26 26,-26 z" fill="black  " fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></g></svg>
+      <a href="search.html">
+        <svg class="h-100percent ml-10px" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#676465;enable-background:accumulate;" d="m 42.003912,964.36624 c -16.5448,0 -30,13.45512 -30,30 0,16.54466 13.4552,29.99996 30,29.99996 7.5515,0 14.4401,-2.817 19.7188,-7.4375 l 22.875,22.8437 c 0.7811,0.7808 2.0314,0.781 2.8124,0 0.7812,-0.7811 0.7814,-2.0317 0,-2.8125 l -22.8437,-22.8437 c 4.6296,-5.2808 7.4375,-12.1902 7.4375,-19.74996 0,-16.54489 -13.4553,-30 -30,-30 z m 0,4 c 14.3829,0 26,11.61689 26,26 0,14.38286 -11.6171,25.99996 -26,25.99996 -14.383,0 -26,-11.6171 -26,-25.99996 0,-14.38312 11.617,-26 26,-26 z" fill="black  " fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></g></svg>
+      </a>
     </div>
     <div class="flex-30percent">
-      <div class="logo-box h-30px text-center">
+      <div class="logo-box h-30px text-center position-rel">
         <a href="index.html">
-          <img src="img/logo-bahia.png" alt="" class="h-100percent" style="vertical-align: top">
+          <img src="img/bahia-logo-1.svg" alt="" class="position-abs left-calc" style="height:50px;top:-9px;">
         </a>
       </div>
     </div>
@@ -318,111 +347,100 @@
     </div>
   </nav>
   <!-- MENU LEFT -->
-  <div id="mobile-menu-right" class="position-fixed h-100percent w-100vw bg-white nav-no-show text-center hidden-sm hidden-md hidden-lg o-y-auto" style="top:49px">
+  <div id="mobile-menu-right" class="position-fixed h-100percent w-300px bg-white nav-no-show text-left  hidden-md hidden-lg p-20px zi-2 o-y-auto" style="top:49px">
     <!-- FEMMES -->
-    <a href="categorie-femmes.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px mt-15px">Femmes</h3>
-    </a>
-    <div class="row mb-5px">
-      <div class="col-xs-6">
-        <a href="categorie-femmes.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Collection été 2017</h4>
-        </a>
-        <a href="categorie-femmes.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Robes</h4>
-        </a>
-        <a href="categorie-femmes.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Vestes</h4>
-        </a>
-      </div>
-      <div class="col-xs-6">
-        <a href="categorie-femmes.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Blouses</h4>
-        </a>
-        <a href="categorie-femmes.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Tops</h4>
-        </a>
-        <a href="categorie-femmes.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Accessoires</h4>
-        </a>
-      </div>
+    <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb" data-btn="mob-menu-btn" data-target="#mob-femmes-menu-content">Femmes <i class="fa fa-angle-right ml-15px tr-rotate" aria-hidden="true"></i></h3>
+    <div class="row mb-5px ml-10px mob-menu-content mob-femmes mt-5px" id="mob-femmes-menu-content">
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">La Collection Été 2017</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Les Intemporels</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Robes</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Vestes</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Blouses</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Tops</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Accessoires</h4>
+      </a>
     </div>
-    <hr class="hr-navbar">
+    <hr class="mt-10px mb-10px">
     <!-- HOMMES -->
     <a href="categorie-hommes.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Hommes</h3>
+      <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb">Hommes</h3>
     </a>
-    <hr class="hr-navbar">
+    <hr class="mt-10px mb-10px">
     <!-- ENFANTS -->
     <a href="categorie-enfants.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Enfants</h3>
+      <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb">Enfants</h3>
     </a>
-    <img src="img/trait_blue.png" alt="" class="h-20px">
+    <hr class="mt-10px mb-10px">
     <!-- Notre hisoitre -->
-    <a href="histoire.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Notre histoire</h3>
-    </a>
-    <a href="histoire-part1.html">
-      <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Les débuts de Bahia Blanca</h4>
-    </a>
-    <a href="equipe.html">
-      <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">L'équipe</h4>
-    </a>
-    <hr class="hr-navbar">
+    <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb" data-btn="mob-menu-btn" data-target="#mob-histoire-menu-content">Notre Histoire <i class="fa fa-angle-right ml-15px tr-rotate" aria-hidden="true"></i></h3>
+    <div class="row mb-5px mt-5px ml-10px mob-menu-content mob-histoire" id="mob-histoire-menu-content">
+      <a href="histoire-part1.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">L'Aventure</h4>
+      </a>
+      <a href="equipe.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">L'Équipe</h4>
+      </a>
+    </div>
+    <hr class="mt-10px mb-10px">
     <!-- L'Artisanat -->
     <a href="artisanat.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Rencontrez nos artisans</h3>
+      <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb">Les Artisans</h3>
     </a>
-    <hr class="hr-navbar">
-    <!-- Notre hisoitre -->
-    <a href="journal.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Journal</h3>
-    </a>
-    <div class="row mb-5px">
-      <div class="col-xs-4">
-        <a href="lookbook.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Lookbook</h4>
-        </a>
-      </div>
-      <div class="col-xs-4">
-        <a href="journal.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Mexique</h4>
-        </a>
-      </div>
-      <div class="col-xs-4">
-        <a href="journal.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Lifestyle</h4>
-        </a>
-      </div>
+    <hr class="mt-10px mb-10px">
+    <!-- Journal -->
+    <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb" data-btn="mob-menu-btn" data-target="#mob-journal-menu-content">Le journal <i class="fa fa-angle-right ml-15px tr-rotate" aria-hidden="true"></i></h3>
+    <div class="row mb-5px mt-5px ml-10px mob-menu-content mob-journal" id="mob-journal-menu-content">
+      <a href="journal.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Mexique</h4>
+      </a>
+      <a href="journal.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Lifestyle</h4>
+      </a>
     </div>
-    <hr class="hr-navbar">
+    <hr class="mt-10px mb-10px">
+    <!-- LOOKBOOK -->
+    <a href="lookbook.html">
+      <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb">Le Lookbook</h3>
+    </a>
+    <hr class="mt-10px mb-10px">
     <!-- Liens Utiles -->
-    <a href="liens_utiles.html">
-      <h3 class="color-red txt-upper fw-300 fs-20px m-10px">Liens utiles</h3>
-    </a>
-    <div class="row mb-5px">
-      <div class="col-xs-4">
-        <a href="contact.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Contact</h4>
-        </a>
-      </div>
-      <div class="col-xs-4">
-        <a href="liens_utiles.html#cgv">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">CGV</h4>
-        </a>
-      </div>
-      <div class="col-xs-4">
-        <a href="liens_utiles.html">
-          <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">À Propos</h4>
-        </a>
-      </div>
+    <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb" data-btn="mob-menu-btn" data-target="#mob-liens-utiles-menu-content">Liens utiles <i class="fa fa-angle-right ml-15px tr-rotate" aria-hidden="true"></i></h3>
+    <div class="row mb-5px mt-5px ml-10px mob-menu-content mob-liens-utiles" id="mob-liens-utiles-menu-content">
+      <a href="contact.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Contact</h4>
+      </a>
+      <a href="liens_utiles.html#cgv">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">CGV</h4>
+      </a>
+      <a href="liens_utiles.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">À Propos</h4>
+      </a>
     </div>
+    <hr class="mt-10px mb-10px">
+    <br><br><br><br>
   </div>
   <!-- // NAVBAR MOBILE -->
+  <!-- BLUR MOBILE DIV -->
+  <div id="mobile-menu-right2" class="position-fixed h-100percent w-100percent nav-no-show text-left  hidden-md hidden-lg o-y-hidden" style="top:49px">
+  </div>
+
 
 <section id="artisanat-container">
   <!-- Titre en aquarelle -->
-  <div class="h-140px text-center mt-50px position-rel h-100px-xs mt-80px-xs">
+  <div class="h-140px text-center mt-50px position-rel h-80px-xs mt-80px-xs">
     <img src="img/titres/artesanos.png" alt="" class="h-100percent">
     <div class="artisanat-move-arrow move-y-artisanat position-abs zi-1 fs-12px">
       <div class="position-rel">
@@ -670,11 +688,11 @@
         <div class="close-info-box text-right" data-close="#chiapas-info-box">
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <h4 class="color-red fw-300 txt-upper fs-20px no-mt">Guanajuato et ses mille et une couleurs</h4>
-        <a href="article.html">
-        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+        <h4 class="color-red fw-300 txt-upper fs-20px no-mt">Chiapas</h4>
+        <a href="chiapas.html">
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('img/artisanat/chiapas.jpg')">
           <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
-            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je découvre cette région</h4>
           </div>
         </div>
         <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
@@ -687,10 +705,10 @@
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <h4 class="color-red fw-300 txt-upper fs-20px no-mt">Lago Atitlàn</h4>
-        <a href="article.html">
-        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+        <a href="lago-atitlan.html">
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('img/artisanat/lago-atitlan.jpg')">
           <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
-            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je découvre cette région</h4>
           </div>
         </div>
         <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
@@ -702,11 +720,11 @@
         <div class="close-info-box text-right" data-close="#guerrero-info-box">
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
-        <h4 class="color-red fw-300 txt-upper fs-20px no-mt">GUERRERO</h4>
+        <h4 class="color-red fw-300 txt-upper fs-20px no-mt">Région u GUERRERO</h4>
         <a href="article.html">
-        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('img/artisanat/guerrero.jpg')">
           <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
-            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je découvre cette région</h4>
           </div>
         </div>
         <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
@@ -719,10 +737,10 @@
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <h4 class="color-red fw-300 txt-upper fs-20px no-mt">MICHOACÁN</h4>
-        <a href="article.html">
-        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+        <a href="michoacan.html">
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('img/artisanat/michoacan.jpg')">
           <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
-            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je découvre cette région</h4>
           </div>
         </div>
         <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
@@ -735,10 +753,10 @@
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <h4 class="color-red fw-300 txt-upper fs-20px no-mt">HIDALGO</h4>
-        <a href="article.html">
-        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+        <a href="hidalgo.html">
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('img/artisanat/hidalgo.jpg')">
           <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
-            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je découvre cette région</h4>
           </div>
         </div>
         <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
@@ -751,10 +769,10 @@
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <h4 class="color-red fw-300 txt-upper fs-20px no-mt">DISTRITO FEDERAL (Mexico City)</h4>
-        <a href="article.html">
-        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+        <a href="mexico.html">
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('img/artisanat/mexico.jpg')">
           <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
-            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je découvre cette région</h4>
           </div>
         </div>
         <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
@@ -767,10 +785,10 @@
           <i class="fa fa-times" aria-hidden="true"></i>
         </div>
         <h4 class="color-red fw-300 txt-upper fs-20px no-mt">Puebla</h4>
-        <a href="article.html">
-        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+        <a href="puebla.html">
+        <div class="w-100percent mb-10px h-140px bs-cover bp-2c position-rel" style="background-image: url('img/artisanat/puebla.jpg')">
           <div class="overlay-info-box position-abs tblr-0 w-100percent h-100percent bg-white-transparent tr-3-eio opacity-0 flex-column-center">
-            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
+            <h4 class="fs-18px fw-300"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je découvre cette région</h4>
           </div>
         </div>
         <p class="fs-12px txt-justify">La magie des fêtes s’est installée à l’appartement MARIE SIXTINE le temps d’un atelier DIY couronne de Noël avec le fleuriste Bergamotte. Retour en images sur cette douce matinée de décembre au parfum de fleurs d’hiver.</p>
@@ -784,7 +802,7 @@
   <div class="text-center mt-50px mb-50px">
     <img src="img/trait_blue.png" alt="" style="width: 200px;margin-bottom: 50px;">
   </div>
-  <div class="video-txt-artisanat row mb-50px">
+  <div class="video-txt-artisanat row mb-50px mb-25px-xs">
     <div class="col-sm-8 txt-artisanat left">
       <h2 class="color-red fw-300 fs-30px no-margin txt-upper">Hecho a mano</h2>
       <p class="pt-20px">Toutes les pièces Bahia Blanca sont confectionnées au Mexique. Chaque détail est brodé par des artisanes de différentes ethnies selon leur savoir-faire, avant d'être assemblée dans notre atelier de confection qui veille à la qualité de nos finitions.</p>
@@ -808,10 +826,10 @@
   <div class="photo-full-width-artisanat no-repeat bs-cover mb-30px row" style="background-image:url('https://ae01.alicdn.com/kf/HTB1g34sLVXXXXcJXVXXq6xXFXXXo/Living-room-home-wall-decoration-fabric-poster-font-b-Mexico-b-font-font-b-city-b.jpg')">
   </div>
   <ul class="articles-section flex-row-wrap-space-between m-auto w-85percent">
-    <!-- ARTICLE MINIATURE 1 -->
-    <a href="article.html">
+    <!-- HIDALGO MINIATURE 1 -->
+    <a href="hidalgo.html">
     <li class="article-miniature w-500px w-100percent-xs text-center mb-50px w-100percent-xs" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485839392/frkh2cypzkcbppr8ialg.jpg')">
+      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('img/artisanat/hidalgo.jpg')">
         <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
           <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je découvre l'artisanant</h4>
         </div>
@@ -835,17 +853,17 @@
       </div>
     </li>
     </a>
-    <!-- // ARTICLE MINIATURE 1 -->
-    <!-- ARTICLE MINIATURE 1 -->
-    <a href="article.html">
+    <!-- // HIDALGO MINIATURE 1 -->
+    <!-- CHIAPAS MINIATURE 1 -->
+    <a href="chiapas.html">
     <li class="article-miniature w-100percent-xs w-500px text-center mb-50px w-100percent-xs" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('img/artisanat/chiapas.jpg')">
         <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
           <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
         </div>
       </div>
       <div class="row article-content ">
-        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Le Coyoacán de Frida</h4>
+        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Le Chiapas</h4>
         <!-- <h4 class="article-date">20 Janvier 2017 </h4> -->
       </div>
       <div class="row article-content no-margin">
@@ -863,18 +881,17 @@
       </div>
     </li>
     </a>
-    <!-- // ARTICLE MINIATURE 1 -->
-    <!-- // ARTICLE MINIATURE 1 -->
-    <!-- ARTICLE MINIATURE 1 -->
-    <a href="article.html">
+    <!-- // CHIAPAS MINIATURE 1 -->
+    <!-- GUERRERO MINIATURE 1 -->
+    <a href="guerrero.html">
     <li class="article-miniature w-100percent-xs w-500px text-center mb-50px w-100percent-xs" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485839490/pgoutfbiupzexx8tvqu7.jpg')">
+      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('img/artisanat/guerrero.jpg')">
         <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
           <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Interlude colonial à Tepozotlan</h4>
+        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Guerrero</h4>
         <!-- <h4 class="article-date">20 Février 2017</h4> -->
       </div>
       <div class="row article-content no-margin">
@@ -882,7 +899,7 @@
       </div>
       <div class="products-made">
         <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
-        <div class="product-photos-box flex-row-space-around h-140px pb-20px">
+        <div class="product-photos-box flex-row-space-around h-140px pb-20px h-100px-xs">
           <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/3f5bbe0f4b4f40aabc69350956166789_be3umu.jpg" alt="" class="h-100percent plr-5px">
         </div>
       </div>
@@ -891,17 +908,17 @@
       </div>
     </li>
     </a>
-    <!-- // ARTICLE MINIATURE 1 -->
-    <!-- ARTICLE MINIATURE 1 -->
-    <a href="article.html">
+    <!-- // GUERRERO MINIATURE 1 -->
+    <!-- LAGO ATITLAN MINIATURE 1 -->
+    <a href="lago-atitlan.html">
       <li class="article-miniature w-100percent-xs w-500px text-center mb-50px w-100percent-xs" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-        <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485185825/z6brxnjmglg06abzzl6p.jpg')">
+        <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('img/artisanat/lago-atitlan.jpg')">
           <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
             <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
           </div>
         </div>
         <div class="row article-content">
-          <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Blablaabl </h4>
+          <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Lago Atitlan </h4>
           <!-- <h4 class="article-date">20 Mars 2017</h4> -->
         </div>
         <div class="row article-content no-margin">
@@ -909,7 +926,7 @@
         </div>
         <div class="products-made">
           <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
-          <div class="product-photos-box flex-row-space-around h-140px pb-20px">
+          <div class="product-photos-box flex-row-space-around h-140px pb-20px h-100px-xs">
             <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/3f5bbe0f4b4f40aabc69350956166789_be3umu.jpg" alt="" class="h-100percent plr-5px">
             <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/9967215493074615b04df99bd09f749c_qhyv1s.jpg" alt="" class="h-100percent plr-5px">
             <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/9967215493074615b04df99bd09f749c_qhyv1s.jpg" alt="" class="h-100percent plr-5px">
@@ -920,17 +937,17 @@
         </div>
       </li>
     </a>
-    <!-- // ARTICLE MINIATURE 1 -->
-    <!-- ARTICLE MINIATURE 1 -->
-    <a href="article.html">
+    <!-- // LAGO ATITLAN MINIATURE 1 -->
+    <!-- MEXICO CITY MINIATURE 1 -->
+    <a href="mexico.html">
     <li class="article-miniature w-100percent-xs w-500px text-center mb-50px w-100percent-xs" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485839392/frkh2cypzkcbppr8ialg.jpg')">
+      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('img/artisanat/mexico.jpg')">
         <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
           <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Guanajuato et ses mille et une couleurs</h4>
+        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Mexico City</h4>
         <!-- <h4 class="article-date">17 Janv 2017 </h4> -->
       </div>
       <div class="row article-content no-margin">
@@ -938,7 +955,7 @@
       </div>
       <div class="products-made">
         <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
-        <div class="product-photos-box flex-row-space-around h-140px pb-20px">
+        <div class="product-photos-box flex-row-space-around h-140px pb-20px h-100px-xs">
           <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/3f5bbe0f4b4f40aabc69350956166789_be3umu.jpg" alt="" class="h-100percent plr-5px">
           <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/9967215493074615b04df99bd09f749c_qhyv1s.jpg" alt="" class="h-100percent plr-5px">
         </div>
@@ -948,17 +965,17 @@
       </div>
     </li>
     </a>
-    <!-- // ARTICLE MINIATURE 1 -->
-    <!-- ARTICLE MINIATURE 1 -->
-    <a href="article.html">
+    <!-- // MEXICO CITY MINIATURE 1 -->
+    <!-- MICHOACAN MINIATURE 1 -->
+    <a href="michoacan.html">
     <li class="article-miniature w-100percent-xs w-500px text-center mb-50px w-100percent-xs" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1484877117/lsum2ygjvje1oig7ru6q.jpg')">
+      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('img/artisanat/michoacan.jpg')">
         <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
           <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Le Coyoacán de Frida</h4>
+        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Michoacan</h4>
         <!-- <h4 class="article-date">20 Janvier 2017 </h4> -->
       </div>
       <div class="row article-content no-margin">
@@ -966,7 +983,7 @@
       </div>
       <div class="products-made">
         <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
-        <div class="product-photos-box flex-row-space-around h-140px pb-20px">
+        <div class="product-photos-box flex-row-space-around h-140px pb-20px h-100px-xs">
           <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/3f5bbe0f4b4f40aabc69350956166789_be3umu.jpg" alt="" class="h-100percent plr-5px">
           <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/9967215493074615b04df99bd09f749c_qhyv1s.jpg" alt="" class="h-100percent plr-5px">
         </div>
@@ -979,15 +996,15 @@
     <!-- // ARTICLE MINIATURE 1 -->
     <!-- // ARTICLE MINIATURE 1 -->
     <!-- ARTICLE MINIATURE 1 -->
-    <a href="article.html">
+    <a href="puebla.html">
     <li class="article-miniature w-100percent-xs w-500px text-center mb-50px w-100percent-xs" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485839490/pgoutfbiupzexx8tvqu7.jpg')">
+      <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('img/artisanat/puebla.jpg')">
         <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
           <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
         </div>
       </div>
       <div class="row article-content">
-        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Interlude colonial à Tepozotlan</h4>
+        <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Puebla</h4>
         <!-- <h4 class="article-date">20 Février 2017</h4> -->
       </div>
       <div class="row article-content no-margin">
@@ -995,7 +1012,7 @@
       </div>
       <div class="products-made">
         <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
-        <div class="product-photos-box flex-row-space-around h-140px pb-20px">
+        <div class="product-photos-box flex-row-space-around h-140px pb-20px h-100px-xs">
           <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/3f5bbe0f4b4f40aabc69350956166789_be3umu.jpg" alt="" class="h-100percent plr-5px">
           <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/9967215493074615b04df99bd09f749c_qhyv1s.jpg" alt="" class="h-100percent plr-5px">
         </div>
@@ -1004,33 +1021,6 @@
         <h4 class="lire-suite bt-grey txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
       </div>
     </li>
-    </a>
-    <!-- // ARTICLE MINIATURE 1 -->
-    <!-- ARTICLE MINIATURE 1 -->
-    <a href="article.html">
-      <li class="article-miniature w-100percent-xs w-500px text-center mb-50px w-100percent-xs" data-aos="fade-up" data-aos-duration="1200" data-aos-delay="300">
-        <div class="w-100percent h-260px bs-cover bp-2c mb-10px position-rel" style="background-image: url('http://res.cloudinary.com/bahia-blanca/image/upload/v1485185825/z6brxnjmglg06abzzl6p.jpg')">
-          <div class="overlay-to-read position-abs tblr-0 w-100percent h-100percent bg-white-transparent opacity-0 flex-column-center">
-            <h4 class="color-grey fw-300 fs-16px"><i class="fa fa-book mr-5px" aria-hidden="true"></i><br><br>Je lis cet article</h4>
-          </div>
-        </div>
-        <div class="row article-content">
-          <h4 class="color-red txt-upper fs-20px fw-300 no-margin pt-10px">Blablaabl </h4>
-        </div>
-        <div class="row article-content no-margin">
-          <p class="fs-12px">Il n'est plus la peine de présenter Garance Doré, papesse du blogging connue pour ces photographies et illustrations de mode inspirantes... Elle nous fait rêver depuis des années au bureau et nous sommes très heureux de l'acceuillir en toute confidence au sein de notre appartement...</p>
-        </div>
-        <div class="products-made">
-          <h3 class="fw-300 no-margin fs-12px color-red">Nos produits fabriqués dans cette région :</h3>
-          <div class="product-photos-box flex-row-space-around h-140px pb-20px">
-            <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/3f5bbe0f4b4f40aabc69350956166789_be3umu.jpg" alt="" class="h-100percent plr-5px">
-            <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/9967215493074615b04df99bd09f749c_qhyv1s.jpg" alt="" class="h-100percent plr-5px">
-          </div>
-        </div>
-        <div class="row article-content">
-          <h4 class="lire-suite bt-grey txt-upper fw-300 fs-16px pt-10px tr-3-eio">Lire la suite</h4>
-        </div>
-      </li>
     </a>
     <!-- // ARTICLE MINIATURE 1 -->
   </div>
@@ -1039,19 +1029,19 @@
 
 <footer>
     <!-- CONDITIONS FOOTER -->
-    <div class="text-center container-75">
-      <div class="row">
-        <img src="img/titres/Hechoamano.png" class="h-140px mb-60px">
+    <div class="text-center container-75 container-100-xs">
+      <div class="row no-mb-xs">
+        <img src="img/titres/Hechoamano.png" class="h-140px mb-60px no-mb-xs">
       </div>
       <div class="conditions mb-50px row">
-        <div class="col-xs-12 col-md-4 br-red h-140px no-br-xs">
+        <div class="col-xs-12 col-md-4 br-red h-140px no-br-xs h-125px-xs">
           <div class="condition-box">
             <h4 class="text-center txt-upper fs-16px"><i class="fa fa-paper-plane" aria-hidden="true"></i></h4>
             <h4 class="text-center txt-upper fs-16px">Livraison offerte</h4>
-            <h5 class="fs-12px fw-300">dès 70€ d'achats en France*</h5>
+            <h5 class="fs-12px fw-300">en France métropolitaine<br>dès 70€ d'achats</h5>
           </div>
         </div>
-        <div class="col-xs-12 col-md-4 br-red h-140px no-br-xs">
+        <div class="col-xs-12 col-md-4 br-red h-140px no-br-xs h-125px-xs">
           <div class="condition-box">
             <h4 class="text-center txt-upper fs-16px"><i class="fa fa-lock" aria-hidden="true"></i></h4>
             <h4 class="text-center txt-upper fs-16px">Paiement 100% sécurisé</h4>
@@ -1065,42 +1055,43 @@
 
           </div>
         </div>
-        <div class="col-xs-12 col-md-4 h-140px">
+        <div class="col-xs-12 col-md-4 h-140px h-125px-xs">
           <div class="condition-box">
             <h4 class="text-center txt-upper fs-16px"><i class="fa fa-phone" aria-hidden="true"></i></h4>
-            <h4 class="text-center txt-upper fs-16px">Appelez-nous !</h4>
+            <h4 class="text-center txt-upper fs-16px">J'ai une question !</h4>
             <a href="tel:0619911332">
-              <h5 class="fs-12px fw-300">Joignables au 06 19 91 13 32</h5>
+              <h5 class="fs-12px fw-300">Appelez-nous au 06 19 91 13 32</h5>
             </a>
           </div>
         </div>
-        <div class="col-xs-12 col-md-4 h-140px hidden-sm hidden-md hidden-lg">
-          <div class="row">
-            <div class="col-xs-6">
-              <h4 class="text-center txt-upper fs-16px">Liens utiles</h4>
-              <a href="liens_utiles.html">
-                <h5 class="fs-12px fw-300">Paiement</h5>
-              </a>
-              <a href="liens_utiles.html#livraison-retours">
-                <h5 class="fs-12px fw-300">Livraison</h5>
-              </a>
-              <a href="liens_utiles.html#cgv">
-                <h5 class="fs-12px fw-300">CGV</h5>
-              </a>
-            </div>
-            <div class="col-xs-6">
-              <h4 class="text-center txt-upper fs-16px">à propos</h4>
-              <a href="contact.html">
-                <h5 class="fs-12px fw-300">Contact</h5>
-              </a>
-              <a href="equipe.html">
-                <h5 class="fs-12px fw-300">L'équipe</h5>
-              </a>
-              <a href="contact_presse.html">
-                <h5 class="fs-12px fw-300">Presse</h5>
-              </a>
-            </div>
-          </div>
+      </div>
+    </div>
+    <!-- MOBILE FOOTER -->
+    <div class="text-center container-90 hidden-sm hidden-md hidden-lg">
+      <div class="row">
+        <div class="col-xs-6">
+          <h4 class="text-center txt-upper fs-16px">Liens utiles</h4>
+          <a href="liens_utiles.html">
+            <h5 class="fs-12px fw-300">Livraison</h5>
+          </a>
+          <a href="liens_utiles.html#livraison-retours">
+            <h5 class="fs-12px fw-300">Retour</h5>
+          </a>
+          <a href="liens_utiles.html#cgv">
+            <h5 class="fs-12px fw-300">CGV</h5>
+          </a>
+        </div>
+        <div class="col-xs-6">
+          <h4 class="text-center txt-upper fs-16px">à propos</h4>
+          <a href="contact.html">
+            <h5 class="fs-12px fw-300">Contact</h5>
+          </a>
+          <a href="equipe.html">
+            <h5 class="fs-12px fw-300">L'Équipe</h5>
+          </a>
+          <a href="contact_presse.html">
+            <h5 class="fs-12px fw-300">Presse</h5>
+          </a>
         </div>
       </div>
     </div>
@@ -1145,7 +1136,7 @@
               <li class="text-left"><a href="artisanat.html" class="fs-12px fw-300">Nos Artisans</a></li>
               <li class="text-left"><a href="journal.html" class="fs-12px fw-300">Le Journal</a></li>
               <li class="text-left"><a href="equipe.html" class="fs-12px fw-300">L'Équipe</a></li>
-              <li class="text-left"><a href="lookbook.html" class="fs-12px fw-300">Lookbook</a></li>
+              <li class="text-left"><a href="lookbook.html" class="fs-12px fw-300">Le Lookbook</a></li>
             </ul>
 
           </div>
@@ -1153,9 +1144,6 @@
       </div>
     </div>
   </footer>
-
-
-
     <!-- Javascript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->

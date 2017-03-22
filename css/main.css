@@ -1415,9 +1415,13 @@ tfoot {
   line-height:0;
 }
 
+.lh-20px {
+  line-height:20px;
+}
+
 /*SCROLL*/
 
 .stop-scrolling-y {
   overflow-y: hidden;
-  height:100% !important;
+  /*height:100% !important;*/
 }

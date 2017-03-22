@@ -203,6 +203,8 @@ var mapProp= {
 
 var map=new google.maps.Map(document.getElementById("map-artisan"),mapProp);
 
+var map=new google.maps.Map(document.getElementById("map-artisan-xs"),mapProp);
+
 var pinColor = 'FFFF00';
 
 var pinIcon = new google.maps.MarkerImage(
@@ -356,6 +358,16 @@ $('#broderie-left').on("click", function(){
     $('#quantity-input').val(newQty);
   });
 
+  $('*[data-btn="mob-product"').click(function(){
+    var tabTarget = $(this).data("target");
+    console.log(tabTarget);
+    $('*[data-btn="mob-product"').removeClass("fw-400").addClass("fw-300");
+    $(this).removeClass("fw-300").addClass("fw-400");
+    $('.product-box-mob').addClass("hidden");
+    $(tabTarget).removeClass("hidden");
+    myMap();
+  });
+
 
 
 $(document).ready(function(){
@@ -363,6 +375,9 @@ $(document).ready(function(){
     loop:true,
     responsiveClass:true,
     navigation:true,
+    autoplay:true,
+    autoplayTimeout:2500,
+    autoplaySpeed: 1500,
     responsive:{
         0:{
             items:1,
@@ -379,5 +394,33 @@ $(document).ready(function(){
         }
     }
   });
+
+  if (window.matchMedia("(max-width: 600px)").matches) {
+    $('.product-suggestion-result').addClass("owl-carousel").addClass("owl-theme");
+    $('.product-suggestion-result.owl-carousel').owlCarousel({
+      loop:true,
+      responsiveClass:true,
+      navigation:true,
+      autoplay:true,
+      autoplayTimeout:2500,
+      autoplaySpeed: 1500,
+      responsive:{
+          0:{
+              items:1,
+              nav:true
+          },
+          600:{
+              items:3,
+              nav:false
+          },
+          1000:{
+              items:5,
+              nav:true,
+              loop:false
+          }
+      }
+    });
+  };
+
 });
 

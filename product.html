@@ -532,7 +532,7 @@
           <a class="btn-red btn-add-cart">J'ajoute à mon panier</a>
           <div class="wishlist-btn"><i class="fa fa-heart-o mr-5px" aria-hidden="true"></i>J'ajoute à ma Wishlist</div>
         </div>
-        </form>
+      </form>
         <div class="row pt-20px" style="font-size:12px;text-align:center">
           <div class="col-xs-6">
             <p><i class="fa fa-paper-plane" aria-hidden="true"></i>
@@ -558,6 +558,86 @@
         <div class="mob-product-photo bs-cover bp-2c h-480px w-100percent" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')"></div>
         <div class="mob-product-photo bs-cover bp-2c h-480px w-100percent" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')"></div>
       </div>
+      <hr class="w-90percent m-auto-xs">
+      <div class="tabs-product-mob">
+        <div class="row no-mb">
+          <div class="col-xs-6">
+            <h3 class="mt-10px mb-10px txt-upper fw-400 text-center color-red fs-14px-xs" data-btn="mob-product" data-target="#info-product-box-mob">Infos <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+          </div>
+          <div class="col-xs-6">
+            <h3 class="mt-10px mb-10px txt-upper fw-300 text-center color-red fs-14px-xs" data-btn="mob-product" data-target="#artisanat-product-box-mob">Artisanat <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+          </div>
+        </div>
+      </div>
+      <div class="info-product-box-mob product-box-mob" id="info-product-box-mob">
+        <div class="p-20px text-justify">
+          <p class="mb-5px">Robe dos nu avec 2 larges bandes brodées main. Idéale pour cet été avec une paire de sneakers de jour ou d’escarpin pour la noche.</p>
+          <p class="mb-5px">100% lyocell</p>
+          <p class="no-margin">Bandes brodées main en fils de coton</p>
+        </div>
+        <hr class="w-90percent m-auto-xs">
+        <form>
+          <div class="row">
+            <!-- COLOR CHOICE-->
+            <div class="col-xs-6">
+              <!-- COLOR N°1 - -->
+              <p class="text-center mb-20px">Couleur</p>
+              <div class="color-choice-box">
+                <input name="color" value="red" type="radio" id="color-red-choice" />
+                <label class="color-choice" for="color-red-choice" style="background-color:#A31D23;border:1px solid #A31D23"></label>
+                <!-- COLOR N°2 -->
+                <input name="color" value="white" type="radio" id="color-white-choice" />
+                <label class="color-choice" for="color-white-choice" style="background-color:#DBDADF"></label>
+                <!-- COLOR N°3 -->
+                <input name="color" value="blue" type="radio" id="color-blue-choice" />
+                <label class="color-choice" for="color-blue-choice" style="background-color:#00316B"></label>
+                <!-- COLOR N°4 -->
+                <input name="color" value="green" type="radio" id="color-green-choice" />
+                <label class="color-choice" for="color-green-choice" style="background-color:#26A69A"></label>
+              <!-- // COLOR CHOICE-->
+              </div>
+            </div>
+            <div class="col-xs-6">
+              <!-- SIZE CHOICE-->
+              <p class="text-center">Taille</p>
+              <div class="size-choice-box text-center">
+                <!-- SIZE N°1 - -->
+                <input name="size" value="s-m" type="radio" id="size-s-m-choice" />
+                <label class="size-choice" for="size-s-m-choice">S/M</label>
+                <!-- SIZE N°2 -->
+                <input name="size" value="m-l" type="radio" id="size-m-l-choice" />
+                <label class="size-choice" for="size-m-l-choice">M/L</label>
+              </div>
+            <!-- // SIZE CHOICE -->
+            </div>
+          </div>
+          <div class="guide-btn">Guide des tailles & entretien</div>
+          <hr class="w-90percent">
+
+
+        <!-- // QUANTITY CHOICE -->
+        <div>
+          <a class="btn-red btn-add-cart">J'ajoute à mon panier</a>
+          <div class="wishlist-btn"><i class="fa fa-heart-o mr-5px" aria-hidden="true"></i>J'ajoute à ma Wishlist</div>
+        </div>
+      </form>
+      </div>
+      <div class="product-box-mob hidden" id="artisanat-product-box-mob">
+        <div class="p-20px">
+          <h5 class="fw-300 fs-16px txt-upper text-center">Hecho a Mano</h5>
+          <p class="text-center"><i class="fa fa-map-marker" aria-hidden="true"></i> Pachuca, région d'Hidalgo</p>
+          <div id="map-artisan-xs" class="mb-20px" style="width:100%; height:160px"></div>
+          <div class="info-artisan row">
+            <div class="col-xs-5 no-p">
+              <img src="img/therezita.png" style="width:100%">
+            </div>
+            <div class="col-xs-7 no-pr">
+              <p class="fs-12px">Rencontrez Therezita qui laisse sa créativité guider son aiguille pour ses broderies.</p>
+              <a class="btn-red-2 btn-product-map">Descubro</a>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -565,7 +645,7 @@
 
   <section class="row mt-15px container-70 container-100-xs">
     <div class="suggestion-title">
-      <img src="img/trait_blue.png" alt="" style="width: 200px;">
+      <img src="img/trait_blue.png">
     </div>
     <div class="suggestion-title p-20px-xs">
       <h5>Si vous avez aimé la Robe Perla, jetez un œil à :</h5>
