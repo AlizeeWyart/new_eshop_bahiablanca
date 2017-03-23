@@ -432,7 +432,7 @@ $(document).ready(function(){
     responsiveClass:true,
     navigation:true,
     autoplay:true,
-    autoplayTimeout:2500,
+    autoplayTimeout:4000,
     autoplaySpeed: 1500,
     responsive:{
         0:{

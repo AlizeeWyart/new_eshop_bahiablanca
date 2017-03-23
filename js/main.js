@@ -114,10 +114,60 @@ $(document).ready(function(){
 
   });
 
-  AOS.init();
+  // COMMANDES
+
+  $('#facturation-different').change(function(){
+    if ($('#facturation-different').is(':checked')) {
+      $('.facturation-box').removeClass('opacity-0');
+    } else {
+      $('.facturation-box').addClass('opacity-0');
+    };
+  });
+
+
+  function calculPanier() {
+    // VERSION ORDI
+    var sousTotalTTC = parseFloat($('.sous-total-ttc').html());
+    var TVAPercentage = parseFloat($('.tva-percentage').html());
+    var sousTotalHT = sousTotalTTC * TVAPercentage / 100;
+    $('.sous-total-tva').html(sousTotalHT);
+    var sumReduction = parseFloat($('.total-reduction').html());
+    var sousTotalWithReduc = sousTotalTTC - sumReduction;
+    if (sousTotalWithReduc > 70) {
+      $('.total-livraison').html("OFFERTE !");
+      $('.full-total-ttc').html(sousTotalWithReduc);
+    } else {
+      $('.total-livraison').html("3 €");
+      $('.full-total-ttc').html(sousTotalWithReduc + 3);
+    };
+
+    // VERSION MOBILE
+    var sousTotalTTCXs = parseFloat($('.sous-total-ttc-xs').html());
+    var TVAPercentageXs = parseFloat($('.tva-percentage-xs').html());
+    var sousTotalHTXs = sousTotalTTCXs * TVAPercentageXs / 100;
+    $('.sous-total-tva-xs').html(sousTotalHTXs);
+    var sumReductionXs = parseFloat($('.total-reduction-xs').html());
+    var sousTotalWithReducXs = sousTotalTTCXs - sumReductionXs;
+    if (sousTotalWithReducXs > 70) {
+      $('.total-livraison-xs').html("OFFERTE !");
+      $('.full-total-ttc-xs').html(sousTotalWithReducXs);
+    } else {
+      $('.total-livraison-xs').html("3 €");
+      $('.full-total-ttc-xs').html(sousTotalWithReducXs + 3);
+    };
+  };
+
+  calculPanier();
+
+
+  // AOS.init();
 
   // $('.youtube-video').each(function(video){
   //   video.mute();
   // });
+
+  // COMMANDES
+
+
 
 });

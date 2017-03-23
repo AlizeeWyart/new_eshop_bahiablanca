@@ -800,7 +800,9 @@ footer {
 
 /* FONT SIZE */
 
-
+.fs-10px {
+  font-size:10px;
+}
 
 .fs-12px {
   font-size: 12px;
@@ -911,8 +913,12 @@ footer {
   height:380px;
 }
 
+
 .h-400px {
   height:400px;
+}
+.h-430px {
+  height:430px;
 }
 .h-480px {
   height:480px;
@@ -921,6 +927,10 @@ footer {
 .h-500px {
   height:500px;
 }
+
+.h-75percent {
+    height:75%;
+  }
 
 .h-80percent {
   height:80%;
@@ -1256,6 +1266,12 @@ footer {
   justify-content:center;
 }
 
+.flex-row-start {
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-start;
+}
+
 .underline {
   text-decoration:underline;
 }
@@ -1276,6 +1292,10 @@ footer {
 
 .bg-red {
   background-color:#A31D23;
+}
+
+.bg-light-grey-important {
+  background-color: #FAFAFA !important;
 }
 
 .bg-white-transparent {
@@ -1370,6 +1390,10 @@ footer {
 
 .bottom-0 {
   bottom:0;
+}
+
+.right-0 {
+  right:0;
 }
 
 .top-10px {

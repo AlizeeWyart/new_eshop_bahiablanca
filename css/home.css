@@ -419,6 +419,10 @@
   width:120px;
 }
 
+.w-130px-important {
+  width:130px !important;
+}
+
 .w-200px {
   width:200px;
 }

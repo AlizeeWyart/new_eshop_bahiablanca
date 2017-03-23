@@ -19,11 +19,37 @@
   <link rel="stylesheet" href="css/footer.css">
   <link rel="stylesheet" href="css/product_category.css">
   <link rel="stylesheet" href="css/art_journal_histoire.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  <!-- Start of Async Drift Code -->
+  <script>
+  !function() {
+    var t;
+    if (t = window.driftt = window.drift = window.driftt || [], !t.init) return t.invoked ? void (window.console && console.error && console.error("Drift snippet included twice.")) : (t.invoked = !0,
+    t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ],
+    t.factory = function(e) {
+      return function() {
+        var n;
+        return n = Array.prototype.slice.call(arguments), n.unshift(e), t.push(n), t;
+      };
+    }, t.methods.forEach(function(e) {
+      t[e] = t.factory(e);
+    }), t.load = function(t) {
+      var e, n, o, i;
+      e = 3e5, i = Math.ceil(new Date() / e) * e, o = document.createElement("script"),
+      o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + i + "/" + t + ".js",
+      n = document.getElementsByTagName("script")[0], n.parentNode.insertBefore(o, n);
+    });
+  }();
+  drift.SNIPPET_VERSION = '0.3.1';
+  drift.load('uwtm284ivgsx');
+  </script>
+  <!-- End of Async Drift Code -->
 </head>
-
 <body>
   <!-- PANIER BOX -->
-  <div class="panier-nav-box bg-white w-260px p-fixed shadow-grey opacity-0 hidden-xs" style="top: 49px;right: 23px;z-index:-3">
+  <div class="panier-nav-box bg-white w-260px p-fixed shadow-grey opacity-0 hidden-xs hidden-sm" style="top: 49px;right: 23px;z-index:-3">
     <h3 class="no-margin fw-300 text-center txt-upper p-10px position-rel">
       <i class="fa fa-times position-abs color-light-grey clickable" id="close-panier-nav-box"  aria-hidden="true" style="top:15px;right:20px"></i>
       Mon Panier (4)
@@ -85,13 +111,15 @@
       <h3 class="no-margin fw-300 text-right txt-upper">150 €</h3>
     </div>
     <hr class="w-90percent no-mt no-mb">
-    <a href="panier.html" class="btn-red w-100percent">Procéder au paiement</a>
+    <a href="panier.html" class="btn-red w-100percent">Commander</a>
   </div>
   <!-- NAVBAR 2 -->
-  <div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="navbar navbar-inverse navbar-fixed-top hidden-xs hidden-sm">
     <!-- Div à récupérer sur site du Wagon -->
     <div class="position-rel" style="width: 80px;">
-      <img class="logo-bahia-2" src="img/bahia-logo-1.svg" alt="">
+      <a href="index.html">
+        <img class="logo-bahia-2" src="img/bahia-logo-1.svg" alt="">
+      </a>
     </div>
     <div class="flex-row-space-between">
       <div class="flex-row menu-navbar-2-content">
@@ -179,9 +207,8 @@
     </div>
   </div>
   <!-- // FIN NAVBAR 2 -->
-
   <!-- NAVBAR 1 -->
-  <nav class="navbar-bahia position-rel" style="border-bottom: 2px solid #9F1723">
+  <nav class="navbar-bahia position-rel hidden-xs hidden-sm" style="border-bottom: 2px solid #9F1723">
     <!-- <img src="img/Vamos2.png" class="w-120px position-abs" style="top: 10px;transform: rotate(9deg);left: 49px;"> -->
     <img src="img/titres/Hechoamano.png" class="position-abs" style="width:200px;top: -6px;
     transform: rotate(-15deg);left: 0px;">
@@ -280,19 +307,168 @@
         </div>
       </div>
     </div>
-
   </nav>
   <!-- // FIN NAVBAR 1 -->
+
+  <!-- NAVBAR MOBILE -->
+  <nav class="position-fixed top-0 left-0 p-10px w-100percent h-50px shadow-navbar bg-white hidden-lg hidden-md flex-row-space-between zi-4" id="mobile-navbar">
+    <!-- MENU BARS + SEARCH -->
+    <div class="flex-30percent h-30px">
+      <svg id="mobile-menu-btn" class="navbar-show bg-white clickable h-100percent ml-5px" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="5 10 80 100"><g transform="translate(0,-952.36218)"><path style="font-size:medium;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-indent:0;text-align:start;text-decoration:none;line-height:normal;letter-spacing:normal;word-spacing:normal;text-transform:none;direction:ltr;block-progression:tb;writing-mode:lr-tb;text-anchor:start;baseline-shift:baseline;opacity:1;color:#000000;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:4;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate;font-family:Sans;-inkscape-font-specification:Sans" d="M 7.8125 26 A 2.0021961 2.0021961 0 1 0 8 30 L 92 30 A 2.0002 2.0002 0 1 0 92 26 L 8 26 A 2.0002 2.0002 0 0 0 7.8125 26 z M 7.8125 48 A 2.0021961 2.0021961 0 1 0 8 52 L 92 52 A 2.0002 2.0002 0 1 0 92 48 L 8 48 A 2.0002 2.0002 0 0 0 7.8125 48 z M 7.8125 70 A 2.0021961 2.0021961 0 1 0 8 74 L 92 74 A 2.0002 2.0002 0 1 0 92 70 L 8 70 A 2.0002 2.0002 0 0 0 7.8125 70 z " transform="translate(0,952.36218)"/></g></svg>
+      <svg id="menu-left-btn-cross" class="position-abs zi-moins2" style="top:10px;height:38px;left:12px;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 120" x="0px" y="0px"><rect x="19.17" y="45.5" width="58.46" height="5.04" transform="translate(-19.78 48.29) rotate(-45)"/><rect x="45.88" y="18.8" width="5.04" height="58.46" transform="translate(-19.78 48.29) rotate(-45)"/></svg>
+      <a href="search.html">
+        <svg class="h-100percent ml-10px" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:cc="http://creativecommons.org/ns#" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" version="1.1" x="0px" y="0px" viewBox="0 0 100 125"><g transform="translate(0,-952.36218)"><path style="text-indent:0;text-transform:none;direction:ltr;block-progression:tb;baseline-shift:baseline;color:#676465;enable-background:accumulate;" d="m 42.003912,964.36624 c -16.5448,0 -30,13.45512 -30,30 0,16.54466 13.4552,29.99996 30,29.99996 7.5515,0 14.4401,-2.817 19.7188,-7.4375 l 22.875,22.8437 c 0.7811,0.7808 2.0314,0.781 2.8124,0 0.7812,-0.7811 0.7814,-2.0317 0,-2.8125 l -22.8437,-22.8437 c 4.6296,-5.2808 7.4375,-12.1902 7.4375,-19.74996 0,-16.54489 -13.4553,-30 -30,-30 z m 0,4 c 14.3829,0 26,11.61689 26,26 0,14.38286 -11.6171,25.99996 -26,25.99996 -14.383,0 -26,-11.6171 -26,-25.99996 0,-14.38312 11.617,-26 26,-26 z" fill="black  " fill-opacity="1" stroke="none" marker="none" visibility="visible" display="inline" overflow="visible"/></g></svg>
+      </a>
+    </div>
+    <div class="flex-30percent">
+      <div class="logo-box h-30px text-center position-rel">
+        <a href="index.html">
+          <img src="img/bahia-logo-1.svg" alt="" class="position-abs left-calc" style="height:50px;top:-9px;">
+        </a>
+      </div>
+    </div>
+    <div class="flex-30percent zi-4">
+      <div class="left-box-panier h-30px text-right position-rel">
+        <a href="compte1.html">
+          <svg style="height:26px;margin-bottom:1px" xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 512 640" x="0px" y="0px"><path d="M256,243.54A121.77,121.77,0,1,0,134.23,121.77,121.91,121.91,0,0,0,256,243.54Z"/><path d="M37.63,512H494A238,238,0,0,0,87.72,343.72,236.43,236.43,0,0,0,18,512H37.63Z"/></svg>
+          <?xml version="1.0" encoding="iso-8859-1"?>
+        </a>
+        <a href="panier.html">
+        <svg class="h-100percent mr-5px ml-10px" style="height:23px; margin-bottom:7px" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve"><g><g><g><path d="M15.733,20.125c1.104,0,2-0.896,2-2v-7.8C17.733,6.838,20.57,4,24.058,4c3.487,0,6.325,2.838,6.325,6.325v7.8
+          c0,1.104,0.896,2,2,2c1.104,0,2-0.896,2-2v-7.8C34.383,4.632,29.751,0,24.058,0c-5.692,0-10.324,4.632-10.324,10.325v7.8
+          C13.733,19.229,14.629,20.125,15.733,20.125z"/><path d="M47,15.631H36.383v2.494c0,2.206-1.794,4-4,4c-2.205,0-4-1.794-4-4v-2.494h-8.649v2.494c0,2.206-1.794,4-4,4
+          s-4-1.794-4-4v-2.494H1c-0.552,0-0.893,0.435-0.762,0.971L7.235,45.1C7.658,46.702,9.343,48,11,48h26
+          c1.658,0,3.342-1.299,3.767-2.9l6.996-28.498C47.893,16.065,47.553,15.631,47,15.631z"/></g></g></g></svg>
+        <span class="color-white position-abs fw-300 ff-main" style="top:-9px;right:14px;font-size: 9px">3</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!-- MENU LEFT -->
+  <div id="mobile-menu-right" class="position-fixed h-100percent w-300px bg-white nav-no-show text-left  hidden-md hidden-lg p-20px zi-2 o-y-auto" style="top:49px">
+    <!-- FEMMES -->
+    <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb" data-btn="mob-menu-btn" data-target="#mob-femmes-menu-content">Femmes <i class="fa fa-angle-right ml-15px tr-rotate" aria-hidden="true"></i></h3>
+    <div class="row mb-5px ml-10px mob-menu-content mob-femmes mt-5px" id="mob-femmes-menu-content">
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">La Collection Été 2017</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Les Intemporels</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Robes</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Vestes</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Blouses</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Tops</h4>
+      </a>
+      <a href="categorie-femmes.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Accessoires</h4>
+      </a>
+    </div>
+    <hr class="mt-10px mb-10px">
+    <!-- HOMMES -->
+    <a href="categorie-hommes.html">
+      <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb">Hommes</h3>
+    </a>
+    <hr class="mt-10px mb-10px">
+    <!-- ENFANTS -->
+    <a href="categorie-enfants.html">
+      <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb">Enfants</h3>
+    </a>
+    <hr class="mt-10px mb-10px">
+    <!-- Notre hisoitre -->
+    <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb" data-btn="mob-menu-btn" data-target="#mob-histoire-menu-content">Notre Histoire <i class="fa fa-angle-right ml-15px tr-rotate" aria-hidden="true"></i></h3>
+    <div class="row mb-5px mt-5px ml-10px mob-menu-content mob-histoire" id="mob-histoire-menu-content">
+      <a href="histoire-part1.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">L'Aventure</h4>
+      </a>
+      <a href="equipe.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">L'Équipe</h4>
+      </a>
+    </div>
+    <hr class="mt-10px mb-10px">
+    <!-- L'Artisanat -->
+    <a href="artisanat.html">
+      <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb">Les Artisans</h3>
+    </a>
+    <hr class="mt-10px mb-10px">
+    <!-- Journal -->
+    <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb" data-btn="mob-menu-btn" data-target="#mob-journal-menu-content">Le journal <i class="fa fa-angle-right ml-15px tr-rotate" aria-hidden="true"></i></h3>
+    <div class="row mb-5px mt-5px ml-10px mob-menu-content mob-journal" id="mob-journal-menu-content">
+      <a href="journal.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Mexique</h4>
+      </a>
+      <a href="journal.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Lifestyle</h4>
+      </a>
+    </div>
+    <hr class="mt-10px mb-10px">
+    <!-- LOOKBOOK -->
+    <a href="lookbook.html">
+      <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb">Le Lookbook</h3>
+    </a>
+    <hr class="mt-10px mb-10px">
+    <!-- Liens Utiles -->
+    <h3 class="color-red txt-upper fw-300 fs-20px ml-10px no-mt no-mb" data-btn="mob-menu-btn" data-target="#mob-liens-utiles-menu-content">Liens utiles <i class="fa fa-angle-right ml-15px tr-rotate" aria-hidden="true"></i></h3>
+    <div class="row mb-5px mt-5px ml-10px mob-menu-content mob-liens-utiles" id="mob-liens-utiles-menu-content">
+      <a href="contact.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">Contact</h4>
+      </a>
+      <a href="liens_utiles.html#cgv">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">CGV</h4>
+      </a>
+      <a href="liens_utiles.html">
+        <h4 class="color-grey fw-300 fs-16px no-mt mb-10px">À Propos</h4>
+      </a>
+    </div>
+    <hr class="mt-10px mb-10px">
+    <br><br><br><br>
+  </div>
+  <!-- // NAVBAR MOBILE -->
+  <!-- BLUR MOBILE DIV -->
+  <div id="mobile-menu-right2" class="position-fixed h-100percent w-100percent nav-no-show text-left  hidden-md hidden-lg o-y-hidden" style="top:49px">
+  </div>
 
 
 
 
   <section id="connexion" class="row">
     <div class="connexion-title vw-100 text-center">
-      <h1 class="fw-300 color-red fs-50px txt-upper mt-80px">Mon Panier</h1>
-      <h3 class="fs-14px fw-300 text-center">Votre panier contient 4 articles</h3>
+      <h1 class="fw-300 color-red fs-50px txt-upper mt-80px fs-2em-xs no-mb-xs">Mon Panier</h1>
+      <h3 class="fs-14px fw-300 text-center no-mt-xs">Votre panier contient 4 articles</h3>
     </div>
-    <div class="panier-box container-85 pt-20px">
+    <div class="commande-steps container-85 text-center">
+      <div class="row">
+        <!-- STEP 1 -->
+        <a href="panier.html">
+        <div class="col-xs-3 col-sm-3 tab-commande p-20px clickable no-pl-xs no-pr-xs active"><h5 class="fw-300 fs-16px text-center no-margin fs-12px-xs h-20-xs">1. Mon Panier</h5></div>
+        </a>
+        <!-- STEP 2 -->
+        <a href="commande-identification.html">
+        <div class="col-xs-3 col-sm-3 tab-commande p-20px clickable no-pl-xs no-pr-xs">
+          <h5 class="fw-300 fs-16px text-center no-margin fs-12px-xs h-20-xs">
+            2. Je m'identifie
+          </h5>
+        </div>
+        </a>
+        <!-- STEP 3 -->
+        <a href="commande-livraison.html">
+        <div class="col-xs-3 col-sm-3 tab-commande p-20px clickable no-pl-xs no-pr-xs"><h5 class="fw-300 fs-16px text-center no-margin fs-12px-xs h-20-xs">3. Adresse de livraison</h5></div>
+        </a>
+        <!-- STEP 4 -->
+        <a href="commande-paiement.html">
+        <div class="col-xs-3 col-sm-3 tab-commande p-20px clickable  no-pl-xs no-pr-xs"><h5 class="fw-300 fs-16px text-center no-margin fs-12px-xs h-20-xs">4. Paiement</h5></div>
+        </a>
+      </div>
+    </div>
+    <!-- PANIER ORDI -->
+    <div class="panier-box container-85 pt-20px hidden-xs">
       <table class="ff-main">
         <!-- HEADER DU TABLEAU -->
         <thead>
@@ -363,8 +539,8 @@
         <tfoot>
           <tr>
             <td class="position-rel">
-              <div class="reduc-box position-abs top-0 left-0 p-20px flex-row-space-between w-440px">
-                <h5 class="fw-300 fs-16px txt-upper no-margin flex-column-center">Code Promo :</h5>
+              <div class="reduc-box position-abs top-0 left-0 p-20px flex-row-space-between w-500px">
+                <h5 class="fw-300 fs-16px txt-upper no-margin flex-column-center">Bon de réduction :</h5>
                 <div class="flex-row-space-around">
                   <input type="text" placeholder="Votre code ici !">
                   <a class="btn-red">Vamos !</a>
@@ -373,29 +549,145 @@
             </td>
             <td></td>
             <td></td>
-            <td class="txt-upper fw-400 fs-20px text-center pt-25px">total :</td>
-            <td class="text-right txt-upper fw-400 fs-20px pt-25px"><span class="pr-20px">130 €</span></td>
+            <td class="txt-upper fw-400 fs-20px text-right pt-25px">
+              <span class="fw-300 fs-12px">sous-total TTC :</span>
+              <br>
+              <span class="fw-300 fs-10px">dont TVA (<span class="tva-percentage">20</span>%) :</span>
+              <br>
+              <span class="fw-300 fs-12px">réduction (30%) :</span>
+              <br>
+              <span class="fw-300 fs-12px">livraison :</span>
+              <br><br>
+              total TTC :
+            </td>
+            <td class="text-right txt-upper fw-400 fs-20px pt-25px">
+              <span class="fw-300 fs-12px pr-10px"><span class="sous-total-ttc">30</span> €</span>
+              <br>
+              <span class="fw-300 fs-10px pr-10px"><span class="sous-total-tva"></span> €</span>
+              <br>
+              <span class="fw-300 fs-12px pr-10px">- <span class="total-reduction">14,5</span> €</span>
+              <br>
+              <span class="fw-300 fs-12px pr-10px"><span class="total-livraison"></span></span>
+              <br><br>
+              <span class="pr-20px"><span class="full-total-ttc"></span> €</span>
+            </td>
           </tr>
         </tfoot>
       </table>
       <div class="btn-validate text-right pt-20px">
-        <a class="btn-red" href="commande-step1.html">Je commande ></a>
+        <a class="btn-red" href="commande-identification.html">Je commande ></a>
       </div>
     </div>
+    <!-- // PANIER ORDI -->
+    <!-- PANIER MOBILE -->
+    <div class="panier-box container-85 pt-20px hidden-lg hidden-md hidden-sm">
+      <!-- ARTICLE PANIER BOX -->
+      <div class="product-panier-box flex-row-start position-rel mb-20px">
+        <i class="fa fa-trash-o position-abs color-light-grey clickable zi-1 w-30px h-30px text-center pt-5px" aria-hidden="true" style="right:-10px;top:0px"></i>
+        <div class="img-panier-box" style="flex:0 0 35%">
+          <img src="https://www.wepopit.fr/689-small_default/robe-beryl.jpg" alt="" class="w-100percent">
+        </div>
+        <div class="text-panier-box pl-10px" style="flex:0 0 65%">
+          <h5 class="no-mt fw-300 fs-20px color-red">Robe Perla</h5>
+          <p><span class="fs-12px">Couleur Bleu - Taille S/M</span>
+          <br><span class="fw-400">65 €</span></td></p>
+          <a href="product.html" class="fw-300 fs-12px"><i class="fa fa-eye mr-5px" aria-hidden="true"></i> <span class="underline">Voir le produit</span></a>
+        </div>
+      </div>
+      <!-- // PANIER BOX -->
+      <!-- ARTICLE PANIER BOX -->
+      <div class="product-panier-box flex-row-start position-rel mb-20px">
+        <i class="fa fa-trash-o position-abs color-light-grey clickable zi-1 w-30px h-30px text-center pt-5px" aria-hidden="true" style="right:-10px;top:0px"></i>
+        <div class="img-panier-box" style="flex:0 0 35%">
+          <img src="https://www.wepopit.fr/689-small_default/robe-beryl.jpg" alt="" class="w-100percent">
+        </div>
+        <div class="text-panier-box pl-10px" style="flex:0 0 65%">
+          <h5 class="no-mt fw-300 fs-20px color-red">Robe Perla</h5>
+          <p><span class="fs-12px">Couleur Bleu - Taille S/M</span>
+          <br><span class="fw-400">65 €</span></td></p>
+          <a href="product.html" class="fw-300 fs-12px"><i class="fa fa-eye mr-5px" aria-hidden="true"></i> <span class="underline">Voir le produit</span></a>
+        </div>
+      </div>
+      <!-- // PANIER BOX -->
+      <!-- ARTICLE PANIER BOX -->
+      <div class="product-panier-box flex-row-start position-rel mb-20px">
+        <i class="fa fa-trash-o position-abs color-light-grey clickable zi-1 w-30px h-30px text-center pt-5px" aria-hidden="true" style="right:-10px;top:0px"></i>
+        <div class="img-panier-box" style="flex:0 0 35%">
+          <img src="https://www.wepopit.fr/689-small_default/robe-beryl.jpg" alt="" class="w-100percent">
+        </div>
+        <div class="text-panier-box pl-10px" style="flex:0 0 65%">
+          <h5 class="no-mt fw-300 fs-20px color-red">Robe Perla</h5>
+          <p><span class="fs-12px">Couleur Bleu - Taille S/M</span>
+          <br><span class="fw-400">65 €</span></td></p>
+          <a href="product.html" class="fw-300 fs-12px"><i class="fa fa-eye mr-5px" aria-hidden="true"></i> <span class="underline">Voir le produit</span></a>
+        </div>
+      </div>
+      <!-- // PANIER BOX -->
+      <!-- PROMOTION & LIVRAISON & TOTAL-->
+      <hr class="m-20px-0">
+      <div class="product-panier-box mb-10px">
+        <h5 class="fs-12px fw-300 no-margin text-center">Entrez un bon de réduction</h5>
+        <div class="reduc-box mt-10px text-center">
+          <input type="text" placeholder="Votre code ici !" class="text-center">
+          <br>
+          <a class="btn-red btn-red-2 mt-10px">Vamos !</a>
+        </div>
+      </div>
+      <hr class="m-20px-0">
+      <div class="product-panier-box flex-row-space-between position-rel mb-10px">
+        <h5 class="fs-16px fw-300 no-margin">Sous-total :</h5>
+        <h5 class="fs-16px fw-300 no-margin"><span class="sous-total-ttc-xs">397</span> €</h5>
+      </div>
+      <div class="product-panier-box flex-row-space-between position-rel mb-10px">
+        <h5 class="fs-12px fw-300 no-margin">Dont TVA (<span class="tva-percentage-xs">20</span>%) :</h5>
+        <h5 class="fs-12px fw-300 no-margin"><span class="sous-total-tva-xs">5</span> €</h5>
+      </div>
+      <div class="product-panier-box flex-row-space-between position-rel mb-10px">
+        <h5 class="fs-16px fw-300 no-margin">Bon de réduction (30%) :</h5>
+        <h5 class="fs-16px fw-300 no-margin">-<span class="total-reduction-xs">5</span> €</h5>
+      </div>
+      <div class="product-panier-box flex-row-space-between position-rel ">
+        <h5 class="fs-16px fw-300 no-margin">Livraison :</h5>
+        <h5 class="fs-16px fw-300 no-margin"><span class="total-livraison-xs"></span></h5>
+      </div>
+      <hr class="m-20px-0">
+      <div class="product-panier-box flex-row-space-between position-rel">
+        <h5 class="fs-18px fw-300 no-margin">Total TTC :</h5>
+        <h5 class="fs-18px fw-300 no-margin"><span class="full-total-ttc-xs"></span> €</h5>
+      </div>
+      <hr class="m-20px-0">
+      <div class="product-panier-box position-rel">
+        <a class="btn-red w-100percent" href="commande-identification.html">Je commande ></a>
+      </div>
+      <div class="product-panier-box position-rel pt-20px">
+        <h5 class="fs-12px fw-300 text-center txt-upper mb-5px mt-10px">Nous acceptons</h5>
+        <div class="cb-box text-center mt-5px">
+          <img src="img/credit-cards-color/visa.png" alt="" height="15">
+        </div>
+      </div>
+    </div>
+    <!-- <div class="btn-validate text-right bg-white hidden-lg hidden-md hidden-sm position-fixed bottom-0 right-0 zi-1 w-100percent" style="box-shadow: 0 2px 42px rgba(0,0,0,0.1);">
+      <h4 class="fs-18px fw-300 text-center">Total TTC avec livraison : 400 €</h4>
+      <a class="btn-red w-100percent" href="commande-identification.html">Je commande ></a>
+    </div> -->
+    <!-- // PANIER MOBILE -->
   </section>
 
   <footer>
     <!-- CONDITIONS FOOTER -->
-    <div class="text-center container-75">
+    <div class="text-center container-75 container-100-xs">
+      <div class="row no-mb-xs">
+        <img src="img/titres/Hechoamano.png" class="h-140px mb-60px no-mb-xs">
+      </div>
       <div class="conditions mb-50px row">
-        <div class="col-xs-4 br-red h-140px">
+        <div class="col-xs-12 col-md-4 br-red h-140px no-br-xs h-125px-xs">
           <div class="condition-box">
             <h4 class="text-center txt-upper fs-16px"><i class="fa fa-paper-plane" aria-hidden="true"></i></h4>
             <h4 class="text-center txt-upper fs-16px">Livraison offerte</h4>
-            <h5 class="fs-12px fw-300">dès 70€ d'achats en France*</h5>
+            <h5 class="fs-12px fw-300">en France métropolitaine<br>dès 70€ d'achats</h5>
           </div>
         </div>
-        <div class="col-xs-4 br-red h-140px">
+        <div class="col-xs-12 col-md-4 br-red h-140px no-br-xs h-125px-xs">
           <div class="condition-box">
             <h4 class="text-center txt-upper fs-16px"><i class="fa fa-lock" aria-hidden="true"></i></h4>
             <h4 class="text-center txt-upper fs-16px">Paiement 100% sécurisé</h4>
@@ -409,28 +701,59 @@
 
           </div>
         </div>
-        <div class="col-xs-4 h-140px">
+        <div class="col-xs-12 col-md-4 h-140px h-125px-xs">
           <div class="condition-box">
             <h4 class="text-center txt-upper fs-16px"><i class="fa fa-phone" aria-hidden="true"></i></h4>
-            <h4 class="text-center txt-upper fs-16px">Appelez-nous !</h4>
-            <h5 class="fs-12px fw-300">Joignables au 06 19 91 13 32</h5>
+            <h4 class="text-center txt-upper fs-16px">J'ai une question !</h4>
+            <a href="tel:0619911332">
+              <h5 class="fs-12px fw-300">Appelez-nous au 06 19 91 13 32</h5>
+            </a>
           </div>
+        </div>
+      </div>
+    </div>
+    <!-- MOBILE FOOTER -->
+    <div class="text-center container-90 hidden-sm hidden-md hidden-lg">
+      <div class="row">
+        <div class="col-xs-6">
+          <h4 class="text-center txt-upper fs-16px">Liens utiles</h4>
+          <a href="liens_utiles.html">
+            <h5 class="fs-12px fw-300">Livraison</h5>
+          </a>
+          <a href="liens_utiles.html#livraison-retours">
+            <h5 class="fs-12px fw-300">Retour</h5>
+          </a>
+          <a href="liens_utiles.html#cgv">
+            <h5 class="fs-12px fw-300">CGV</h5>
+          </a>
+        </div>
+        <div class="col-xs-6">
+          <h4 class="text-center txt-upper fs-16px">à propos</h4>
+          <a href="contact.html">
+            <h5 class="fs-12px fw-300">Contact</h5>
+          </a>
+          <a href="equipe.html">
+            <h5 class="fs-12px fw-300">L'Équipe</h5>
+          </a>
+          <a href="contact_presse.html">
+            <h5 class="fs-12px fw-300">Presse</h5>
+          </a>
         </div>
       </div>
     </div>
 
     <!-- FOOTER -->
-    <div class="container-80">
+    <div class="container-80 hidden-xs">
       <div class="conditions row">
         <div class="col-xs-4">
           <div class="condition-box">
             <h4 class="text-right txt-upper fs-16px">Liens utiles</h4>
             <ul class="no-bullet">
-              <li class="text-right"><a href="index.html" class="fs-12px fw-300">Livraisons et Retours</a></li>
-              <li class="text-right"><a href="index.html" class="fs-12px fw-300">CGV</a></li>
-              <li class="text-right"><a href="index.html" class="fs-12px fw-300">Mentions Légales</a></li>
-              <li class="text-right"><a href="index.html" class="fs-12px fw-300">Envoyez-nous un mot doux</a></li>
-              <li class="text-right"><a href="index.html" class="fs-12px fw-300">Contact Presse</a></li>
+              <li class="text-right"><a href="liens_utiles.html" class="fs-12px fw-300">Livraisons et Retours</a></li>
+              <li class="text-right"><a href="liens_utiles.html#cgv" class="fs-12px fw-300">CGV</a></li>
+              <li class="text-right"><a href="liens_utiles.html#mentions-legales" class="fs-12px fw-300">Mentions Légales</a></li>
+              <li class="text-right"><a href="contact.html" class="fs-12px fw-300">Envoyez-nous un mot doux</a></li>
+              <li class="text-right"><a href="contact_presse.html" class="fs-12px fw-300">Contact Presse</a></li>
             </ul>
           </div>
         </div>
@@ -455,11 +778,11 @@
           <div class="condition-box">
             <h4 class="txt-upper fs-16px text-left">L'aventure</h4>
             <ul class="no-bullet">
-              <li class="text-left"><a href="index.html" class="fs-12px fw-300">Notre Histoire</a></li>
-              <li class="text-left"><a href="index.html" class="fs-12px fw-300">Nos Artisans</a></li>
-              <li class="text-left"><a href="index.html" class="fs-12px fw-300">Le Journal</a></li>
-              <li class="text-left"><a href="index.html" class="fs-12px fw-300">L'Équipe</a></li>
-              <li class="text-left"><a href="index.html" class="fs-12px fw-300">On Recrute</a></li>
+              <li class="text-left"><a href="histoire.html" class="fs-12px fw-300">Notre Histoire</a></li>
+              <li class="text-left"><a href="artisanat.html" class="fs-12px fw-300">Nos Artisans</a></li>
+              <li class="text-left"><a href="journal.html" class="fs-12px fw-300">Le Journal</a></li>
+              <li class="text-left"><a href="equipe.html" class="fs-12px fw-300">L'Équipe</a></li>
+              <li class="text-left"><a href="lookbook.html" class="fs-12px fw-300">Le Lookbook</a></li>
             </ul>
 
           </div>

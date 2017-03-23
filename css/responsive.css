@@ -1,6 +1,10 @@
 @media only screen and (max-width: 760px) {
   /* HEIGHT */
 
+  .h-20px-xs {
+    height:20px;
+  }
+
   .h-80px-xs {
     height:80px;
   }
@@ -8,9 +12,14 @@
     height:100px;
   }
 
+  .h-80percent-xs {
+    height:80%;
+  }
+
   .h-90percent-xs {
     height:90%;
   }
+
 
   .h-125px-xs {
     height:125px;
@@ -22,6 +31,10 @@
 
   .h-200px-xs {
     height:200px;
+  }
+
+  .h-auto-xs {
+    height:auto;
   }
 
   /* WIDTH */
@@ -36,6 +49,9 @@
   }
   .w-100percent-xs {
     width:100%;
+  }
+  .w-48percent-xs {
+    width:48%;
   }
 
   /* MARGIN */
@@ -60,6 +76,9 @@
   .no-m-xs {
     margin:0;
   }
+  .no-mt-xs {
+    margin-top:0;
+  }
 
   /* PADDING */
 
@@ -67,15 +86,54 @@
     padding:20px;
   }
 
+  .pb-20px-xs{
+    padding-bottom:20px;
+  }
+
+  .no-p-xs {
+    padding:0;
+  }
+
+  .no-pl-xs {
+    padding-left:0 !important;
+  }
+  .no-pr-xs {
+    padding-right:0 !important;
+  }
+
 
   /* FONT SIZE */
+  .fs-10px-xs {
+    font-size:10px;
+  }
+
+  .fs-12px-xs {
+    font-size:12px;
+  }
+
+
   .fs-14px-xs {
         font-size: 1.3em;
+  }
+
+  .fs-18px-xs {
+    font-size:18px;
+  }
+
+  /* TEXT */
+  .text-center-xs {
+    text-align:center;
   }
 
   /*POSITION */
   .right-10px-xs {
     right:10px;
+  }
+
+  /*FLEX*/
+
+  .block-xs {
+    display:block;
   }
 
   /* HISTOIRE */
