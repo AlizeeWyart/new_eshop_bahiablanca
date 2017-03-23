@@ -103,8 +103,11 @@
     margin-left:-184px;
   }
   .artisanat-move-arrow {
-    top: 160px;
-    right: 5px;
+    top: 16px;
+    right: 195px;
+  }
+  #arrow-artisanat {
+    transform: rotate(90deg);
   }
   .mapa-artisanat .map {
     top: -20px;

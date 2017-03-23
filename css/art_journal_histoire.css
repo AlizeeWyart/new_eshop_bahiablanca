@@ -123,8 +123,8 @@
 }
 
 .artisanat-move-arrow {
-  top: 238px;
-  right: 20%;
+  top: 138px;
+  right: 40px;
 }
 
 #arrow-artisanat {
@@ -180,6 +180,12 @@
 
 #journal-show .articles-section {
   margin-top:60px;
+}
+
+#tortuga-aquarelle {
+  width: 345px;
+  right: 21px;
+  top: 13px;
 }
 
 

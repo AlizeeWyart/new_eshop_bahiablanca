@@ -116,4 +116,8 @@ $(document).ready(function(){
 
   AOS.init();
 
+  // $('.youtube-video').each(function(video){
+  //   video.mute();
+  // });
+
 });
