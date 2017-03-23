@@ -945,9 +945,15 @@ footer {
 }
 /* WIDTH */
 
+
+.w-80percent {
+  width:80%;
+}
 .w-85percent {
   width:85%;
 }
+
+
 .w-90percent {
   width:90%;
 }
@@ -1032,6 +1038,10 @@ footer {
 
 .mt-50px {
   margin-top: 50px;
+}
+
+.mt-60px {
+  margin-top: 60px;
 }
 
 .mt-15px {
@@ -1144,6 +1154,10 @@ footer {
 .p-40px {
   padding:40px;
 }
+.plr-100px {
+  padding-left:100px;
+  padding-right:100px;
+}
 
 .p-0-20px {
   padding:0 20px;
@@ -1250,6 +1264,11 @@ footer {
   flex-direction:column;
   justify-content:space-between;
 }
+
+.flex-80percent {
+  flex:0 0 80%;
+}
+
 
 .flex-50percent {
   flex:0 0 50%;

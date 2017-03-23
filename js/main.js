@@ -160,14 +160,8 @@ $(document).ready(function(){
   calculPanier();
 
 
-  // AOS.init();
-
-  // $('.youtube-video').each(function(video){
-  //   video.mute();
-  // });
+  AOS.init();
 
   // COMMANDES
-
-
 
 });
