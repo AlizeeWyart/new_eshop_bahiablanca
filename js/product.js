@@ -407,11 +407,11 @@ $('#broderie-left').on("click", function(){
     $('#quantity-input').val(newQty);
   });
 
-  $('*[data-btn="mob-product"').click(function(){
+  $('*[data-btn="mob-product"]').click(function(){
     var tabTarget = $(this).data("target");
     // console.log(tabTarget);
-    $('*[data-btn="mob-product"').removeClass("fw-400").addClass("fw-300");
-    $('*[data-btn="mob-product"').parent().removeClass("bb-2px-red");
+    $('*[data-btn="mob-product"]').removeClass("fw-400").addClass("fw-300");
+    $('*[data-btn="mob-product"]').parent().removeClass("bb-2px-red");
     $(this).removeClass("fw-300").addClass("fw-400");
     $(this).parent().addClass("bb-2px-red");
     $('.product-box-mob').addClass("hidden");
