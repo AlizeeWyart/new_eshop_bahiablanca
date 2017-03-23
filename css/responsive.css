@@ -8,6 +8,10 @@
     height:100px;
   }
 
+  .h-90percent-xs {
+    height:90%;
+  }
+
   .h-125px-xs {
     height:125px;
   }
@@ -171,7 +175,7 @@
     width: 80%;
   }
   .product-suggestion-result .photos-product {
-    height:250px;
+    height:300px;
   }
   .product-title h1 {
     font-size:30px;
@@ -202,8 +206,51 @@
   .suggestion-title {
     margin-bottom:0;
   }
-  .info-product-box-mob {
+  .btn-product-map {
+    line-height: 20px;
+  }
 
+  .broderie-show {
+    height:140px;
+  }
+  .broderie-image-xs {
+    width:90%;
+    height:100%;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center center;
+    position:absolute;
+    transition:0.3s ease-in-out;
+  }
+
+  #broderie-left-xs {
+    height: 100%;
+    width: 30%;
+    z-index: 1;
+    padding-top: 35px;
+    position:absolute;
+    left:30px;
+  }
+  #broderie-left-xs i {
+    font-size: 70px;
+    color: white;
+    text-shadow: 1px 1px 4px black
+  }
+
+  #broderie-right-xs {
+    height: 100%;
+    width: 30%;
+    z-index: 1;
+    padding-top: 35px;
+    position:absolute;
+    right:30px;
+    top:0;
+    text-align:right;
+  }
+  #broderie-right-xs i {
+    font-size: 70px;
+    color: white;
+    text-shadow: 1px 1px 4px black;
   }
 }
 

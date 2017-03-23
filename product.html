@@ -560,12 +560,12 @@
       </div>
       <hr class="w-90percent m-auto-xs">
       <div class="tabs-product-mob">
-        <div class="row no-mb">
-          <div class="col-xs-6">
-            <h3 class="mt-10px mb-10px txt-upper fw-400 text-center color-red fs-14px-xs" data-btn="mob-product" data-target="#info-product-box-mob">Infos <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+        <div class="row no-mb m-0-20px bb-red">
+          <div class="col-xs-6 bb-2px-red plr-5px">
+            <h3 class="mt-10px mb-10px txt-upper fw-400 text-center color-red fs-14px-xs" data-btn="mob-product" data-target="#info-product-box-mob" style="margin: 10px 0px 5px 0;">Le produit</h3>
           </div>
-          <div class="col-xs-6">
-            <h3 class="mt-10px mb-10px txt-upper fw-300 text-center color-red fs-14px-xs" data-btn="mob-product" data-target="#artisanat-product-box-mob">Artisanat <i class="fa fa-angle-down" aria-hidden="true"></i></h3>
+          <div class="col-xs-6 plr-5px">
+            <h3 class="mt-10px mb-10px txt-upper fw-300 text-center color-red fs-14px-xs" data-btn="mob-product" data-target="#artisanat-product-box-mob" style="margin: 10px 0px 5px 0;">L'artisan</h3>
           </div>
         </div>
       </div>
@@ -577,7 +577,7 @@
         </div>
         <hr class="w-90percent m-auto-xs">
         <form>
-          <div class="row">
+          <div class="row pt-20px">
             <!-- COLOR CHOICE-->
             <div class="col-xs-6">
               <!-- COLOR N°1 - -->
@@ -611,6 +611,29 @@
             <!-- // SIZE CHOICE -->
             </div>
           </div>
+          <div class="broderie-choice-box mt-50px">
+            <div class="broderie-txt move-y-small">
+              <div class="position-rel">
+                <p>Choisissez votre broderie !</p>
+                <img src="img/arrow-curve.svg" alt="" id="arrow-broderie">
+              </div>
+            </div>
+            <div id="broderie-left-xs">
+             <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </div>
+            <div class="broderie-show">
+              <div class="broderie-image-xs selected" data-nb-broderie="1"  style="background-image:url('img/broderie-1.png');opacity:1"></div>
+              <div class="broderie-image-xs" data-nb-broderie="2"  style="background-image:url('img/broderie-2.png');opacity:0"></div>
+              <div class="broderie-image-xs" data-nb-broderie="3"  style="background-image:url('img/broderie-3.png');opacity:0"></div>
+              <div class="broderie-image-xs" data-nb-broderie="4"  style="background-image:url('img/broderie-4.png');opacity:0"></div>
+              <div class="broderie-image-xs" data-nb-broderie="5"  style="background-image:url('img/broderie-5.png');opacity:0"></div>
+              <div class="broderie-image-xs" data-nb-broderie="6"  style="background-image:url('img/broderie-6.png');opacity:0"></div>
+            </div>
+            <div id="broderie-right-xs">
+             <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </div>
+          </div>
+          <input type="text" name="broderie" value="" style="display:none">
           <div class="guide-btn">Guide des tailles & entretien</div>
           <hr class="w-90percent">
 
@@ -624,14 +647,14 @@
       </div>
       <div class="product-box-mob hidden" id="artisanat-product-box-mob">
         <div class="p-20px">
-          <h5 class="fw-300 fs-16px txt-upper text-center">Hecho a Mano</h5>
+          <h5 class="fw-300 fs-16px txt-upper text-center no-mt color-red">Hecho a Mano</h5>
           <p class="text-center"><i class="fa fa-map-marker" aria-hidden="true"></i> Pachuca, région d'Hidalgo</p>
           <div id="map-artisan-xs" class="mb-20px" style="width:100%; height:160px"></div>
           <div class="info-artisan row">
             <div class="col-xs-5 no-p">
-              <img src="img/therezita.png" style="width:100%">
+              <img src="img/therezita.png" style="width:100%" id="h-to-know">
             </div>
-            <div class="col-xs-7 no-pr">
+            <div class="col-xs-7 no-pr flex-column-space-between h-responsive">
               <p class="fs-12px">Rencontrez Therezita qui laisse sa créativité guider son aiguille pour ses broderies.</p>
               <a class="btn-red-2 btn-product-map">Descubro</a>
             </div>
@@ -648,145 +671,145 @@
       <img src="img/trait_blue.png">
     </div>
     <div class="suggestion-title p-20px-xs">
-      <h5>Si vous avez aimé la Robe Perla, jetez un œil à :</h5>
+      <h5 class="lh-20px">Si vous avez aimé la Robe Perla,<span class="hidden-lg hidden-sm hidden-md"><br></span> jetez un œil à :</h5>
     </div>
     <div class="product-suggestion-result flex-row-wrap-space-between p-0-15px">
       <!-- PRODUCT CARD WHISLIST & SOLD OUT -->
-    <div class="product-miniature-card w-300px position-rel w-100percent-xs m-auto-xs mb-40px-xs favorite sold-out">
-      <!-- METHODE : Ajouter à la whishlist -->
-      <a href="#">
-        <div class="add-to-whishlist-box clickable position-abs zi-1 top-10px right-15px right-10px-xs fs-16px bg-white circle h-30px w-30px text-center pt-5px">
-          <i class="fa fa-heart-o" aria-hidden="true"></i></a>
-          <i class="fa fa-heart no-show" aria-hidden="true"></i>
-        </div>
-      </a>
-      <!-- PRODUCT CARD -->
-      <a href="product.html">
-        <div class="photos-product h-400px position-rel w-100percent">
-          <div class="first-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
+      <div class="product-miniature-card w-300px position-rel w-100percent-xs m-auto-xs mb-40px-xs favorite sold-out">
+        <!-- METHODE : Ajouter à la whishlist -->
+        <a href="#">
+          <div class="add-to-whishlist-box clickable position-abs zi-1 top-10px right-15px fs-16px b-grey circle h-30px w-30px text-center pt-4px">
+            <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <i class="fa fa-heart no-show" aria-hidden="true"></i>
           </div>
-          <div class="second-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
+        </a>
+        <!-- PRODUCT CARD -->
+        <a href="product.html">
+          <div class="photos-product h-400px position-rel w-100percent h-xs">
+            <div class="first-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
+            </div>
+            <div class="second-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
 
+            </div>
+            <div class="call-to-action-banner position-abs opacity-0 bottom-0 w-100percent bg-white-transparent p-10px text-center tr-6-ease-io">
+              <p class="no-padding no-margin"><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
+            </div>
           </div>
-          <div class="call-to-action-banner position-abs opacity-0 bottom-0 w-100percent bg-white-transparent p-10px text-center tr-6-ease-io">
-            <p class="no-padding no-margin"><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
+          <div class="info-product flex-row-space-between pt-10px fw-300 fs-18px">
+            <div class="color-red no-margin fs-16px">TESTRobe Perla</div>
+            <div class="no-margin fs-16px">65 €</div>
           </div>
-        </div>
-        <div class="info-product flex-row-space-between pt-10px fw-300 fs-18px fs-14px-xs">
-          <div class="color-red no-margin">TESTRobe Perla</div>
-          <div class="no-margin">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-        <div class="position-abs bg-white-transparent top-0 left-0 text-center w-100percent h-100percent flex-column-center opacity-0 sold-out-box">
-          <p class="txt-upper">sold out</p>
-        </div>
-      </a>
-    </div>
-    <!-- PRODUCT CARD -->
-    <!-- PRODUCT CARD SOLD OUT -->
-    <div class="product-miniature-card w-300px position-rel w-100percent-xs m-auto-xs mb-40px-xs sold-out">
-      <!-- METHODE : Ajouter à la whishlist -->
-      <a href="#">
-        <div class="add-to-whishlist-box clickable position-abs zi-1 top-10px right-15px right-10px-xs fs-16px bg-white circle h-30px w-30px text-center pt-5px">
-          <i class="fa fa-heart-o" aria-hidden="true"></i></a>
-          <i class="fa fa-heart no-show" aria-hidden="true"></i>
-        </div>
-      </a>
+          <div class="description-product">
+            <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
+          </div>
+          <div class="position-abs bg-white-transparent top-0 left-0 text-center w-100percent h-80percent h-90percent-xs flex-column-center opacity-0 sold-out-box">
+            <p>Stock Épuisé</p>
+          </div>
+        </a>
+      </div>
       <!-- PRODUCT CARD -->
-      <a href="product.html">
-        <div class="photos-product h-400px position-rel w-100percent">
-          <div class="first-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
+      <!-- PRODUCT CARD SOLD OUT -->
+      <div class="product-miniature-card w-300px position-rel w-100percent-xs m-auto-xs mb-40px-xs sold-out">
+        <!-- METHODE : Ajouter à la whishlist -->
+        <a href="#">
+          <div class="add-to-whishlist-box clickable position-abs zi-1 top-10px right-15px fs-16px b-grey circle h-30px w-30px text-center pt-4px">
+            <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <i class="fa fa-heart no-show" aria-hidden="true"></i>
           </div>
-          <div class="second-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
+        </a>
+        <!-- PRODUCT CARD -->
+        <a href="product.html">
+          <div class="photos-product h-400px position-rel w-100percent">
+            <div class="first-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
+            </div>
+            <div class="second-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
 
+            </div>
+            <div class="call-to-action-banner position-abs opacity-0 bottom-0 w-100percent bg-white-transparent p-10px text-center tr-6-ease-io">
+              <p class="no-padding no-margin"><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
+            </div>
           </div>
-          <div class="call-to-action-banner position-abs opacity-0 bottom-0 w-100percent bg-white-transparent p-10px text-center tr-6-ease-io">
-            <p class="no-padding no-margin"><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
+          <div class="info-product flex-row-space-between pt-10px fw-300 fs-18px">
+            <div class="color-red no-margin fs-16px">TESTRobe Perla</div>
+            <div class="no-margin fs-16px">65 €</div>
           </div>
-        </div>
-        <div class="info-product flex-row-space-between pt-10px fw-300 fs-18px fs-14px-xs">
-          <div class="color-red no-margin">TESTRobe Perla</div>
-          <div class="no-margin">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-        <div class="position-abs bg-white-transparent top-0 left-0 text-center w-100percent h-100percent flex-column-center opacity-0 sold-out-box">
-          <p class="txt-upper">sold out</p>
-        </div>
-      </a>
-    </div>
-    <!-- PRODUCT CARD -->
-    <!-- PRODUCT CARD WHISLIST -->
-    <div class="product-miniature-card w-300px position-rel w-100percent-xs m-auto-xs mb-40px-xs favorite">
-      <!-- METHODE : Ajouter à la whishlist -->
-      <a href="#">
-        <div class="add-to-whishlist-box clickable position-abs zi-1 top-10px right-15px right-10px-xs fs-16px bg-white circle h-30px w-30px text-center pt-5px">
-          <i class="fa fa-heart-o" aria-hidden="true"></i></a>
-          <i class="fa fa-heart no-show" aria-hidden="true"></i>
-        </div>
-      </a>
+          <div class="description-product">
+            <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
+          </div>
+          <div class="position-abs bg-white-transparent top-0 left-0 text-center w-100percent h-80percent h-90percent-xs flex-column-center opacity-0 sold-out-box">
+            <p>Stock Épuisé</p>
+          </div>
+        </a>
+      </div>
       <!-- PRODUCT CARD -->
-      <a href="product.html">
-        <div class="photos-product h-400px position-rel w-100percent">
-          <div class="first-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
+      <!-- PRODUCT CARD WHISLIST -->
+      <div class="product-miniature-card w-300px position-rel w-100percent-xs m-auto-xs mb-40px-xs favorite">
+        <!-- METHODE : Ajouter à la whishlist -->
+        <a href="#">
+          <div class="add-to-whishlist-box clickable position-abs zi-1 top-10px right-15px fs-16px b-grey circle h-30px w-30px text-center pt-4px">
+            <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <i class="fa fa-heart no-show" aria-hidden="true"></i>
           </div>
-          <div class="second-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
+        </a>
+        <!-- PRODUCT CARD -->
+        <a href="product.html">
+          <div class="photos-product h-400px position-rel w-100percent">
+            <div class="first-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
+            </div>
+            <div class="second-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
 
+            </div>
+            <div class="call-to-action-banner position-abs opacity-0 bottom-0 w-100percent bg-white-transparent p-10px text-center tr-6-ease-io">
+              <p class="no-padding no-margin"><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
+            </div>
           </div>
-          <div class="call-to-action-banner position-abs opacity-0 bottom-0 w-100percent bg-white-transparent p-10px text-center tr-6-ease-io">
-            <p class="no-padding no-margin"><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
+          <div class="info-product flex-row-space-between pt-10px fw-300 fs-18px">
+            <div class="color-red no-margin fs-16px">TESTRobe Perla</div>
+            <div class="no-margin fs-16px">65 €</div>
           </div>
-        </div>
-        <div class="info-product flex-row-space-between pt-10px fw-300 fs-18px fs-14px-xs">
-          <div class="color-red no-margin">TESTRobe Perla</div>
-          <div class="no-margin">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-        <div class="position-abs bg-white-transparent top-0 left-0 text-center w-100percent h-100percent flex-column-center opacity-0 sold-out-box">
-          <p class="txt-upper">sold out</p>
-        </div>
-      </a>
-    </div>
-    <!-- PRODUCT CARD -->
-    <!-- PRODUCT CARD SIMPLE -->
-    <div class="product-miniature-card w-300px position-rel w-100percent-xs m-auto-xs mb-40px-xs">
-      <!-- METHODE : Ajouter à la whishlist -->
-      <a href="#">
-        <div class="add-to-whishlist-box clickable position-abs zi-1 top-10px right-15px right-10px-xs fs-16px bg-white circle h-30px w-30px text-center pt-5px">
-          <i class="fa fa-heart-o" aria-hidden="true"></i></a>
-          <i class="fa fa-heart no-show" aria-hidden="true"></i>
-        </div>
-      </a>
+          <div class="description-product">
+            <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
+          </div>
+          <div class="position-abs bg-white-transparent top-0 left-0 text-center w-100percent h-80percent h-90percent-xs flex-column-center opacity-0 sold-out-box">
+            <p>Stock Épuisé</p>
+          </div>
+        </a>
+      </div>
       <!-- PRODUCT CARD -->
-      <a href="product.html">
-        <div class="photos-product h-400px position-rel w-100percent">
-          <div class="first-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
+      <!-- PRODUCT CARD SIMPLE -->
+      <div class="product-miniature-card w-300px position-rel w-100percent-xs m-auto-xs mb-40px-xs">
+        <!-- METHODE : Ajouter à la whishlist -->
+        <a href="#">
+          <div class="add-to-whishlist-box clickable position-abs zi-1 top-10px right-15px fs-16px b-grey circle h-30px w-30px text-center pt-4px">
+            <i class="fa fa-heart-o" aria-hidden="true"></i></a>
+            <i class="fa fa-heart no-show" aria-hidden="true"></i>
           </div>
-          <div class="second-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
+        </a>
+        <!-- PRODUCT CARD -->
+        <a href="product.html">
+          <div class="photos-product h-400px position-rel w-100percent">
+            <div class="first-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg')">
+            </div>
+            <div class="second-photo product-photo position-abs w-100percent tblr-0 bs-cover bp-2c tr-6-ease-io" style="background-image:url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,fl_lossy,h_1440,w_720,f_auto,q_auto/v1/780428/b6a82c63-4152-4ee2-a023-61c320afa114_ahur03.jpg')">
 
+            </div>
+            <div class="call-to-action-banner position-abs opacity-0 bottom-0 w-100percent bg-white-transparent p-10px text-center tr-6-ease-io">
+              <p class="no-padding no-margin"><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
+            </div>
           </div>
-          <div class="call-to-action-banner position-abs opacity-0 bottom-0 w-100percent bg-white-transparent p-10px text-center tr-6-ease-io">
-            <p class="no-padding no-margin"><i class="fa fa-eye mr-5px" aria-hidden="true"></i> Découvrir ce modèle</p>
+          <div class="info-product flex-row-space-between pt-10px fw-300 fs-18px">
+            <div class="color-red no-margin fs-16px">TESTRobe Perla</div>
+            <div class="no-margin fs-16px">65 €</div>
           </div>
-        </div>
-        <div class="info-product flex-row-space-between pt-10px fw-300 fs-18px fs-14px-xs">
-          <div class="color-red no-margin">TESTRobe Perla</div>
-          <div class="no-margin">65 €</div>
-        </div>
-        <div class="description-product">
-          <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
-        </div>
-        <div class="position-abs bg-white-transparent top-0 left-0 text-center w-100percent h-100percent flex-column-center opacity-0 sold-out-box">
-          <p class="txt-upper">sold out</p>
-        </div>
-      </a>
-    </div>
-    <!-- PRODUCT CARD -->
+          <div class="description-product">
+            <p class="no-margin fs-12px">Bande brodée à la main dans le Chiapas</p>
+          </div>
+          <div class="position-abs bg-white-transparent top-0 left-0 text-center w-100percent h-80percent h-90percent-xs flex-column-center opacity-0 sold-out-box">
+            <p>Stock Épuisé</p>
+          </div>
+        </a>
+      </div>
+      <!-- PRODUCT CARD -->
     </div>
   </section>
 

@@ -290,7 +290,7 @@ $('input[name="size"]').change(function(){
 });
 
 
-// BRODERIE CHOICE
+// BRODERIE CHOICE ORDI
 
 var actualBroderieNb = $('.broderie-image.selected').data("nb-broderie");
 $('input[name="broderie"]').val("broderie n° " + actualBroderieNb);
@@ -339,6 +339,55 @@ $('#broderie-left').on("click", function(){
   $('input[name="broderie"]').val("broderie n° " + nbNextBroderie);
 });
 
+// BRODERIE CHOICE MOBILE
+
+var actualBroderieNbXs = $('.broderie-image-xs.selected').data("nb-broderie");
+$('input[name="broderie"]').val("broderie n° " + actualBroderieNbXs);
+
+$('#broderie-right-xs').on("click", function(){
+  var nbTotalBroderieXs = $('.broderie-image-xs').length;
+  var nbActualBroderieXs = $('.broderie-image-xs.selected').data("nb-broderie");
+
+
+  if (nbActualBroderieXs + 1 > nbTotalBroderieXs) {
+    var nbNextBroderieXs = 1;
+  } else {
+    var nbNextBroderieXs = nbActualBroderieXs + 1;
+  };
+
+  actualBroderieXs = $('.broderie-image-xs.selected');
+  nextBroderieXs = $('.broderie-image-xs[data-nb-broderie="'+ nbNextBroderieXs +'"]');
+
+  actualBroderieXs.removeClass("selected");
+  nextBroderieXs.addClass("selected");
+  actualBroderieXs.css("opacity", "0");
+  nextBroderieXs.css("opacity", "1");
+
+  $('input[name="broderie"]').val("broderie n° " + nbNextBroderieXs);
+});
+
+$('#broderie-left').on("click", function(){
+  var nbTotalBroderie = $('.broderie-image').length;
+  var nbActualBroderie = $('.broderie-image.selected').data("nb-broderie");
+
+
+  if (nbActualBroderie - 1 <= 0 ) {
+    var nbNextBroderie = nbTotalBroderie;
+  } else {
+    var nbNextBroderie = nbActualBroderie - 1;
+  };
+
+  actualBroderie = $('.broderie-image.selected');
+  nextBroderie = $('.broderie-image[data-nb-broderie="'+ nbNextBroderie +'"]');
+
+  actualBroderie.removeClass("selected");
+  nextBroderie.addClass("selected");
+  actualBroderie.css("opacity", "0");
+  nextBroderie.css("opacity", "1");
+
+  $('input[name="broderie"]').val("broderie n° " + nbNextBroderie);
+});
+
 
 // QUANTITY IN SHOW PRODUCT
   // INCREASE +1
@@ -360,13 +409,20 @@ $('#broderie-left').on("click", function(){
 
   $('*[data-btn="mob-product"').click(function(){
     var tabTarget = $(this).data("target");
-    console.log(tabTarget);
+    // console.log(tabTarget);
     $('*[data-btn="mob-product"').removeClass("fw-400").addClass("fw-300");
+    $('*[data-btn="mob-product"').parent().removeClass("bb-2px-red");
     $(this).removeClass("fw-300").addClass("fw-400");
+    $(this).parent().addClass("bb-2px-red");
     $('.product-box-mob').addClass("hidden");
     $(tabTarget).removeClass("hidden");
-    myMap();
+    if (tabTarget == "#artisanat-product-box-mob") {
+      heightArtisan = $('#h-to-know').height();
+      $('.h-responsive').css("height", heightArtisan);
+      myMap();
+    }
   });
+
 
 
 

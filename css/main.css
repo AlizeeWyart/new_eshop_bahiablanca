@@ -799,6 +799,9 @@ footer {
 
 
 /* FONT SIZE */
+
+
+
 .fs-12px {
   font-size: 12px;
 }
@@ -1089,6 +1092,10 @@ footer {
   margin:20px 0;
 }
 
+.m-0-20px {
+  margin:0 20px;
+}
+
 /* LIST */
 
 .no-bullet li {
@@ -1189,6 +1196,11 @@ footer {
 .bb-red {
   border-bottom: 1px solid #A31D23;
 }
+
+.bb-2px-red {
+  border-bottom: 2px solid #A31D23;
+}
+
 .br-grey {
   border-right: 1px solid #333333;
 }
@@ -1220,6 +1232,12 @@ footer {
   display:flex;
   flex-direction:row;
   flex-wrap:wrap;
+  justify-content:space-between;
+}
+
+.flex-column-space-between {
+  display:flex;
+  flex-direction:column;
   justify-content:space-between;
 }
 
