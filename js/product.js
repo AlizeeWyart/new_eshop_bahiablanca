@@ -366,26 +366,31 @@ $('#broderie-right-xs').on("click", function(){
   $('input[name="broderie"]').val("broderie n° " + nbNextBroderieXs);
 });
 
-$('#broderie-left').on("click", function(){
-  var nbTotalBroderie = $('.broderie-image').length;
-  var nbActualBroderie = $('.broderie-image.selected').data("nb-broderie");
+$('#hello').click(function(){
+  console.log("hello")
+});
+
+$('#broderie-left-xs').on("click", function(){
+  console.log("working broderie left xs");
+  var nbTotalBroderieXs = $('.broderie-image-xs').length;
+  var nbActualBroderieXs = $('.broderie-image-xs.selected').data("nb-broderie");
 
 
-  if (nbActualBroderie - 1 <= 0 ) {
-    var nbNextBroderie = nbTotalBroderie;
+  if (nbActualBroderieXs - 1 <= 0 ) {
+    var nbNextBroderieXs = nbTotalBroderieXs;
   } else {
-    var nbNextBroderie = nbActualBroderie - 1;
+    var nbNextBroderieXs = nbActualBroderieXs - 1;
   };
 
-  actualBroderie = $('.broderie-image.selected');
-  nextBroderie = $('.broderie-image[data-nb-broderie="'+ nbNextBroderie +'"]');
+  actualBroderieXs = $('.broderie-image-xs.selected');
+  nextBroderieXs = $('.broderie-image-xs[data-nb-broderie="'+ nbNextBroderieXs +'"]');
 
-  actualBroderie.removeClass("selected");
-  nextBroderie.addClass("selected");
-  actualBroderie.css("opacity", "0");
-  nextBroderie.css("opacity", "1");
+  actualBroderieXs.removeClass("selected");
+  nextBroderieXs.addClass("selected");
+  actualBroderieXs.css("opacity", "0");
+  nextBroderieXs.css("opacity", "1");
 
-  $('input[name="broderie"]').val("broderie n° " + nbNextBroderie);
+  $('input[name="broderie"]').val("broderie n° " + nbNextBroderieXs);
 });
 
 

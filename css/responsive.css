@@ -6,6 +6,9 @@
   .h-20px-xs {
     height:20px;
   }
+  .h-60px-xs {
+    height:60px;
+  }
 
   .h-80px-xs {
     height:80px;
@@ -56,6 +59,9 @@
   .w-100percent-xs {
     width:100%;
   }
+  .w-95percent-xs {
+    width:95%;
+  }
   .w-48percent-xs {
     width:48%;
   }
@@ -63,6 +69,9 @@
   /* MARGIN */
   .m-auto-xs {
     margin:auto;
+  }
+  .mt-10px-xs {
+    margin-top:10px;
   }
   .mb-20px-xs {
     margin-bottom:20px;
@@ -92,6 +101,10 @@
     padding:20px;
   }
 
+  .p-30px-xs {
+    padding:30px;
+  }
+
   .p-20px-10px-xs {
     padding:20px 10px;
   }
@@ -107,6 +120,10 @@
 
   .no-pb-xs {
     padding-bottom:0;
+  }
+
+  .no-pt-xs {
+    padding-top:0;
   }
 
   .no-pl-xs {
@@ -129,6 +146,10 @@
 
   .fs-14px-xs {
         font-size: 1.3em;
+  }
+
+  .fs-16px-xs {
+    font-size: 16px;
   }
 
   .fs-18px-xs {
@@ -339,6 +360,18 @@
     color: white;
     text-shadow: 1px 1px 4px black;
   }
+  /* EQUIPE */
+  #thibaut-equipe {
+    width: 98px;
+    right: -15px;
+    bottom: 11px;
+  }
+  .team-member-pair {
+    margin:0;
+  }
+  .team-member-3 {
+    margin-top:0;
+  }
 }
 
 
@@ -348,4 +381,30 @@
   .category-products-result {
     padding: 60px;
   }
+}
+
+/*REORDER COLUMN */
+
+@media (max-width: 767px) {
+
+  .row.reorder-xs {
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+
+    direction: rtl;
+  }
+
+  .row.reorder-xs > [class*="col-"] {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+
+    direction: ltr;
+  }
+
 }

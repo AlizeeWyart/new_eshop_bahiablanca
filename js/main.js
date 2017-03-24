@@ -162,6 +162,22 @@ $(document).ready(function(){
 
   AOS.init();
 
+
+
+  $('#close-enews-modal').click(function(){
+    console.log("working close modal");
+    $('#modal-enews').css("background-color", "transparent")
+    $('#modal-enews').css("top","-1000px")
+  });
+
+  var isshow = sessionStorage.getItem('isshow');
+  if (isshow== 1) {
+    setTimeout(function() {
+      $('#bahialetterModal').css("display", "none");
+    }, 5000);
+    sessionStorage.setItem('isshow', 1);
+  };
+
   // COMMANDES
 
 });
