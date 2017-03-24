@@ -10,6 +10,8 @@
     height:60px;
   }
 
+
+
   .h-80px-xs {
     height:80px;
   }
@@ -273,9 +275,16 @@
   .lire-suite {
     margin: 0 80px;
   }
+
+  .container-80-xs {
+    width:80%;
+    margin:auto;
+  }
   .container-100-xs {
     width:100%;
   }
+
+  .photo-description
 
 
   /* PRODUCT */
@@ -311,9 +320,7 @@
   .suggestion-title img {
     width:100%;
   }
-  .suggestion-title {
-    margin-bottom:0;
-  }
+
   .btn-product-map {
     line-height: 20px;
   }
