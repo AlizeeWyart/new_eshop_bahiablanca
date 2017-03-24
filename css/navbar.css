@@ -157,6 +157,12 @@ nav {
   justify-content:space-between;
 }
 
+.flex-row-center {
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+}
+
 .menu-navbar-2-content {
   padding-left: 130px;
   padding-top: 10px;

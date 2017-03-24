@@ -436,3 +436,11 @@ label.size-choice.checked {
   bottom:0px
 }
 
+/* SEARCH */
+
+input[type=text].search-large-bar {
+  height:30px;
+  margin-bottom:0;
+  margin-top:16px;
+}
+
