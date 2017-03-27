@@ -21,7 +21,7 @@
   font-family: "Raleway", sans-serif;
 }
 
-input[type=text]:focus:not([readonly]) {
+input[type=text]:focus:not([readonly]), input[type=date]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly])  {
   border-bottom: 1px solid #A31D23;
   box-shadow:none;
 }
@@ -40,8 +40,11 @@ input[type=text]:focus:not([readonly]) {
   height:30px;
   margin:0 50px 0 0;
 }
+.connexion-box.mot-doux input[type=text] {
+  margin:0;
+}
 
-.inscription-box input[type=text] {
+.inscription-box input[type=text], .inscription-box input[type=date], textarea.materialize-textarea {
   border-bottom:1px solid #A31D23;
   font-family:'Montserrat', sans-serif;
   font-weight:300;

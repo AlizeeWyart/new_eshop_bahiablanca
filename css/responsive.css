@@ -299,6 +299,10 @@
     width:100%;
   }
 
+  .container-90-xs {
+    width:90%;
+  }
+
   .photo-description
 
 
@@ -413,6 +417,10 @@
   }
   .team-member-pair p {
     padding-left:0;
+  }
+  .container-80-ipad {
+    width:80%;
+    margin:auto;
   }
 }
 
