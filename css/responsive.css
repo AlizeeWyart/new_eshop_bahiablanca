@@ -111,6 +111,10 @@
     padding:20px 10px;
   }
 
+  .pr-80px-xs {
+    padding-right:80px;
+  }
+
 
   .pb-20px-xs{
     padding-bottom:20px;
@@ -163,6 +167,10 @@
     text-align:center;
   }
 
+  .lh-20px-xs {
+    line-height:20px;
+  }
+
   /*POSITION */
   .right-10px-xs {
     right:10px;
@@ -182,6 +190,13 @@
     display:flex;
     flex-direction:column;
     justify-content: center;
+  }
+
+  .flex-row-wrap-space-between-xs {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+    flex-wrap:wrap;
   }
 
   /* HISTOIRE */
@@ -379,14 +394,25 @@
   .team-member-3 {
     margin-top:0;
   }
+
 }
 
 
 /* IPAD */
 
-@media only screen and (min-width: 760px) and (max-width: 1000px) {
+@media only screen and (min-width: 767px) and (max-width: 1000px) {
   .category-products-result {
     padding: 60px;
+  }
+  .w-100percent-ipad {
+    width:100%;
+  }
+  .team-member-pair {
+    margin-top:40px;
+    margin-left:0;
+  }
+  .team-member-pair p {
+    padding-left:0;
   }
 }
 
@@ -414,4 +440,23 @@
     direction: ltr;
   }
 
+}
+
+/* ONLY ORDI */
+
+@media (min-width: 767px) {
+  .whishlist-box {
+    margin-left: -10px;
+    margin-right: -10px;
+  }
+  .mlr-10px-no-xs {
+    margin-left:10px;
+    margin-right:10px;
+  }
+  .team-member-pair p {
+    padding-right:17%;
+  }
+  .titre-equipe {
+    padding-left:11%;
+  }
 }

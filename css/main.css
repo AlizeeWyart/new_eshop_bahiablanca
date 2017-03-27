@@ -1055,6 +1055,10 @@ footer {
   margin-top:80px;
 }
 
+.mt-40px {
+  margin-top:40px;
+}
+
 .mt-50px {
   margin-top: 50px;
 }
@@ -1322,6 +1326,10 @@ footer {
   justify-content:flex-start;
 }
 
+.flex-wrap {
+  flex-wrap:wrap;
+}
+
 .underline {
   text-decoration:underline;
 }
@@ -1511,6 +1519,10 @@ tfoot {
   line-height:20px;
 }
 
+.lh-45px {
+  line-height:45px;
+}
+
 /*SCROLL*/
 
 .stop-scrolling-y {
@@ -1520,6 +1532,7 @@ tfoot {
 
 
 .modal-default {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(250, 250, 250, 0.7);
   transition: top 0.4s ease-in-out;
+  z-index:99999999;
 }

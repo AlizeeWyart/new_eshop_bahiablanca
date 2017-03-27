@@ -187,9 +187,14 @@
 #tortuga-aquarelle {
   width: 345px;
   right: 21px;
-  top: 13px;
+  top: 94px;
 }
 
+#guitare-aquarelle {
+  width: 220px;
+  right: 87px;
+  top: 81px;
+}
 
 .journal-title {
   height:150px;
@@ -269,12 +274,12 @@
 
 /* EQUIPE */
 .team-member-pair {
-  margin-top: -100px;
+  margin-top: -40px;
   margin-left: 20%;
 }
 
 .team-member-3 {
-  margin-top:-100px;
+  margin-top:-40px;
 }
 
 /* CONTACT PRESSE */
