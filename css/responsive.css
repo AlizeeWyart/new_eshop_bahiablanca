@@ -162,6 +162,10 @@
     font-size:18px;
   }
 
+  .fs-30px-xs {
+    font-size:30px;
+  }
+
   /* TEXT */
   .text-center-xs {
     text-align:center;

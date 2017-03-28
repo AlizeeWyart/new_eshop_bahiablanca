@@ -592,6 +592,18 @@
   margin-left: -28%;
 }
 
+.br-timer {
+  width: 32px;
+  top: 25px;
+  transform: rotate(90deg);
+  right: -37px;
+  border-top:1px solid #333333
+}
+
+#hecho-landing {
+  margin-left:-36px;
+}
+
 @media only screen and (max-width: 760px) {
   .txt-landing {
     width: 90%;
@@ -615,6 +627,14 @@
   }
   .w-100percent-xs-important {
     width:100% !important;
+  }
+  .br-timer {
+    width: 26px;
+    top: 13px;
+    right: -25px;
+  }
+  #hecho-landing {
+    margin-left:0;
   }
 }
 
