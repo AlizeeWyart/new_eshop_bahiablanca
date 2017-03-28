@@ -739,6 +739,7 @@ footer {
   -moz-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
   transition: all 0.35s ease-in-out;
+  outline:none;
 }
 
 .btn-enews-modal {
@@ -834,6 +835,10 @@ footer {
 
 .fs-20px {
   font-size:20px;
+}
+
+.fs-26px {
+  font-size:26px !important;
 }
 
 .fs-30px {
@@ -1556,7 +1561,7 @@ tfoot {
   z-index:99999999;
 }
 
-.bahia-input input[type=text] {
+.bahia-input input[type=text], .bahia-input input[type=email] {
   border-bottom:1px solid #A31D23;
   font-family:'Montserrat', sans-serif;
   font-weight:300;
@@ -1566,7 +1571,7 @@ tfoot {
 }
 
 
-.bahia-input input[type=text]:focus:not([readonly])  {
+.bahia-input input[type=text]:focus:not([readonly]), .bahia-input input[type=email]  {
   border-bottom: 1px solid #A31D23;
   box-shadow:none;
 }
