@@ -845,6 +845,10 @@ footer {
   font-size:30px;
 }
 
+.fs-45px {
+  font-size:45px;
+}
+
 /* FONT WEIGHT */
 .fw-300 {
   font-weight:300;
