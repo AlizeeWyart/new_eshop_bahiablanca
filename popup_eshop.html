@@ -1,0 +1,76 @@
+<style>
+.modal-default {
+  background-color: rgba(250, 250, 250, 0.7);
+  transition: top 0.4s ease-in-out;
+  z-index:99999999;
+}
+.position-fixed {position:fixed;}
+.w-100percent {width:100%;}
+.h-100percent {height:100%}
+.tblr-0 {top:0; bottom:0; left:0; right:0}
+.flex-column-center {display:flex; flex-direction:column; justify-content:center}
+.shadow-navbar {box-shadow: 0 2px 42px rgba(0,0,0,0.1);}
+.modal-default-content {}
+.m-auto {margin:auto;}
+.bg-white {background-color:white;}
+.bs-cover {background-size: cover !important;}
+.position-rel {position:relative;}
+.no-margin {margin:0;}
+.color-red {color:#A31D23}
+.fw-300 {font-weight:300;}
+.fs-16px {font-size:16px}
+.txt-upper {text-transform:uppercase}
+.text-center {text-align:center;}
+.clickable {cursor:pointer;}
+.btn-red:hover, .btn-red:focus, .btn-red:active, .btn-red.active {
+  background-color: transparent;
+  color: #A31D23 !important;
+  transition: all 0.35s ease-in-out;
+}
+.btn-red {
+  border-radius: 0;
+  border: 1px solid #A31D23;
+  box-shadow: none;
+  background-color: #A31D23;
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  color: white;
+  text-align: center;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+  vertical-align: middle;
+  text-decoration:none;
+}
+.btn-enews-modal {
+  height: 20px;
+  line-height: 19px;
+  font-weight: 300;
+  font-size: 10px;
+  padding: 0 1rem;
+}
+.position-abs {position:absolute;}
+.circle {border-radius:50%;}
+</style>
+
+
+<div class="modal-default position-fixed w-100percent h-100percent tblr-0 bg-black flex-column-center zi-1 hidden-xs shadow-navbar" id="modal-enews">
+  <div class="modal-default-content m-auto bg-white bs-cover position-rel flex-column-center" style="background-image:url('http://res.cloudinary.com/cocktailsfever/image/upload/v1490685145/BAHIA/newsletter.png');width:260px;height:160px;padding:68px 125px 144px 147px">
+      <div class="position-abs bg-white circle shadow-navbar" id="close-enews-modal" style="width:17px;right:-9px;top:-9px;width:20px;height:20px">
+        <img src="http://res.cloudinary.com/cocktailsfever/image/upload/v1490685171/BAHIA/cross.svg" class="clickable">
+      </div>
+      <h4 class="no-margin color-red fw-300 fs-16px text-center">Jetez un oeil à notre collecte Ulule pour retrouver votre pièce préférée à prix réduit et/ou pour précommander les produits de notre collection Été 2017</h4>
+      <div style="padding-left:78px">
+        <a href="https://fr.ulule.com/bahia-blanca/" class="btn-red btn-enews-modal">Vamos</a>
+      </div>
+  </div>
+</div>
+
+
+<script>
+  $('#close-enews-modal').click(function(){
+    console.log("working close modal");
+    $('#modal-enews').css("background-color", "transparent")
+    $('#modal-enews').css("top","-1000px")
+  });
+</script>
