@@ -532,7 +532,9 @@
   display:none;
 }
 */
-
+.h-80vh {
+  height:80vh;
+}
 
 /* CAROUSEL */
 .img-slider {
