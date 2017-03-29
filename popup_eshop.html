@@ -1,9 +1,6 @@
 <style>
-.modal-default {
-  background-color: rgba(250, 250, 250, 0.7);
-  transition: top 0.4s ease-in-out;
-  z-index:99999999;
-}
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300" rel="stylesheet">
+.modal-default {background-color: rgba(250, 250, 250, 0.7);transition: top 0.4s ease-in-out;z-index:99999999;}
 .position-fixed {position:fixed;}
 .w-100percent {width:100%;}
 .h-100percent {height:100%}
@@ -51,17 +48,27 @@
 }
 .position-abs {position:absolute;}
 .circle {border-radius:50%;}
+.size-modal-enews {width:510px;height:360px;padding:68px 125px 144px 147px;}
+.text-modal-enews {font-size:15px;padding:10px}
+
+@media (max-width: 760px) {
+  .size-modal-enews {width:60vw;height:283px;padding: 0px 50px 88px 50px}
+  .text-modal-enews {font-size:13px;padding:50px 10px 9px 15px;}
+}
 </style>
 
 
-<div class="modal-default position-fixed w-100percent h-100percent tblr-0 bg-black flex-column-center zi-1 hidden-xs shadow-navbar" id="modal-enews">
-  <div class="modal-default-content m-auto bg-white bs-cover position-rel flex-column-center" style="background-image:url('http://res.cloudinary.com/cocktailsfever/image/upload/v1490685145/BAHIA/newsletter.png');width:260px;height:160px;padding:68px 125px 144px 147px">
+
+
+
+<div class="modal-default position-fixed w-100percent h-100percent tblr-0 bg-black flex-column-center zi-1 hidden-xs shadow-navbar size-modal-enews" id="modal-enews" style="background-color: rgba(250, 250, 250, 0.7);transition: top 0.4s ease-in-out;z-index:99999999;">
+  <div class="modal-default-content m-auto bg-white bs-cover position-rel flex-column-center" style="background-image:url('http://res.cloudinary.com/cocktailsfever/image/upload/v1490685145/BAHIA/newsletter.png');background-position:center">
       <div class="position-abs bg-white circle shadow-navbar" id="close-enews-modal" style="width:17px;right:-9px;top:-9px;width:20px;height:20px">
         <img src="http://res.cloudinary.com/cocktailsfever/image/upload/v1490685171/BAHIA/cross.svg" class="clickable">
       </div>
-      <h4 class="no-margin color-red fw-300 fs-16px text-center">Jetez un oeil à notre collecte Ulule pour retrouver votre pièce préférée à prix réduit et/ou pour précommander les produits de notre collection Été 2017</h4>
+      <p class="no-margin color-red fw-300 text-center text-modal-enews" style="font-family:'Montserrat', sans-serif;">Jetez un oeil <br>à notre collecte Ulule pour retrouver votre pièce préférée à prix réduit et/ou pour précommander les produits de notre collection Été 2017</p>
       <div style="padding-left:78px">
-        <a href="https://fr.ulule.com/bahia-blanca/" class="btn-red btn-enews-modal">Vamos</a>
+        <a href="https://fr.ulule.com/bahia-blanca/" class="btn-red btn-enews-modal" style="font-family:'Montserrat', sans-serif">Vamos</a>
       </div>
   </div>
 </div>

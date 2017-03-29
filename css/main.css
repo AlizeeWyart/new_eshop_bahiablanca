@@ -795,6 +795,10 @@ footer {
   color:#A31D23;
 }
 
+.hover-red:hover {
+  color:#A31D23;
+}
+
 .color-light-grey {
   color: #999799;
 }
@@ -959,6 +963,10 @@ footer {
 
 .h-100percent {
   height:100%;
+}
+
+.h-80vh {
+  height:80vh;
 }
 
 .h-100vh {
