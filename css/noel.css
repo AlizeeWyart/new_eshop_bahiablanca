@@ -1,0 +1,115 @@
+#noel-page {
+  min-height: 100vh;
+  text-align:center;
+}
+
+.noel-guirlandes {
+  height:400px;
+}
+
+#guirlandes-left {
+  left:0;
+}
+
+#guirlandes-right {
+  right:0;
+  -moz-transform: scaleX(-1);
+  -o-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+#feliz-navidad {
+  width:50%;
+  margin-top:60px;
+  margin-bottom:40px;
+}
+.box-choix-cadeaux {
+  width: 40%;
+  margin: auto;
+}
+.card-choix-cadeau {
+  width: 40%;
+  display: block;
+}
+.img-choix-cadeau {
+  width:100%;
+}
+
+.hover-choix-cadeau {
+  width: 100%;
+  height: 80%;
+  background: rgba(164, 57, 49, 0.81);
+  opacity: 0;
+  padding-top: 30%;
+  transition:ease 0.3s;
+}
+
+.hover-choix-cadeau:hover {
+  opacity: 1;
+}
+
+.hover-choix-cadeau .fa-gift {
+  font-size:40px;
+}
+
+.sapin-link {
+  height:10px;
+  right:12px;
+  opacity: 0;
+  transition:ease 0.3s;
+}
+
+.card-choix-cadeau:hover .sapin-link {
+  height:25px;
+  opacity:1;
+}
+
+.cadeau-link-sapin {
+  transition:ease 0.3s;
+}
+
+.card-choix-cadeau:hover .cadeau-link-sapin {
+  font-weight:400;
+}
+
+
+/* CHOIX CADEAUX - DIV 2*/
+.box-cadeau-elle-lui {
+  padding-left:15%;
+  padding-right:15%;
+}
+
+.card-choix-cadeau-elle-lui {
+  flex:0 0 28%;
+
+}
+.img-choix-cadeau-elle-lui {
+  width:100%;
+  left:0;
+  transition:ease 0.3s;
+}
+
+.color-choices {
+  padding-top:10px;
+}
+.color-choice-elle-1 {
+  height: 28px;
+  width: 28px;
+  border:3px solid white;
+  border-radius: 50%;
+  margin-right:10Px;
+  transition: ease 0.3s;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+}
+
+.img-choix-cadeau-elle-lui.not-choosen {
+  opacity:0;
+  left:-100px;
+}
+
+

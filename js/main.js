@@ -171,13 +171,35 @@ $(document).ready(function(){
   });
 
   var isshow = sessionStorage.getItem('isshow');
-  if (isshow== 1) {
-    setTimeout(function() {
-      $('#bahialetterModal').css("display", "none");
-    }, 5000);
+  if (sessionStorage.getItem('isshow') == 1) {
+    $('#modal-enews').css("display", "none");
+  } else {
     sessionStorage.setItem('isshow', 1);
+  };
   };
 
   // COMMANDES
 
 });
+
+// FAQ BOX
+
+$('.faq-box .fa-plus').on("click", function(){
+  thisFaqBox = $(this).parent().parent();
+  $(this).addClass("hidden");
+  console.log(thisFaqBox);
+  thisFaqBox.find(".fa-minus").removeClass("hidden");
+  thisFaqBox.find(".faq-box-content").removeClass("h-0");
+});
+
+$('.faq-box .fa-minus').on("click", function(){
+  thisFaqBox = $(this).parent().parent();
+  $(this).addClass("hidden");
+  console.log(thisFaqBox);
+  thisFaqBox.find(".fa-plus").removeClass("hidden");
+  thisFaqBox.find(".faq-box-content").addClass("h-0");
+});
+
+// INSTAGRAM
+
+
